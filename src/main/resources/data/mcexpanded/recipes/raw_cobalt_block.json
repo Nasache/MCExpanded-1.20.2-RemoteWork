@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mcexpanded:raw_cobalt"
+    }
+  },
+  "result": {
+    "item": "mcexpanded:raw_cobalt_block"
+  }
+}

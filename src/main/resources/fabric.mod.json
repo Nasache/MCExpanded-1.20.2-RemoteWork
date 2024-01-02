@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mcexpanded",
+	"version": "${version}",
+	"name": "MCExpanded",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mcexpanded/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.nathan.mcexpanded.MCExpanded"
+		],
+		"fabric-datagen": [
+			"net.nathan.mcexpanded.MCExpandedDataGenerator"
+		]
+	},
+	"mixins": [
+		"mcexpanded.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

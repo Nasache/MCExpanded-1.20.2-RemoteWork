@@ -1,0 +1,13 @@
+{
+  "item.mcexpanded.cobalt_ingot": "Cobalt Ingot",
+  "item.mcexpanded.raw_cobalt": "Raw Cobalt",
+
+  "block.mcexpanded.cobalt_block": "Block of Cobalt",
+  "block.mcexpanded.raw_cobalt_block": "Block of Raw Cobalt",
+  "block.mcexpanded.cobalt_ore": "Cobalt Ore",
+
+  "item.mcexpanded.lightning_bottle": "Lightning in a Bottle",
+
+  "itemgroup.ex_ingredients_group": "MCEX Ingredients",
+  "itemgroup.ex_building_blocks_group": "MCEX Building Blocks"
+}

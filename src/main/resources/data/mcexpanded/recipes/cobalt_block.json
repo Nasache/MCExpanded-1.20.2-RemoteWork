@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "mcexpanded:cobalt_ingot"
+    }
+  },
+  "result": {
+    "item": "mcexpanded:cobalt_block"
+  }
+}
