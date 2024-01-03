@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"net.nathan.mcexpanded.MCExpandedDataGenerator"
+		],
+		"client": [
+			"net.nathan.mcexpanded.MCExpandedClient"
 		]
 	},
 	"mixins": [

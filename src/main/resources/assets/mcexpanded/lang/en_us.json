@@ -6,8 +6,55 @@
   "block.mcexpanded.raw_cobalt_block": "Block of Raw Cobalt",
   "block.mcexpanded.cobalt_ore": "Cobalt Ore",
 
+  "item.mcexpanded.cobalt_sword": "Cobalt Sword",
+  "item.mcexpanded.cobalt_pickaxe": "Cobalt Pickaxe",
+  "item.mcexpanded.cobalt_axe": "Cobalt Axe",
+  "item.mcexpanded.cobalt_shovel": "Cobalt Shovel",
+  "item.mcexpanded.cobalt_hoe": "Cobalt Hoe",
+  "item.mcexpanded.cobalt_helmet": "Cobalt Helmet",
+  "item.mcexpanded.cobalt_chestplate": "Cobalt Chestplate",
+  "item.mcexpanded.cobalt_leggings": "Cobalt Leggings",
+  "item.mcexpanded.cobalt_boots": "Cobalt Boots",
+  "item.mcexpanded.blaze_shield": "Blaze Shield",
+
+  "block.mcexpanded.maple_planks": "Maple Planks",
+  "block.mcexpanded.maple_stairs": "Maple Stairs",
+  "block.mcexpanded.maple_slab": "Maple Slab",
+  "block.mcexpanded.maple_button": "Maple Button",
+  "block.mcexpanded.maple_pressure_plate": "Maple Pressure Plate",
+  "block.mcexpanded.maple_fence": "Maple Fence",
+  "block.mcexpanded.maple_fence_gate": "Maple Fence Gate",
+  "block.mcexpanded.maple_door": "Maple Door",
+  "block.mcexpanded.maple_trapdoor": "Maple Trapdoor",
+
+  "block.mcexpanded.maple_leaves": "Maple Leaves",
+
+  "item.mcexpanded.bitter_berries": "Bitter Berries",
+  "item.mcexpanded.leek": "Leek",
+  "item.mcexpanded.roasted_leek": "Roasted Leek",
+  "item.mcexpanded.leek_seeds": "Leek Seeds",
+  "item.mcexpanded.moon_fruit": "Moon Fruit",
+  "item.mcexpanded.moon_seeds": "Moon Seeds",
+  "item.mcexpanded.sun_fruit": "Sun Fruit",
+  "item.mcexpanded.sun_seeds": "Sun Seeds",
+  "block.mcexpanded.garden_cosmos": "Garden Cosmos",
+  "block.mcexpanded.blue_mushroom": "Blue Mushroom",
+
   "item.mcexpanded.lightning_bottle": "Lightning in a Bottle",
 
+  "item.mcexpanded.music_disc_shroom_song": "§bMusic Disc§b",
+  "item.mcexpanded.music_disc_shroom_song.desc": "Nathan Stabach - shroom song",
+
+  "block.mcexpanded.test_block": "Test Block",
+
+  "enchantment.mcexpanded.lightning_striker": "Striker",
+  "enchantment.mcexpanded.explosive": "Explosive",
+
+  "effect.mcexpanded.slimey": "Slimey",
+  "effect.mcexpanded.leatherfae": "Full Armor Effect",
+
   "itemgroup.ex_ingredients_group": "MCEX Ingredients",
-  "itemgroup.ex_building_blocks_group": "MCEX Building Blocks"
+  "itemgroup.ex_building_blocks_group": "MCEX Building Blocks",
+  "itemgroup.ex_food_and_drinks_group": "MCEX Food and Drinks",
+  "itemgroup.ex_tools": "MCEX Tools"
 }

@@ -16,23 +16,17 @@ public class LightningBottleItem extends Item {
         super(settings);
     }
 
+
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        if(!world.isClient) {
+        if(!world.isClient && (!world.isThundering())) {
             ServerWorld serverWorld = (ServerWorld) world;
-            if(!world.isThundering()) {
+            serverWorld.setWeather(0, UniformIntProvider.create(3600, 15600).get(world.random), true, true);
 
-                serverWorld.setWeather(0, UniformIntProvider.create(3600, 15600).get(world.random), true, true);
-
-                if (!user.isCreative() && user.getStackInHand(hand).getCount() > 0) {
-                    user.getStackInHand(hand).decrement(1);
-
-                    return TypedActionResult.success(user.getStackInHand(hand));
-
-                }
+            if (!user.isCreative() && user.getStackInHand(hand).getCount() > 0) {
+                user.getStackInHand(hand).decrement(1);
             }
         }
-
-        return super.use(world, user, hand);
+        return TypedActionResult.consume(user.getStackInHand(hand));
     }
 }

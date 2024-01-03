@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "mcexpanded:block/maple_slab"
+    },
+    "type=double": {
+      "model": "mcexpanded:block/maple_planks"
+    },
+    "type=top": {
+      "model": "mcexpanded:block/maple_slab_top"
+    }
+  }
+}
