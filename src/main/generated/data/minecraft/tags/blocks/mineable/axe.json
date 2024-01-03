@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "mcexpanded:maple_planks",
+    "mcexpanded:maple_stairs",
+    "mcexpanded:maple_slab",
+    "mcexpanded:maple_button",
+    "mcexpanded:maple_pressure_plate",
+    "mcexpanded:maple_fence",
+    "mcexpanded:maple_fence_gate",
+    "mcexpanded:maple_door",
+    "mcexpanded:maple_trapdoor"
+  ]
+}

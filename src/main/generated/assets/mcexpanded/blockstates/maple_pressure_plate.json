@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "mcexpanded:block/maple_pressure_plate"
+    },
+    "powered=true": {
+      "model": "mcexpanded:block/maple_pressure_plate_down"
+    }
+  }
+}

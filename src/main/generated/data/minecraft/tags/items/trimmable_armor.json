@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mcexpanded:cobalt_helmet",
+    "mcexpanded:cobalt_chestplate",
+    "mcexpanded:cobalt_leggings",
+    "mcexpanded:cobalt_boots"
+  ]
+}

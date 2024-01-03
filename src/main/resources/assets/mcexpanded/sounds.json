@@ -1,0 +1,10 @@
+{
+  "shroom_song": {
+    "sounds": [
+      {
+        "name": "mcexpanded:shroom_song",
+        "stream": true
+      }
+    ]
+  }
+}
