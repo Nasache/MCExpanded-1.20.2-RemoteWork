@@ -37,7 +37,7 @@
                   ]
                 }
               ],
-              "name": "mcexpanded:maple_leaves"
+              "name": "mcexpanded:yellow_maple_leaves"
             },
             {
               "type": "minecraft:item",
@@ -53,7 +53,7 @@
                   "enchantment": "minecraft:fortune"
                 }
               ],
-              "name": "minecraft:spruce_sapling"
+              "name": "mcexpanded:yellow_maple_sapling"
             }
           ]
         }

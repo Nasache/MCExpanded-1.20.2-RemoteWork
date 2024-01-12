@@ -33,7 +33,10 @@ public class ModItemGroup {
                         entries.add(ModBlocks.MAPLE_FENCE_GATE);
                         entries.add(ModBlocks.MAPLE_DOOR);
                         entries.add(ModBlocks.MAPLE_TRAPDOOR);
-                        entries.add(ModBlocks.MAPLE_LEAVES);
+                        entries.add(ModBlocks.RED_MAPLE_LEAVES);
+                        entries.add(ModBlocks.YELLOW_MAPLE_LEAVES);
+                        entries.add(ModItems.MAPLE_SIGN);
+                        entries.add(ModItems.MAPLE_HANGING_SIGN);
 
                     }).build());
     public static final ItemGroup EX_INGREDIENTS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -61,6 +64,8 @@ public class ModItemGroup {
                         entries.add(ModItems.MOON_SEEDS);
                         entries.add(ModItems.SUN_FRUIT);
                         entries.add(ModItems.SUN_SEEDS);
+                        entries.add(ModBlocks.RED_MAPLE_SAPLING);
+                        entries.add(ModBlocks.YELLOW_MAPLE_SAPLING);
 
 
                     }).build());

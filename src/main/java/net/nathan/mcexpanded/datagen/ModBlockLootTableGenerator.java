@@ -32,7 +32,8 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAPLE_WOOD);
         addDrop(ModBlocks.STRIPPED_MAPLE_LOG);
         addDrop(ModBlocks.STRIPPED_MAPLE_WOOD);
-        addDrop(ModBlocks.MAPLE_LEAVES, leavesDrops(ModBlocks.MAPLE_LEAVES, Blocks.SPRUCE_SAPLING, .05f));
+        addDrop(ModBlocks.RED_MAPLE_LEAVES, leavesDrops(ModBlocks.RED_MAPLE_LEAVES, ModBlocks.RED_MAPLE_SAPLING, .05f));
+        addDrop(ModBlocks.YELLOW_MAPLE_LEAVES, leavesDrops(ModBlocks.YELLOW_MAPLE_LEAVES, ModBlocks.YELLOW_MAPLE_SAPLING, .05f));
         addDrop(ModBlocks.MAPLE_STAIRS);
         addDrop(ModBlocks.MAPLE_SLAB, slabDrops(ModBlocks.MAPLE_SLAB));
         addDrop(ModBlocks.MAPLE_BUTTON);
@@ -40,6 +41,11 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAPLE_FENCE);
         addDrop(ModBlocks.MAPLE_FENCE_GATE);
         addDrop(ModBlocks.MAPLE_DOOR, doorDrops(ModBlocks.MAPLE_DOOR));
+        addDrop(ModBlocks.MAPLE_TRAPDOOR);
+        addDrop(ModBlocks.MAPLE_SIGN);
+        addDrop(ModBlocks.MAPLE_WALL_SIGN);
+        addDrop(ModBlocks.MAPLE_HANGING_SIGN);
+        addDrop(ModBlocks.MAPLE_WALL_HANGING_SIGN);
         addDrop(ModBlocks.MAPLE_TRAPDOOR);
         addDrop(ModBlocks.GARDEN_COSMOS);
         addDrop(ModBlocks.GARDEN_COSMOS);

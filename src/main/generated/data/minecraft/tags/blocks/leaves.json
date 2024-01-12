@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "mcexpanded:maple_leaves"
+    "mcexpanded:red_maple_leaves",
+    "mcexpanded:yellow_maple_leaves"
   ]
 }

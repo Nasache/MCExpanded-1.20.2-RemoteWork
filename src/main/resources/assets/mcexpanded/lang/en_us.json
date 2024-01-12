@@ -31,7 +31,14 @@
   "block.mcexpanded.stripped_maple_log": "Stripped Maple Log",
   "block.mcexpanded.stripped_maple_wood": "Stripped Maple Wood",
 
-  "block.mcexpanded.maple_leaves": "Maple Leaves",
+  "block.mcexpanded.maple_sign": "Maple Sign",
+  "block.mcexpanded.maple_hanging_sign": "Maple Hanging Sign",
+
+  "block.mcexpanded.red_maple_sapling": "Red Maple Sapling",
+  "block.mcexpanded.yellow_maple_sapling": "Yellow Maple Sapling",
+
+  "block.mcexpanded.red_maple_leaves": "Red Maple Leaves",
+  "block.mcexpanded.yellow_maple_leaves": "Yellow Maple Leaves",
 
   "item.mcexpanded.bitter_berries": "Bitter Berries",
   "item.mcexpanded.leek": "Leek",

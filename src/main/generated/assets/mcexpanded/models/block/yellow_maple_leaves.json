@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "mcexpanded:block/maple_leaves"
+    "all": "mcexpanded:block/yellow_maple_leaves"
   }
 }

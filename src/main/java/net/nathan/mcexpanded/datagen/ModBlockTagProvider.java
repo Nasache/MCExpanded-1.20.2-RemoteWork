@@ -39,7 +39,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.MAPLE_PLANKS);
 
         getOrCreateTagBuilder(BlockTags.LEAVES)
-                .add(ModBlocks.MAPLE_LEAVES);
+                .add(ModBlocks.RED_MAPLE_LEAVES,
+                        ModBlocks.YELLOW_MAPLE_LEAVES);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.COBALT_BLOCK,

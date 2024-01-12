@@ -1,9 +1,10 @@
-// 1.20.2	2024-01-10T21:22:15.2315609	MCExpanded/Recipes
+// 1.20.2	2024-01-12T16:11:52.9347698	MCExpanded/Recipes
 622e62f9cf6bf70ed623b6539b6e87b829880bd5 data\mcexpanded\advancements\recipes\misc\cobalt_helmet.json
 e216b25871f22a4b04871bd6ad83b88f08bbf15a data\mcexpanded\advancements\recipes\food\roasted_leek_from_campfire_cooking.json
 d76ac39ff744b15f2d81f3efac13dff17fe96143 data\mcexpanded\advancements\recipes\misc\raw_cobalt.json
 a4eb35ff881cf94825c1514a26b14a46f8244b5f data\mcexpanded\recipes\cobalt_boots.json
 b8b7bd7f1912ee952c79135fde4c7afe8b308dc4 data\mcexpanded\recipes\cobalt_ingot_from_smelting_cobalt_ore.json
+4578b03a6b3275e3a8baf4b0031f14355367df95 data\mcexpanded\recipes\maple_hanging_sign.json
 0be0088f1651de13e09e593acf7bea1ae7fb0f47 data\mcexpanded\advancements\recipes\misc\cobalt_sword.json
 84fc5a630b7030543fe62a98a79d2de1e783ffac data\mcexpanded\advancements\recipes\misc\cobalt_hoe.json
 a1ea28fc1f41e209f783ba8cd61b74e7ffece64c data\mcexpanded\advancements\recipes\misc\cobalt_ingot_from_blasting_raw_cobalt.json
@@ -59,3 +60,4 @@ aab3286c73621d61a4530a58f01e011676e7beff data\mcexpanded\recipes\cobalt_leggings
 46a74ba0167e02682316872cb9213679bd8c393c data\mcexpanded\recipes\cobalt_helmet.json
 d228ab1c2d05e050c4c4ada7b42271788be0de73 data\mcexpanded\recipes\maple_button.json
 22304884ee387452760a05c4b02e4e33f953ff21 data\mcexpanded\recipes\cobalt_pickaxe.json
+9fcd43dc0d2666f3d9bc4f86769500420f5136f5 data\mcexpanded\advancements\recipes\decorations\maple_hanging_sign.json

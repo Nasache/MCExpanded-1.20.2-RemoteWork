@@ -14,6 +14,9 @@ import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.TreeConfiguredFeatures;
 import net.nathan.mcexpanded.MCExpanded;
 import net.nathan.mcexpanded.block.custom.*;
+import net.nathan.mcexpanded.util.ModWoodTypes;
+import net.nathan.mcexpanded.world.tree.RedMapleSaplingGenerator;
+import net.nathan.mcexpanded.world.tree.YellowMapleSaplingGenerator;
 
 public class ModBlocks {
 
@@ -51,8 +54,29 @@ public class ModBlocks {
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
     public static final Block STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_WOOD)));
-    public static final Block MAPLE_LEAVES = registerBlock("maple_leaves",
+    public static final Block RED_MAPLE_LEAVES = registerBlock("red_maple_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).mapColor(MapColor.BRIGHT_RED)));
+    public static final Block YELLOW_MAPLE_LEAVES = registerBlock("yellow_maple_leaves",
+            new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).mapColor(MapColor.YELLOW)));
+    public static final Block RED_MAPLE_SAPLING = registerBlock("red_maple_sapling",
+            new SaplingBlock(new RedMapleSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).mapColor(MapColor.BRIGHT_RED)));
+    public static final Block POTTED_RED_MAPLE_SAPLING = registerBlockWithoutBlockItem("potted_red_maple_sapling",
+            new FlowerPotBlock(RED_MAPLE_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).mapColor(MapColor.BRIGHT_RED)));
+
+    public static final Block YELLOW_MAPLE_SAPLING = registerBlock("yellow_maple_sapling",
+            new SaplingBlock(new YellowMapleSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING).mapColor(MapColor.YELLOW)));
+    public static final Block POTTED_YELLOW_MAPLE_SAPLING = registerBlockWithoutBlockItem("potted_yellow_maple_sapling",
+            new FlowerPotBlock(YELLOW_MAPLE_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_OAK_SAPLING).mapColor(MapColor.YELLOW)));
+
+    public static final Block MAPLE_SIGN = registerBlockWithoutBlockItem("maple_sign",
+            new ModStandingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_SIGN), ModWoodTypes.MAPLE));
+    public static final Block MAPLE_WALL_SIGN = registerBlockWithoutBlockItem("maple_wall_sign",
+            new ModWallSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_WALL_SIGN), ModWoodTypes.MAPLE));
+    public static final Block MAPLE_HANGING_SIGN = registerBlockWithoutBlockItem("maple_hanging_sign",
+            new ModHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN), ModWoodTypes.MAPLE));
+    public static final Block MAPLE_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("maple_wall_hanging_sign",
+            new ModWallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.MAPLE));
+
     public static final Block LEEK_CROP = registerBlockWithoutBlockItem("leek_crop",
             new LeekCropBlock(FabricBlockSettings.copyOf(Blocks.POTATOES)));
 

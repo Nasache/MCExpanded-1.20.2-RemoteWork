@@ -39,6 +39,11 @@ public class ModItems {
     public static final Item BLAZE_SHIELD = registerItem("blaze_shield",
             new ShieldItem(new FabricItemSettings().maxDamage(672)));
 
+    public static final Item MAPLE_SIGN = registerItem("maple_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.MAPLE_SIGN, ModBlocks.MAPLE_WALL_SIGN));
+    public static final Item MAPLE_HANGING_SIGN = registerItem("maple_hanging_sign",
+            new HangingSignItem(ModBlocks.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
+
     public static final Item BITTER_BERRIES = registerItem("bitter_berries",
             new AliasedBlockItem(ModBlocks.BITTER_BERRY_BUSH, new FabricItemSettings().food(ModFoodComponents.BITTER_BERRIES)));
 
