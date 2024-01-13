@@ -36,8 +36,14 @@ public class ModItems {
     public static final Item COBALT_BOOTS = registerItem("cobalt_boots",
             new ModArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
-    public static final Item BLAZE_SHIELD = registerItem("blaze_shield",
-            new ShieldItem(new FabricItemSettings().maxDamage(672)));
+    public static final Item PRISMARINE_HELMET = registerItem("prismarine_helmet",
+            new ModArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item PRISMARINE_CHESTPLATE = registerItem("prismarine_chestplate",
+            new ModArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item PRISMARINE_LEGGINGS = registerItem("prismarine_leggings",
+            new ModArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item PRISMARINE_BOOTS = registerItem("prismarine_boots",
+            new ModArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     public static final Item MAPLE_SIGN = registerItem("maple_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.MAPLE_SIGN, ModBlocks.MAPLE_WALL_SIGN));

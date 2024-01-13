@@ -5,6 +5,7 @@
   "block.mcexpanded.cobalt_block": "Block of Cobalt",
   "block.mcexpanded.raw_cobalt_block": "Block of Raw Cobalt",
   "block.mcexpanded.cobalt_ore": "Cobalt Ore",
+  "block.mcexpanded.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
 
   "item.mcexpanded.cobalt_sword": "Cobalt Sword",
   "item.mcexpanded.cobalt_pickaxe": "Cobalt Pickaxe",
@@ -15,7 +16,11 @@
   "item.mcexpanded.cobalt_chestplate": "Cobalt Chestplate",
   "item.mcexpanded.cobalt_leggings": "Cobalt Leggings",
   "item.mcexpanded.cobalt_boots": "Cobalt Boots",
-  "item.mcexpanded.blaze_shield": "Blaze Shield",
+  "item.mcexpanded.prismarine_helmet": "Prismarine Helmet",
+  "item.mcexpanded.prismarine_chestplate": "Prismarine Chestplate",
+  "item.mcexpanded.prismarine_leggings": "Prismarine Leggings",
+  "item.mcexpanded.prismarine_boots": "Prismarine Boots",
+
 
   "block.mcexpanded.maple_planks": "Maple Planks",
   "block.mcexpanded.maple_stairs": "Maple Stairs",
@@ -62,7 +67,7 @@
   "enchantment.mcexpanded.explosive": "Explosive",
 
   "effect.mcexpanded.slimey": "Slimey",
-  "effect.mcexpanded.leatherfae": "Full Armor Effect",
+  "effect.mcexpanded.prismarine": "Prismarine Protection",
 
   "itemgroup.ex_ingredients_group": "MCEX Ingredients",
   "itemgroup.ex_building_blocks_group": "MCEX Building Blocks",

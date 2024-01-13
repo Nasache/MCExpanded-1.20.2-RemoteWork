@@ -2,6 +2,7 @@ package net.nathan.mcexpanded.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -39,8 +40,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.COBALT_INGOT, RecipeCategory.MISC, ModBlocks.COBALT_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RAW_COBALT, RecipeCategory.MISC, ModBlocks.RAW_COBALT_BLOCK);
 
-        offerSmelting(exporter, List.of(ModItems.RAW_COBALT, ModBlocks.COBALT_ORE), RecipeCategory.MISC, ModItems.COBALT_INGOT, 0.7f, 200, "cobalt_ingot");
-        offerBlasting(exporter, List.of(ModItems.RAW_COBALT, ModBlocks.COBALT_ORE), RecipeCategory.MISC, ModItems.COBALT_INGOT, 0.7f, 100, "cobalt_ingot");
+        offerSmelting(exporter, List.of(ModItems.RAW_COBALT, ModBlocks.COBALT_ORE, ModBlocks.DEEPSLATE_COBALT_ORE), RecipeCategory.MISC, ModItems.COBALT_INGOT, 0.7f, 200, "cobalt_ingot");
+        offerBlasting(exporter, List.of(ModItems.RAW_COBALT, ModBlocks.COBALT_ORE, ModBlocks.DEEPSLATE_COBALT_ORE), RecipeCategory.MISC, ModItems.COBALT_INGOT, 0.7f, 100, "cobalt_ingot");
 
         offerPlanksRecipe(exporter, ModBlocks.MAPLE_PLANKS, ModTags.Items.MAPLE_LOGS, 4);
 
@@ -139,10 +140,35 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.COBALT_INGOT), conditionsFromItem(ModItems.COBALT_INGOT))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.COBALT_BOOTS)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PRISMARINE_HELMET)
+                .pattern("CCC")
+                .pattern("C C")
+                .input('C', Items.PRISMARINE_SHARD)
+                .criterion(hasItem(Items.PRISMARINE_SHARD), conditionsFromItem(Items.PRISMARINE_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PRISMARINE_HELMET)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PRISMARINE_CHESTPLATE)
+                .pattern("C C")
+                .pattern("CCC")
+                .pattern("CCC")
+                .input('C', Items.PRISMARINE_SHARD)
+                .criterion(hasItem(Items.PRISMARINE_SHARD), conditionsFromItem(Items.PRISMARINE_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PRISMARINE_CHESTPLATE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PRISMARINE_LEGGINGS)
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("C C")
+                .input('C', Items.PRISMARINE_SHARD)
+                .criterion(hasItem(Items.PRISMARINE_SHARD), conditionsFromItem(Items.PRISMARINE_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PRISMARINE_LEGGINGS)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PRISMARINE_BOOTS)
+                .pattern("C C")
+                .pattern("C C")
+                .input('C', Items.PRISMARINE_SHARD)
+                .criterion(hasItem(Items.PRISMARINE_SHARD), conditionsFromItem(Items.PRISMARINE_SHARD))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PRISMARINE_BOOTS)));
+
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(new ItemConvertible[]{ModItems.LEEK}), RecipeCategory.FOOD, ModItems.ROASTED_LEEK, 0.35F, 200).criterion("has_leek", conditionsFromItem(ModItems.LEEK)).offerTo(exporter);
         offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING, 100, ModItems.LEEK, ModItems.ROASTED_LEEK, 0.35f);
         offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, 600, ModItems.LEEK, ModItems.ROASTED_LEEK, 0.35f);
-
-
     }
 }

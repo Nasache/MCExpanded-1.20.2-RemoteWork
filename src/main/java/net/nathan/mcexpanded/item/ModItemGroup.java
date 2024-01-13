@@ -19,6 +19,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.COBALT_BLOCK);
                         entries.add(ModBlocks.RAW_COBALT_BLOCK);
                         entries.add(ModBlocks.COBALT_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_COBALT_ORE);
                         entries.add(ModBlocks.TEST_BLOCK);
                         entries.add(ModBlocks.MAPLE_LOG);
                         entries.add(ModBlocks.MAPLE_WOOD);
@@ -83,7 +84,10 @@ public class ModItemGroup {
                         entries.add(ModItems.COBALT_CHESTPLATE);
                         entries.add(ModItems.COBALT_LEGGINGS);
                         entries.add(ModItems.COBALT_BOOTS);
-                        entries.add(ModItems.BLAZE_SHIELD);
+                        entries.add(ModItems.PRISMARINE_HELMET);
+                        entries.add(ModItems.PRISMARINE_CHESTPLATE);
+                        entries.add(ModItems.PRISMARINE_LEGGINGS);
+                        entries.add(ModItems.PRISMARINE_BOOTS);
                         entries.add(ModItems.LIGHTNING_BOTTLE);
 
                     }).build());

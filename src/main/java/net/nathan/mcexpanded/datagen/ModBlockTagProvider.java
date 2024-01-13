@@ -22,7 +22,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(ModBlocks.COBALT_BLOCK,
                         ModBlocks.RAW_COBALT_BLOCK,
-                        ModBlocks.COBALT_ORE);
+                        ModBlocks.COBALT_ORE,
+                        ModBlocks.DEEPSLATE_COBALT_ORE);
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.MAPLE_PLANKS,
@@ -33,7 +34,15 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.MAPLE_FENCE,
                         ModBlocks.MAPLE_FENCE_GATE,
                         ModBlocks.MAPLE_DOOR,
-                        ModBlocks.MAPLE_TRAPDOOR);
+                        ModBlocks.MAPLE_TRAPDOOR,
+                        ModBlocks.MAPLE_LOG,
+                        ModBlocks.MAPLE_WOOD,
+                        ModBlocks.STRIPPED_MAPLE_LOG,
+                        ModBlocks.STRIPPED_MAPLE_WOOD,
+                        ModBlocks.MAPLE_HANGING_SIGN,
+                        ModBlocks.MAPLE_SIGN,
+                        ModBlocks.MAPLE_WALL_SIGN,
+                        ModBlocks.MAPLE_WALL_HANGING_SIGN);
 
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(ModBlocks.MAPLE_PLANKS);
@@ -45,7 +54,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.COBALT_BLOCK,
                         ModBlocks.RAW_COBALT_BLOCK,
-                        ModBlocks.COBALT_ORE);
+                        ModBlocks.COBALT_ORE,
+                        ModBlocks.DEEPSLATE_COBALT_ORE);
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.MAPLE_FENCE);

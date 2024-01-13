@@ -9,6 +9,14 @@
     "mcexpanded:maple_fence",
     "mcexpanded:maple_fence_gate",
     "mcexpanded:maple_door",
-    "mcexpanded:maple_trapdoor"
+    "mcexpanded:maple_trapdoor",
+    "mcexpanded:maple_log",
+    "mcexpanded:maple_wood",
+    "mcexpanded:stripped_maple_log",
+    "mcexpanded:stripped_maple_wood",
+    "mcexpanded:maple_hanging_sign",
+    "mcexpanded:maple_sign",
+    "mcexpanded:maple_wall_sign",
+    "mcexpanded:maple_wall_hanging_sign"
   ]
 }

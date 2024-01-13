@@ -6,9 +6,4 @@ import net.minecraft.util.Identifier;
 import net.nathan.mcexpanded.item.ModItems;
 
 public class ModModelPredicateProvider {
-    public static void registerModModels() {
-        ModelPredicateProviderRegistry.register(ModItems.BLAZE_SHIELD, new Identifier("blocking"),
-                (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0F : 0.0F);
-
-    }
 }

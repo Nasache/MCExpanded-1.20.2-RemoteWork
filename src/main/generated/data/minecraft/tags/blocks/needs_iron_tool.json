@@ -3,6 +3,7 @@
   "values": [
     "mcexpanded:cobalt_block",
     "mcexpanded:raw_cobalt_block",
-    "mcexpanded:cobalt_ore"
+    "mcexpanded:cobalt_ore",
+    "mcexpanded:deepslate_cobalt_ore"
   ]
 }

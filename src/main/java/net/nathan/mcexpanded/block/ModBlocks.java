@@ -27,6 +27,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.RAW_IRON_BLOCK).mapColor(MapColor.BLUE)));
     public static final Block COBALT_ORE = registerBlock("cobalt_ore",
             new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.IRON_ORE)));
+    public static final Block DEEPSLATE_COBALT_ORE = registerBlock("deepslate_cobalt_ore",
+            new ExperienceDroppingBlock(FabricBlockSettings.copyOf(Blocks.DEEPSLATE_IRON_ORE)));
 
     public static final Block MAPLE_PLANKS = registerBlock("maple_planks",
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS)));

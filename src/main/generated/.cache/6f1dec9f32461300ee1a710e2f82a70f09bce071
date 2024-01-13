@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-12T16:11:52.927763	MCExpanded/Block Loot Tables
+// 1.20.2	2024-01-13T15:20:03.970407	MCExpanded/Block Loot Tables
 4704f5838cdf4ab233e63cae4a9a580d628fbf81 data\mcexpanded\loot_tables\blocks\maple_button.json
 d5d180af0d9e049be4344883f2c733c226d2a80f data\mcexpanded\loot_tables\blocks\garden_cosmos.json
 7e82fc498401fbe1c2ad501c048f241271158c3e data\mcexpanded\loot_tables\blocks\maple_planks.json
@@ -23,6 +23,7 @@ bb2dbdbfcb27cddc1c91d4b03286c9d84a4f518e data\mcexpanded\loot_tables\blocks\coba
 28d285df37674b28324db53fddc3fc0dd294faaf data\mcexpanded\loot_tables\blocks\sun_crop.json
 9c1b5f7be0e0da3ef56a99a963deab71bc6e70af data\mcexpanded\loot_tables\blocks\leek_crop.json
 0787a5cb52a52b0a38d05cf1f79b4d48e38ada0a data\minecraft\loot_tables\blocks\oak_sign.json
+bea5cb7752fba37900348b116e6398ba954b4b74 data\mcexpanded\loot_tables\blocks\deepslate_cobalt_ore.json
 50da60b505d40f6b7f984ff183b4a1d9cba8973a data\mcexpanded\loot_tables\blocks\potted_blue_mushroom.json
 63e9ab47ca53679a93e9da100e6c38d968f23bf8 data\mcexpanded\loot_tables\blocks\blue_mushroom.json
 d92403486e9e819b35394b6d7f482f36e1c21726 data\mcexpanded\loot_tables\blocks\raw_cobalt_block.json

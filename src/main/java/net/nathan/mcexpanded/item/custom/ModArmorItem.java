@@ -8,6 +8,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
 import net.minecraft.world.World;
+import net.nathan.mcexpanded.effect.ModEffects;
 import net.nathan.mcexpanded.item.ModArmorMaterials;
 
 import java.util.Map;
@@ -16,6 +17,7 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, StatusEffectInstance> MATERIAL_TO_EFFECT_MAP =
             new ImmutableMap.Builder<ArmorMaterial, StatusEffectInstance>()
                     .put(ModArmorMaterials.COBALT, new StatusEffectInstance(StatusEffects.ABSORPTION, 0, 0))
+                    .put(ModArmorMaterials.PRISMARINE, new StatusEffectInstance(ModEffects.PRISMARINE, 0, 1, false, false))
                     .put(ArmorMaterials.IRON, new StatusEffectInstance(StatusEffects.HASTE, 0, 0)).build();
 
     public ModArmorItem(ArmorMaterial material, Type type, Settings settings) {

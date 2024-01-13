@@ -23,6 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBALT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COBALT_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_COBALT_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RAW_COBALT_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.TEST_BLOCK);
 
@@ -87,6 +88,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.COBALT_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.COBALT_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.COBALT_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PRISMARINE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PRISMARINE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PRISMARINE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.PRISMARINE_BOOTS));
 
     }
 }
