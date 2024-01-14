@@ -1,9 +1,9 @@
-// 1.20.2	2024-01-13T15:20:03.970407	MCExpanded/Block Loot Tables
+// 1.20.2	2024-01-14T00:40:16.4168918	MCExpanded/Block Loot Tables
 4704f5838cdf4ab233e63cae4a9a580d628fbf81 data\mcexpanded\loot_tables\blocks\maple_button.json
 d5d180af0d9e049be4344883f2c733c226d2a80f data\mcexpanded\loot_tables\blocks\garden_cosmos.json
 7e82fc498401fbe1c2ad501c048f241271158c3e data\mcexpanded\loot_tables\blocks\maple_planks.json
-af3bd0d335481b5f047a76a5d420c4e1293fb7d3 data\mcexpanded\loot_tables\blocks\maple_wood.json
 6460f3fbeb563747649d56b15c657918ee9ac812 data\mcexpanded\loot_tables\blocks\cobalt_ore.json
+af3bd0d335481b5f047a76a5d420c4e1293fb7d3 data\mcexpanded\loot_tables\blocks\maple_wood.json
 e83415886387f6a7c279a5c8ab9db9c5734551e7 data\mcexpanded\loot_tables\blocks\maple_trapdoor.json
 53bec5e31201a640930e705a1af12896c879d55e data\mcexpanded\loot_tables\blocks\red_maple_leaves.json
 34e945ea050e948493778a7006078c314e14145e data\mcexpanded\loot_tables\blocks\maple_pressure_plate.json

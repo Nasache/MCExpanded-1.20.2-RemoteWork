@@ -6,7 +6,10 @@
 		"ExampleMixin",
 		"ModEntityDataSaverMixin",
 		"PlayerEntityMixin",
-		"FoliagePlacerTypeInvoker"
+		"FoliagePlacerTypeInvoker",
+		"LivingEntityMixin",
+		"ServerPlayerEntityMixin"
+
 
 	],
 	"injectors": {

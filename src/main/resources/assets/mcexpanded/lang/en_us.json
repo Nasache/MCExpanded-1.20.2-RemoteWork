@@ -67,7 +67,10 @@
   "enchantment.mcexpanded.explosive": "Explosive",
 
   "effect.mcexpanded.slimey": "Slimey",
-  "effect.mcexpanded.prismarine": "Prismarine Protection",
+  "effect.mcexpanded.leather": "Leather",
+  "effect.mcexpanded.chain": "Chain",
+  "effect.mcexpanded.prismarine": "Prismarine",
+
 
   "itemgroup.ex_ingredients_group": "MCEX Ingredients",
   "itemgroup.ex_building_blocks_group": "MCEX Building Blocks",
