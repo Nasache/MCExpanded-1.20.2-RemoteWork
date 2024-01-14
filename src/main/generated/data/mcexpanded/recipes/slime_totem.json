@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "mcexpanded:slime_boots"
+    },
+    "C": {
+      "item": "mcexpanded:slime_chestplate"
+    },
+    "H": {
+      "item": "mcexpanded:slime_helmet"
+    },
+    "L": {
+      "item": "mcexpanded:slime_leggings"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    }
+  },
+  "pattern": [
+    " H ",
+    "CTL",
+    " B "
+  ],
+  "result": {
+    "item": "mcexpanded:slime_totem"
+  },
+  "show_notification": true
+}

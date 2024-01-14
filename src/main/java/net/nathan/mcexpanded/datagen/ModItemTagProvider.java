@@ -32,7 +32,10 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.COBALT_HOE);
 
         getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
-                .add(ModItems.COBALT_HELMET, ModItems.COBALT_CHESTPLATE, ModItems.COBALT_LEGGINGS, ModItems.COBALT_BOOTS);
+                .add(ModItems.COBALT_HELMET, ModItems.COBALT_CHESTPLATE, ModItems.COBALT_LEGGINGS, ModItems.COBALT_BOOTS)
+                .add(ModItems.PRISMARINE_HELMET, ModItems.PRISMARINE_CHESTPLATE, ModItems.PRISMARINE_LEGGINGS, ModItems.PRISMARINE_BOOTS)
+                .add(ModItems.BEE_HELMET, ModItems.BEE_CHESTPLATE, ModItems.BEE_LEGGINGS, ModItems.BEE_BOOTS)
+                .add(ModItems.SLIME_HELMET, ModItems.SLIME_CHESTPLATE, ModItems.SLIME_LEGGINGS, ModItems.SLIME_BOOTS);
 
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS)
                 .add(ModItems.MUSIC_DISC_SHROOM_SONG);

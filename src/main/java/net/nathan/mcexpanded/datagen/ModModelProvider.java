@@ -77,6 +77,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LIGHTNING_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_SHROOM_SONG, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.SLIME_TOTEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HONEY_TOTEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PRISMARINE_TOTEM, Models.GENERATED);
+
 
         itemModelGenerator.register(ModItems.COBALT_SWORD, Models.HANDHELD);
         itemModelGenerator.register(ModItems.COBALT_PICKAXE, Models.HANDHELD);
@@ -92,6 +96,14 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PRISMARINE_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PRISMARINE_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.PRISMARINE_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEE_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEE_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEE_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.BEE_BOOTS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_BOOTS));
 
     }
 }

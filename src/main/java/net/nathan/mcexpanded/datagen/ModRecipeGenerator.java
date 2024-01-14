@@ -167,6 +167,94 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(Items.PRISMARINE_SHARD), conditionsFromItem(Items.PRISMARINE_SHARD))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.PRISMARINE_BOOTS)));
 
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BEE_HELMET)
+                .pattern("CCC")
+                .pattern("C C")
+                .input('C', Items.HONEYCOMB)
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BEE_HELMET)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BEE_CHESTPLATE)
+                .pattern("C C")
+                .pattern("CCC")
+                .pattern("CCC")
+                .input('C', Items.HONEYCOMB)
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BEE_CHESTPLATE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BEE_LEGGINGS)
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("C C")
+                .input('C', Items.HONEYCOMB)
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BEE_LEGGINGS)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BEE_BOOTS)
+                .pattern("C C")
+                .pattern("C C")
+                .input('C', Items.HONEYCOMB)
+                .criterion(hasItem(Items.HONEYCOMB), conditionsFromItem(Items.HONEYCOMB))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.BEE_BOOTS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_HELMET)
+                .pattern("CCC")
+                .pattern("C C")
+                .input('C', Items.SLIME_BALL)
+                .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SLIME_HELMET)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_CHESTPLATE)
+                .pattern("C C")
+                .pattern("CCC")
+                .pattern("CCC")
+                .input('C', Items.SLIME_BALL)
+                .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SLIME_CHESTPLATE)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_LEGGINGS)
+                .pattern("CCC")
+                .pattern("C C")
+                .pattern("C C")
+                .input('C', Items.SLIME_BALL)
+                .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SLIME_LEGGINGS)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_BOOTS)
+                .pattern("C C")
+                .pattern("C C")
+                .input('C', Items.SLIME_BALL)
+                .criterion(hasItem(Items.SLIME_BALL), conditionsFromItem(Items.SLIME_BALL))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SLIME_BOOTS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SLIME_TOTEM)
+                .pattern(" H ")
+                .pattern("CTL")
+                .pattern(" B ")
+                .input('H', ModItems.SLIME_HELMET)
+                .input('C', ModItems.SLIME_CHESTPLATE)
+                .input('L', ModItems.SLIME_LEGGINGS)
+                .input('B', ModItems.SLIME_BOOTS)
+                .input('T', Items.TOTEM_OF_UNDYING)
+                .criterion(hasItem(Items.TOTEM_OF_UNDYING), conditionsFromItem(Items.TOTEM_OF_UNDYING))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.SLIME_TOTEM)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.HONEY_TOTEM)
+                .pattern(" H ")
+                .pattern("CTL")
+                .pattern(" B ")
+                .input('H', ModItems.BEE_HELMET)
+                .input('C', ModItems.BEE_CHESTPLATE)
+                .input('L', ModItems.BEE_LEGGINGS)
+                .input('B', ModItems.BEE_BOOTS)
+                .input('T', Items.TOTEM_OF_UNDYING)
+                .criterion(hasItem(Items.TOTEM_OF_UNDYING), conditionsFromItem(Items.TOTEM_OF_UNDYING))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.HONEY_TOTEM)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.PRISMARINE_TOTEM)
+                .pattern(" H ")
+                .pattern("CTL")
+                .pattern(" B ")
+                .input('H', ModItems.PRISMARINE_HELMET)
+                .input('C', ModItems.PRISMARINE_CHESTPLATE)
+                .input('L', ModItems.PRISMARINE_LEGGINGS)
+                .input('B', ModItems.PRISMARINE_BOOTS)
+                .input('T', Items.TOTEM_OF_UNDYING)
+                .criterion(hasItem(Items.TOTEM_OF_UNDYING), conditionsFromItem(Items.TOTEM_OF_UNDYING))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.PRISMARINE_TOTEM)));
+
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(new ItemConvertible[]{ModItems.LEEK}), RecipeCategory.FOOD, ModItems.ROASTED_LEEK, 0.35F, 200).criterion("has_leek", conditionsFromItem(ModItems.LEEK)).offerTo(exporter);
         offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING, 100, ModItems.LEEK, ModItems.ROASTED_LEEK, 0.35f);
         offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, 600, ModItems.LEEK, ModItems.ROASTED_LEEK, 0.35f);

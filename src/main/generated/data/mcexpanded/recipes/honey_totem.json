@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "mcexpanded:bee_boots"
+    },
+    "C": {
+      "item": "mcexpanded:bee_chestplate"
+    },
+    "H": {
+      "item": "mcexpanded:bee_helmet"
+    },
+    "L": {
+      "item": "mcexpanded:bee_leggings"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    }
+  },
+  "pattern": [
+    " H ",
+    "CTL",
+    " B "
+  ],
+  "result": {
+    "item": "mcexpanded:honey_totem"
+  },
+  "show_notification": true
+}

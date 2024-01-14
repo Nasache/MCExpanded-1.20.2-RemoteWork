@@ -2,16 +2,25 @@ package net.nathan.mcexpanded;
 
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
 import net.minecraft.client.render.block.entity.HangingSignBlockEntityRenderer;
 import net.minecraft.client.render.block.entity.SignBlockEntityRenderer;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.util.math.Vec3d;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.block.entity.ModBlockEntities;
+import net.nathan.mcexpanded.effect.ModEffects;
 import net.nathan.mcexpanded.util.ModWoodTypes;
 
+import java.util.HashMap;
+import java.util.UUID;
+
 public class MCExpandedClient implements ClientModInitializer {
+
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.MAPLE_DOOR, RenderLayer.getCutout());
@@ -33,8 +42,6 @@ public class MCExpandedClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.MOD_HANGING_SIGN_BLOCK_ENTITY, HangingSignBlockEntityRenderer::new);
 
         TexturedRenderLayers.SIGN_TYPE_TEXTURES.put(ModWoodTypes.MAPLE, TexturedRenderLayers.getSignTextureId(ModWoodTypes.MAPLE));
-
-
 
     }
 }

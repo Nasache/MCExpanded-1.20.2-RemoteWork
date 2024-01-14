@@ -8,10 +8,11 @@ import net.nathan.mcexpanded.effect.ModEffects;
 import net.nathan.mcexpanded.enchantment.ModEnchantments;
 import net.nathan.mcexpanded.item.ModItemGroup;
 import net.nathan.mcexpanded.item.ModItems;
+import net.nathan.mcexpanded.item.custom.ModItemEffect;
 import net.nathan.mcexpanded.sound.ModSounds;
+import net.nathan.mcexpanded.util.ModEventListeners;
 import net.nathan.mcexpanded.util.ModLootTableModifiers;
 import net.nathan.mcexpanded.util.ModRegistries;
-import net.nathan.mcexpanded.util.ModWoodTypes;
 import net.nathan.mcexpanded.world.gen.ModWorldGeneration;
 import net.nathan.mcexpanded.world.tree.ModFoliagePlacerTypes;
 import org.slf4j.Logger;
@@ -40,5 +41,6 @@ public class MCExpanded implements ModInitializer {
 		ModWorldGeneration.generateModWorldGeneration();
 
 		ModFoliagePlacerTypes.register();
+		ModEventListeners.registerEventListeners();
 	}
 }

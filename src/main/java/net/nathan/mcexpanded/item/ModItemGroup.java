@@ -88,7 +88,18 @@ public class ModItemGroup {
                         entries.add(ModItems.PRISMARINE_CHESTPLATE);
                         entries.add(ModItems.PRISMARINE_LEGGINGS);
                         entries.add(ModItems.PRISMARINE_BOOTS);
+                        entries.add(ModItems.BEE_HELMET);
+                        entries.add(ModItems.BEE_CHESTPLATE);
+                        entries.add(ModItems.BEE_LEGGINGS);
+                        entries.add(ModItems.BEE_BOOTS);
+                        entries.add(ModItems.SLIME_HELMET);
+                        entries.add(ModItems.SLIME_CHESTPLATE);
+                        entries.add(ModItems.SLIME_LEGGINGS);
+                        entries.add(ModItems.SLIME_BOOTS);
                         entries.add(ModItems.LIGHTNING_BOTTLE);
+                        entries.add(ModItems.SLIME_TOTEM);
+                        entries.add(ModItems.HONEY_TOTEM);
+                        entries.add(ModItems.PRISMARINE_TOTEM);
 
                     }).build());
 

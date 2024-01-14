@@ -10,6 +10,7 @@ import net.nathan.mcexpanded.MCExpanded;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.item.custom.LightningBottleItem;
 import net.nathan.mcexpanded.item.custom.ModArmorItem;
+import net.nathan.mcexpanded.item.custom.ModItemEffect;
 import net.nathan.mcexpanded.sound.ModSounds;
 
 public class ModItems {
@@ -44,6 +45,32 @@ public class ModItems {
             new ModArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item PRISMARINE_BOOTS = registerItem("prismarine_boots",
             new ModArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item BEE_HELMET = registerItem("bee_helmet",
+            new ModArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item BEE_CHESTPLATE = registerItem("bee_chestplate",
+            new ModArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item BEE_LEGGINGS = registerItem("bee_leggings",
+            new ModArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item BEE_BOOTS = registerItem("bee_boots",
+            new ModArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item SLIME_HELMET = registerItem("slime_helmet",
+            new ModArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item SLIME_CHESTPLATE = registerItem("slime_chestplate",
+            new ModArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item SLIME_LEGGINGS = registerItem("slime_leggings",
+            new ModArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item SLIME_BOOTS = registerItem("slime_boots",
+            new ModArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+
+    public static final Item SLIME_TOTEM = registerItem("slime_totem",
+            new ModItemEffect(new FabricItemSettings().maxCount(1)));
+    public static final Item HONEY_TOTEM = registerItem("honey_totem",
+            new ModItemEffect(new FabricItemSettings().maxCount(1)));
+    public static final Item PRISMARINE_TOTEM = registerItem("prismarine_totem",
+            new ModItemEffect(new FabricItemSettings().maxCount(1)));
 
     public static final Item MAPLE_SIGN = registerItem("maple_sign",
             new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.MAPLE_SIGN, ModBlocks.MAPLE_WALL_SIGN));

@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "mcexpanded:prismarine_boots"
+    },
+    "C": {
+      "item": "mcexpanded:prismarine_chestplate"
+    },
+    "H": {
+      "item": "mcexpanded:prismarine_helmet"
+    },
+    "L": {
+      "item": "mcexpanded:prismarine_leggings"
+    },
+    "T": {
+      "item": "minecraft:totem_of_undying"
+    }
+  },
+  "pattern": [
+    " H ",
+    "CTL",
+    " B "
+  ],
+  "result": {
+    "item": "mcexpanded:prismarine_totem"
+  },
+  "show_notification": true
+}
