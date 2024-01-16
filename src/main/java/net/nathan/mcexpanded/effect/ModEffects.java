@@ -27,6 +27,11 @@ public class ModEffects {
     public static final StatusEffect BEE = registerStatusEffect("bee",
             new BeeEffect(StatusEffectCategory.BENEFICIAL, 0xffffff));
 
+    public static final StatusEffect LEATHER = registerStatusEffect("leather",
+            new LeatherEffect(StatusEffectCategory.BENEFICIAL, 0xffffff));
+    public static final StatusEffect CHAIN = registerStatusEffect("chain",
+            new ChainEffect(StatusEffectCategory.BENEFICIAL, 0xffffff));
+
     
     private static StatusEffect registerStatusEffect(String name, StatusEffect statusEffect) {
         return Registry.register(Registries.STATUS_EFFECT, new Identifier(MCExpanded.MOD_ID, name), statusEffect);

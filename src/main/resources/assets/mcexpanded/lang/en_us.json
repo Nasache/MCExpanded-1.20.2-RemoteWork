@@ -12,7 +12,6 @@
   "item.mcexpanded.cobalt_axe": "Cobalt Axe",
   "item.mcexpanded.cobalt_shovel": "Cobalt Shovel",
   "item.mcexpanded.cobalt_hoe": "Cobalt Hoe",
-
   "item.mcexpanded.cobalt_helmet": "Cobalt Helmet",
   "item.mcexpanded.cobalt_chestplate": "Cobalt Chestplate",
   "item.mcexpanded.cobalt_leggings": "Cobalt Leggings",
@@ -21,18 +20,6 @@
   "item.mcexpanded.prismarine_chestplate": "Prismarine Chestplate",
   "item.mcexpanded.prismarine_leggings": "Prismarine Leggings",
   "item.mcexpanded.prismarine_boots": "Prismarine Boots",
-  "item.mcexpanded.bee_helmet": "Bee Helmet",
-  "item.mcexpanded.bee_chestplate": "Bee Chestplate",
-  "item.mcexpanded.bee_leggings": "Bee Leggings",
-  "item.mcexpanded.bee_boots": "Bee Boots",
-  "item.mcexpanded.slime_helmet": "Slime Helmet",
-  "item.mcexpanded.slime_chestplate": "Slime Chestplate",
-  "item.mcexpanded.slime_leggings": "Slime Leggings",
-  "item.mcexpanded.slime_boots": "Slime Boots",
-
-  "item.mcexpanded.slime_totem": "§eSlime Totem§e",
-  "item.mcexpanded.honey_totem": "§eHoney Totem§e",
-  "item.mcexpanded.prismarine_totem": "§ePrismarine Totem§e",
 
 
   "block.mcexpanded.maple_planks": "Maple Planks",
@@ -79,12 +66,8 @@
   "enchantment.mcexpanded.lightning_striker": "Striker",
   "enchantment.mcexpanded.explosive": "Explosive",
 
-  "effect.mcexpanded.slimey": "Slime",
-  "effect.mcexpanded.leather": "Leather",
-  "effect.mcexpanded.chain": "Chain",
-  "effect.mcexpanded.prismarine": "Prismarine",
-  "effect.mcexpanded.bee": "Honey",
-
+  "effect.mcexpanded.slimey": "Slimey",
+  "effect.mcexpanded.prismarine": "Prismarine Protection",
 
   "itemgroup.ex_ingredients_group": "MCEX Ingredients",
   "itemgroup.ex_building_blocks_group": "MCEX Building Blocks",

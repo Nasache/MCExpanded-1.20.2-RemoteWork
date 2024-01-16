@@ -1,11 +1,11 @@
-// 1.20.2	2024-01-15T20:39:28.3971519	MCExpanded/Tags for minecraft:item
-27ce2a86a826b03b75f4fcc64600d83f4cc2b902 data\minecraft\tags\items\trimmable_armor.json
+// 1.20.2	2024-01-13T15:20:03.9774135	MCExpanded/Tags for minecraft:item
+a9e255dae8bc6bd96bbddff282ff8a52e81fafe2 data\minecraft\tags\items\swords.json
+1c3e11192c0c374341274759b40d8d0dab4de33e data\minecraft\tags\items\trimmable_armor.json
+e30236eaf44a0270007d1bca59e0d40beb28716e data\minecraft\tags\items\hoes.json
+8519eb2d2da497be80b1487d96e54ca9d9fadb06 data\mcexpanded\tags\items\maple_logs.json
+abe80804ca62929a74fa1bc9bca0e5772b4ceb7d data\minecraft\tags\items\axes.json
+8519eb2d2da497be80b1487d96e54ca9d9fadb06 data\minecraft\tags\items\logs_that_burn.json
 6e2825bb88fcc70984def9b5c61540f9f95ae755 data\minecraft\tags\items\pickaxes.json
 a3c79f3c556a212b0fde999c79f9400349d68085 data\minecraft\tags\items\planks.json
 22c261e6cfaaa3fafc5b74a0bb00ed9264367049 data\minecraft\tags\items\shovels.json
-8519eb2d2da497be80b1487d96e54ca9d9fadb06 data\minecraft\tags\items\logs_that_burn.json
-e30236eaf44a0270007d1bca59e0d40beb28716e data\minecraft\tags\items\hoes.json
-a9e255dae8bc6bd96bbddff282ff8a52e81fafe2 data\minecraft\tags\items\swords.json
-8519eb2d2da497be80b1487d96e54ca9d9fadb06 data\mcexpanded\tags\items\maple_logs.json
-abe80804ca62929a74fa1bc9bca0e5772b4ceb7d data\minecraft\tags\items\axes.json
 c24b0129d0573a2acffff7d2dc73820ac3e3f640 data\minecraft\tags\items\music_discs.json
