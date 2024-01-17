@@ -74,12 +74,18 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.ROASTED_LEEK, Models.GENERATED);
         itemModelGenerator.register(ModItems.MOON_FRUIT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUN_FRUIT, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_SQUID, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_GLOW_SQUID, Models.GENERATED);
+        itemModelGenerator.register(ModItems.HONEY_GLAZED_STEAK, Models.GENERATED);
         itemModelGenerator.register(ModItems.LIGHTNING_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CONGEALED_SLIME, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_SHROOM_SONG, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SLIME_TOTEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.HONEY_TOTEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.PRISMARINE_TOTEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LEATHER_TOTEM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.CHAIN_TOTEM, Models.GENERATED);
 
 
         itemModelGenerator.register(ModItems.COBALT_SWORD, Models.HANDHELD);

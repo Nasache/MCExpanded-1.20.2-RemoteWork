@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_slime_ball": {
+    "has_congealed_slime": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:slime_ball"
+              "mcexpanded:congealed_slime"
             ]
           }
         ]
@@ -23,7 +23,7 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_slime_ball"
+      "has_congealed_slime"
     ]
   ],
   "rewards": {

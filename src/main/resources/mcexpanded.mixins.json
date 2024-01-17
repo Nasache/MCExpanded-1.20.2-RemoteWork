@@ -8,6 +8,7 @@
 		"PlayerEntityMixin",
 		"FoliagePlacerTypeInvoker",
 		"LivingEntityMixin",
+		"ArmorEffectMixin",
 		"ServerPlayerEntityMixin"
 
 

@@ -28,10 +28,13 @@ public class ModItemEffect extends Item {
             totemStack = player.getMainHandStack().getItem() == ModItems.SLIME_TOTEM ? player.getMainHandStack() : player.getOffHandStack();
         } else if (player.getMainHandStack().getItem() == ModItems.HONEY_TOTEM || player.getOffHandStack().getItem() == ModItems.HONEY_TOTEM) {
             totemStack = player.getMainHandStack().getItem() == ModItems.HONEY_TOTEM ? player.getMainHandStack() : player.getOffHandStack();
-        } else if (player.getMainHandStack().getItem() ==
-                ModItems.PRISMARINE_TOTEM || player.getOffHandStack().getItem() == ModItems.PRISMARINE_TOTEM) {
+        } else if (player.getMainHandStack().getItem() == ModItems.PRISMARINE_TOTEM || player.getOffHandStack().getItem() == ModItems.PRISMARINE_TOTEM) {
             totemStack = player.getMainHandStack().getItem() == ModItems.PRISMARINE_TOTEM ? player.getMainHandStack() : player.getOffHandStack();
-        }
+        } else if (player.getMainHandStack().getItem() == ModItems.LEATHER_TOTEM || player.getOffHandStack().getItem() == ModItems.LEATHER_TOTEM) {
+            totemStack = player.getMainHandStack().getItem() == ModItems.LEATHER_TOTEM ? player.getMainHandStack() : player.getOffHandStack();
+        } else if (player.getMainHandStack().getItem() == ModItems.CHAIN_TOTEM || player.getOffHandStack().getItem() == ModItems.CHAIN_TOTEM) {
+        totemStack = player.getMainHandStack().getItem() == ModItems.CHAIN_TOTEM ? player.getMainHandStack() : player.getOffHandStack();
+    }
 
         if (totemStack != null) {
             // Consume the totem
@@ -63,13 +66,19 @@ public class ModItemEffect extends Item {
             // Check if the player is holding the specific item in either hand
             if (player.getMainHandStack().getItem() == ModItems.SLIME_TOTEM || player.getOffHandStack().getItem() == ModItems.SLIME_TOTEM) {
                 // Apply a status effect to the player
-                player.addStatusEffect(new StatusEffectInstance(ModEffects.SLIMEY, 1, 0, false, false, true));
+                player.addStatusEffect(new StatusEffectInstance(ModEffects.SLIMEY, 2, 0, false, false, false));
             } if (player.getMainHandStack().getItem() == ModItems.HONEY_TOTEM || player.getOffHandStack().getItem() == ModItems.HONEY_TOTEM) {
                 // Apply a status effect to the player
-                player.addStatusEffect(new StatusEffectInstance(ModEffects.BEE, 10, 0, false, false, true));
+                player.addStatusEffect(new StatusEffectInstance(ModEffects.BEE, 2, 0, false, false, false));
             } if (player.getMainHandStack().getItem() == ModItems.PRISMARINE_TOTEM || player.getOffHandStack().getItem() == ModItems.PRISMARINE_TOTEM) {
                 // Apply a status effect to the player
-                player.addStatusEffect(new StatusEffectInstance(ModEffects.PRISMARINE, 1, 0, false, false, true));
+                player.addStatusEffect(new StatusEffectInstance(ModEffects.PRISMARINE, 2, 0, false, false, false));
+            } if (player.getMainHandStack().getItem() == ModItems.LEATHER_TOTEM || player.getOffHandStack().getItem() == ModItems.LEATHER_TOTEM) {
+                // Apply a status effect to the player
+                player.addStatusEffect(new StatusEffectInstance(ModEffects.LEATHER, 2, 0, false, false, false));
+            } if (player.getMainHandStack().getItem() == ModItems.CHAIN_TOTEM || player.getOffHandStack().getItem() == ModItems.CHAIN_TOTEM) {
+                // Apply a status effect to the player
+                player.addStatusEffect(new StatusEffectInstance(ModEffects.CHAIN, 2, 0, false, false, false));
             }
         }
 

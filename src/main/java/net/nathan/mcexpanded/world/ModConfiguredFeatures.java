@@ -1,5 +1,8 @@
 package net.nathan.mcexpanded.world;
 
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
@@ -14,6 +17,7 @@ import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
+import net.nathan.mcexpanded.block.custom.BitterBerryBush;
 import net.nathan.mcexpanded.world.tree.custom.MapleFoliagePlacer;
 
 import java.util.List;
@@ -21,6 +25,10 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> RED_MAPLE_KEY = registerKey("red_maple");
     public static final RegistryKey<ConfiguredFeature<?, ?>> YELLOW_MAPLE_KEY = registerKey("yellow_maple");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> GARDEN_COSMOS_KEY = registerKey("garden_cosmos");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_BLUE_MUSHROOM = registerKey("blue_mushroom");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_BITTER_BUSH = registerKey("bitter_bush");
+
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBALT_ORE_KEY = registerKey("cobalt_ore");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
@@ -46,6 +54,15 @@ public class ModConfiguredFeatures {
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, COBALT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobaltOres, 8));
+
+        register(context, GARDEN_COSMOS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.GARDEN_COSMOS)))));
+        register(context, PATCH_BLUE_MUSHROOM, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig
+                (Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_MUSHROOM))));
+        ConfiguredFeatures.register(context, PATCH_BITTER_BUSH, Feature.RANDOM_PATCH,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
+                        (BlockStateProvider.of((BlockState)ModBlocks.BITTER_BERRY_BUSH.getDefaultState()
+                                .with(BitterBerryBush.AGE, 3))), List.of(Blocks.GRASS_BLOCK)));
     }
 
 

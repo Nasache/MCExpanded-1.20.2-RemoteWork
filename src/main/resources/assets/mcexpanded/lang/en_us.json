@@ -7,6 +7,8 @@
   "block.mcexpanded.cobalt_ore": "Cobalt Ore",
   "block.mcexpanded.deepslate_cobalt_ore": "Deepslate Cobalt Ore",
 
+  "item.mcexpanded.congealed_slime": "Congealed Slime",
+
   "item.mcexpanded.cobalt_sword": "Cobalt Sword",
   "item.mcexpanded.cobalt_pickaxe": "Cobalt Pickaxe",
   "item.mcexpanded.cobalt_axe": "Cobalt Axe",
@@ -20,6 +22,16 @@
   "item.mcexpanded.prismarine_chestplate": "Prismarine Chestplate",
   "item.mcexpanded.prismarine_leggings": "Prismarine Leggings",
   "item.mcexpanded.prismarine_boots": "Prismarine Boots",
+  "item.mcexpanded.bee_helmet": "Honey Helmet",
+  "item.mcexpanded.bee_chestplate": "Honey Chestplate",
+  "item.mcexpanded.bee_leggings": "Honey Leggings",
+  "item.mcexpanded.bee_boots": "Honey Boots",
+  "item.mcexpanded.slime_helmet": "Slime Helmet",
+  "item.mcexpanded.slime_chestplate": "Slime Chestplate",
+  "item.mcexpanded.slime_leggings": "Slime Leggings",
+  "item.mcexpanded.slime_boots": "Slime Boots",
+
+  "item.mcexpanded.slimiken": "Slimiken",
 
 
   "block.mcexpanded.maple_planks": "Maple Planks",
@@ -49,10 +61,13 @@
   "item.mcexpanded.leek": "Leek",
   "item.mcexpanded.roasted_leek": "Roasted Leek",
   "item.mcexpanded.leek_seeds": "Leek Seeds",
-  "item.mcexpanded.moon_fruit": "Moon Fruit",
-  "item.mcexpanded.moon_seeds": "Moon Seeds",
-  "item.mcexpanded.sun_fruit": "Sun Fruit",
-  "item.mcexpanded.sun_seeds": "Sun Seeds",
+  "item.mcexpanded.moon_fruit": "Lunar Burst",
+  "item.mcexpanded.moon_seeds": "Lunar Seeds",
+  "item.mcexpanded.sun_fruit": "Solar Flare",
+  "item.mcexpanded.sun_seeds": "Solar Seeds",
+  "item.mcexpanded.raw_squid": "Raw Squid",
+  "item.mcexpanded.raw_glow_squid": "Raw Glow Squid",
+  "item.mcexpanded.honey_glazed_steak": "Honey Glazed Steak",
   "block.mcexpanded.garden_cosmos": "Garden Cosmos",
   "block.mcexpanded.blue_mushroom": "Blue Mushroom",
 
@@ -66,8 +81,17 @@
   "enchantment.mcexpanded.lightning_striker": "Striker",
   "enchantment.mcexpanded.explosive": "Explosive",
 
-  "effect.mcexpanded.slimey": "Slimey",
-  "effect.mcexpanded.prismarine": "Prismarine Protection",
+  "item.mcexpanded.slime_totem": "§eSlime Totem§e",
+  "item.mcexpanded.honey_totem": "§eHoney Totem§e",
+  "item.mcexpanded.prismarine_totem": "§ePrismarine Totem§e",
+  "item.mcexpanded.leather_totem": "§eLeather Totem§e",
+  "item.mcexpanded.chain_totem": "§eChain Totem§e",
+
+  "effect.mcexpanded.slimey": "Slime",
+  "effect.mcexpanded.prismarine": "Prismarine",
+  "effect.mcexpanded.bee": "Honey",
+  "effect.mcexpanded.leather": "Leather",
+  "effect.mcexpanded.chain": "Chain",
 
   "itemgroup.ex_ingredients_group": "MCEX Ingredients",
   "itemgroup.ex_building_blocks_group": "MCEX Building Blocks",

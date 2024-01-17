@@ -9,7 +9,6 @@ import net.minecraft.util.Identifier;
 import net.nathan.mcexpanded.MCExpanded;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.item.custom.LightningBottleItem;
-import net.nathan.mcexpanded.item.custom.ModArmorItem;
 import net.nathan.mcexpanded.item.custom.ModItemEffect;
 import net.nathan.mcexpanded.sound.ModSounds;
 
@@ -29,40 +28,40 @@ public class ModItems {
     public static final Item COBALT_HOE = registerItem("cobalt_hoe",
             new HoeItem(ModToolMaterial.COBALT, -3, 0f, new FabricItemSettings()));
     public static final Item COBALT_HELMET = registerItem("cobalt_helmet",
-            new ModArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item COBALT_CHESTPLATE = registerItem("cobalt_chestplate",
-            new ModArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item COBALT_LEGGINGS = registerItem("cobalt_leggings",
-            new ModArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item COBALT_BOOTS = registerItem("cobalt_boots",
-            new ModArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.COBALT, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     public static final Item PRISMARINE_HELMET = registerItem("prismarine_helmet",
-            new ModArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item PRISMARINE_CHESTPLATE = registerItem("prismarine_chestplate",
-            new ModArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item PRISMARINE_LEGGINGS = registerItem("prismarine_leggings",
-            new ModArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item PRISMARINE_BOOTS = registerItem("prismarine_boots",
-            new ModArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.PRISMARINE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     public static final Item BEE_HELMET = registerItem("bee_helmet",
-            new ModArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item BEE_CHESTPLATE = registerItem("bee_chestplate",
-            new ModArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item BEE_LEGGINGS = registerItem("bee_leggings",
-            new ModArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item BEE_BOOTS = registerItem("bee_boots",
-            new ModArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.HONEY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
     public static final Item SLIME_HELMET = registerItem("slime_helmet",
-            new ModArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item SLIME_CHESTPLATE = registerItem("slime_chestplate",
-            new ModArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item SLIME_LEGGINGS = registerItem("slime_leggings",
-            new ModArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item SLIME_BOOTS = registerItem("slime_boots",
-            new ModArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+            new ArmorItem(ModArmorMaterials.SLIME, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
     public static final Item SLIME_TOTEM = registerItem("slime_totem",
@@ -70,6 +69,10 @@ public class ModItems {
     public static final Item HONEY_TOTEM = registerItem("honey_totem",
             new ModItemEffect(new FabricItemSettings().maxCount(1)));
     public static final Item PRISMARINE_TOTEM = registerItem("prismarine_totem",
+            new ModItemEffect(new FabricItemSettings().maxCount(1)));
+    public static final Item LEATHER_TOTEM = registerItem("leather_totem",
+            new ModItemEffect(new FabricItemSettings().maxCount(1)));
+    public static final Item CHAIN_TOTEM = registerItem("chain_totem",
             new ModItemEffect(new FabricItemSettings().maxCount(1)));
 
     public static final Item MAPLE_SIGN = registerItem("maple_sign",
@@ -87,13 +90,22 @@ public class ModItems {
     public static final Item LEEK = registerItem("leek",
             new Item(new FabricItemSettings().food(ModFoodComponents.LEEK)));
     public static final Item MOON_FRUIT = registerItem("moon_fruit",
-            new Item(new FabricItemSettings().food(ModFoodComponents.MOON_FRUIT)));
+            new Item(new FabricItemSettings().food(ModFoodComponents.LUNAR_BURST)));
     public static final Item MOON_SEEDS = registerItem("moon_seeds",
             new AliasedBlockItem(ModBlocks.MOON_CROP, new FabricItemSettings()));
     public static final Item SUN_FRUIT = registerItem("sun_fruit",
-            new Item(new FabricItemSettings().food(ModFoodComponents.SUN_FRUIT)));
+            new Item(new FabricItemSettings().food(ModFoodComponents.SOLAR_FLARE)));
     public static final Item SUN_SEEDS = registerItem("sun_seeds",
             new AliasedBlockItem(ModBlocks.SUN_CROP, new FabricItemSettings()));
+    public static final Item RAW_SQUID = registerItem("raw_squid",
+            new Item(new FabricItemSettings().food(ModFoodComponents.RAW_SQUID)));
+    public static final Item RAW_GLOW_SQUID = registerItem("raw_glow_squid",
+            new Item(new FabricItemSettings().food(ModFoodComponents.RAW_GLOW_SQUID)));
+    public static final Item HONEY_GLAZED_STEAK = registerItem("honey_glazed_steak",
+            new Item(new FabricItemSettings().food(ModFoodComponents.HONEY_GLAZED_STEAK)));
+
+    public static final Item CONGEALED_SLIME = registerItem("congealed_slime",
+            new Item(new FabricItemSettings()));
 
 
     public static final Item LIGHTNING_BOTTLE = registerItem("lightning_bottle",

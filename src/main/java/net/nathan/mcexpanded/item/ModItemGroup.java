@@ -48,6 +48,7 @@ public class ModItemGroup {
                         entries.add(ModItems.RAW_COBALT);
                         entries.add(ModBlocks.GARDEN_COSMOS);
                         entries.add(ModBlocks.BLUE_MUSHROOM);
+                        entries.add(ModItems.CONGEALED_SLIME);
                         entries.add(ModItems.MUSIC_DISC_SHROOM_SONG);
 
 
@@ -65,6 +66,9 @@ public class ModItemGroup {
                         entries.add(ModItems.MOON_SEEDS);
                         entries.add(ModItems.SUN_FRUIT);
                         entries.add(ModItems.SUN_SEEDS);
+                        entries.add(ModItems.RAW_SQUID);
+                        entries.add(ModItems.RAW_GLOW_SQUID);
+                        entries.add(ModItems.HONEY_GLAZED_STEAK);
                         entries.add(ModBlocks.RED_MAPLE_SAPLING);
                         entries.add(ModBlocks.YELLOW_MAPLE_SAPLING);
 
@@ -100,6 +104,8 @@ public class ModItemGroup {
                         entries.add(ModItems.SLIME_TOTEM);
                         entries.add(ModItems.HONEY_TOTEM);
                         entries.add(ModItems.PRISMARINE_TOTEM);
+                        entries.add(ModItems.LEATHER_TOTEM);
+                        entries.add(ModItems.CHAIN_TOTEM);
 
                     }).build());
 

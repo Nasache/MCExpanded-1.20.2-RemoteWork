@@ -31,6 +31,13 @@ public class ModLootTableModifiers {
     private static final Identifier SAVANNA_VILLAGE_CHEST_ID
             = new Identifier("minecraft", "chests/village/village_savanna_house");
 
+    private static final Identifier SLIME_ID
+            = new Identifier("minecraft", "entities/slime");
+    private static final Identifier SQUID_ID
+            = new Identifier("minecraft", "entities/squid");
+    private static final Identifier GLOW_SQUID_ID
+            = new Identifier("minecraft", "entities/glow_squid");
+
 
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
@@ -102,6 +109,37 @@ public class ModLootTableModifiers {
                 tableBuilder.pool(poolBuilder.build());
                 tableBuilder.pool(poolBuilder2.build());
             }
+            if(SLIME_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .with(ItemEntry.builder(ModItems.CONGEALED_SLIME))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 2.0f)).build());
+
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if(SQUID_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModItems.RAW_SQUID))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+            if(GLOW_SQUID_ID.equals(id)) {
+                LootPool.Builder poolBuilder = LootPool.builder()
+                        .rolls(ConstantLootNumberProvider.create(1))
+                        .conditionally(RandomChanceLootCondition.builder(1f))
+                        .with(ItemEntry.builder(ModItems.RAW_GLOW_SQUID))
+                        .apply(SetCountLootFunction.builder(UniformLootNumberProvider.create(1.0f, 1.0f)).build());
+
+
+                tableBuilder.pool(poolBuilder.build());
+            }
+
         });
 
 

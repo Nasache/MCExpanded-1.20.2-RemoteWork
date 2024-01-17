@@ -1,7 +1,7 @@
 package net.nathan.mcexpanded.world;
 
 import net.minecraft.world.gen.YOffset;
-import net.minecraft.world.gen.placementmodifier.HeightRangePlacementModifier;
+import net.minecraft.world.gen.placementmodifier.*;
 import net.nathan.mcexpanded.MCExpanded;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.minecraft.registry.Registerable;
@@ -10,7 +10,6 @@ import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.placementmodifier.PlacementModifier;
 
 
 import java.util.List;
@@ -18,6 +17,9 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> RED_MAPLE_PLACED_KEY = registerKey("red_maple_placed");
     public static final RegistryKey<PlacedFeature> YELLOW_MAPLE_PLACED_KEY = registerKey("yellow_maple_placed");
+    public static final RegistryKey<PlacedFeature> GARDEN_COSMOS_PLACED_KEY = registerKey("garden_cosmos_placed");
+    public static final RegistryKey<PlacedFeature> PATCH_BITTER_PLACED_KEY = registerKey("bitter_berry_placed");
+    public static final RegistryKey<PlacedFeature> BLUE_MUSHROOM_PLACED_KEY = registerKey("blue_mushroom_placed");
     public static final RegistryKey<PlacedFeature> COBALT_ORE_PLACED_KEY = registerKey("cobalt_ore_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
@@ -29,6 +31,14 @@ public class ModPlacedFeatures {
         register(context, YELLOW_MAPLE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.YELLOW_MAPLE_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(1, 0.2f, 2), ModBlocks.YELLOW_MAPLE_SAPLING));
+
+        register(context, GARDEN_COSMOS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GARDEN_COSMOS_KEY),
+                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+        register(context, PATCH_BITTER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_BITTER_BUSH),
+                new PlacementModifier[]{RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
+                        PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of()});
+        register(context, BLUE_MUSHROOM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_BLUE_MUSHROOM),
+                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
         register(context, COBALT_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.COBALT_ORE_KEY),
                 ModOrePlacement.modifiersWithCount(10,
