@@ -9,11 +9,15 @@ import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.Items;
 import net.minecraft.state.property.Properties;
+import net.minecraft.util.Identifier;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.block.custom.LeekCropBlock;
 import net.nathan.mcexpanded.block.custom.MoonCropBlock;
 import net.nathan.mcexpanded.block.custom.SunCropBlock;
 import net.nathan.mcexpanded.item.ModItems;
+
+import java.util.IdentityHashMap;
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -110,6 +114,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_CHESTPLATE));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_LEGGINGS));
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_BOOTS));
+
+        itemModelGenerator.register(ModItems.DUCK_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
     }
 }

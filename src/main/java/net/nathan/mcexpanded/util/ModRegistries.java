@@ -3,6 +3,7 @@ package net.nathan.mcexpanded.util;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
@@ -11,6 +12,8 @@ import net.minecraft.command.CommandRegistryAccess;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.command.ReturnHomeCommand;
 import net.nathan.mcexpanded.command.SetHomeCommand;
+import net.nathan.mcexpanded.entity.ModEntities;
+import net.nathan.mcexpanded.entity.custom.DuckEntity;
 import net.nathan.mcexpanded.event.AttackEntityHandler;
 import net.nathan.mcexpanded.event.PlayerCopyHandler;
 import net.nathan.mcexpanded.item.ModItems;
@@ -23,6 +26,11 @@ public class ModRegistries {
         registerEvents();
         registerStrippables();
         registerFlammables();
+        registerAttributes();
+    }
+
+    private static void registerAttributes() {
+        FabricDefaultAttributeRegistry.register(ModEntities.DUCK, DuckEntity.createDuckAttributes());
     }
 
     private static void registerFuels() {

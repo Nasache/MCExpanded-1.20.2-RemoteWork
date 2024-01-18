@@ -1,5 +1,6 @@
 package net.nathan.mcexpanded.world.gen;
 
+import net.nathan.mcexpanded.entity.ModEntities;
 import net.nathan.mcexpanded.world.ModOrePlacement;
 
 public class ModWorldGeneration {
@@ -9,5 +10,7 @@ public class ModWorldGeneration {
         ModTreeGeneration.generateTrees();
 
         ModFlowerGeneration.generateFlowers();
+
+        ModEntitySpawns.addSpawns();
     }
 }

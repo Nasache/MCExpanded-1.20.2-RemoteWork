@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.nathan.mcexpanded.MCExpanded;
 import net.nathan.mcexpanded.block.ModBlocks;
+import net.nathan.mcexpanded.entity.ModEntities;
 import net.nathan.mcexpanded.item.custom.LightningBottleItem;
 import net.nathan.mcexpanded.item.custom.ModItemEffect;
 import net.nathan.mcexpanded.sound.ModSounds;
@@ -106,6 +107,9 @@ public class ModItems {
 
     public static final Item CONGEALED_SLIME = registerItem("congealed_slime",
             new Item(new FabricItemSettings()));
+
+    public static final Item DUCK_SPAWN_EGG = registerItem("duck_spawn_egg",
+            new SpawnEggItem(ModEntities.DUCK, 0x593012, 0x095213, new FabricItemSettings()));
 
 
     public static final Item LIGHTNING_BOTTLE = registerItem("lightning_bottle",

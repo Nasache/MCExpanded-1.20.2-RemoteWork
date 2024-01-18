@@ -3,6 +3,8 @@ package net.nathan.mcexpanded;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.TexturedRenderLayers;
@@ -14,6 +16,10 @@ import net.minecraft.util.math.Vec3d;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.block.entity.ModBlockEntities;
 import net.nathan.mcexpanded.effect.ModEffects;
+import net.nathan.mcexpanded.entity.ModEntities;
+import net.nathan.mcexpanded.entity.client.DuckModel;
+import net.nathan.mcexpanded.entity.client.DuckRenderer;
+import net.nathan.mcexpanded.entity.layer.ModModelLayers;
 import net.nathan.mcexpanded.util.ModWoodTypes;
 
 import java.util.HashMap;
@@ -42,6 +48,9 @@ public class MCExpandedClient implements ClientModInitializer {
         BlockEntityRendererFactories.register(ModBlockEntities.MOD_HANGING_SIGN_BLOCK_ENTITY, HangingSignBlockEntityRenderer::new);
 
         TexturedRenderLayers.SIGN_TYPE_TEXTURES.put(ModWoodTypes.MAPLE, TexturedRenderLayers.getSignTextureId(ModWoodTypes.MAPLE));
+
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.DUCK, DuckModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.DUCK, DuckRenderer::new);
 
     }
 }
