@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-17T21:26:02.914412	MCExpanded/Recipes
+// 1.20.2	2024-01-18T10:54:50.8225268	MCExpanded/Recipes
 58cdb722ee74ee6da1d353f7a3ada5829f52169a data\mcexpanded\advancements\recipes\misc\cobalt_boots.json
 3831e1aa5cc8733d4cdbf64e6fd07384cb9e0877 data\mcexpanded\recipes\prismarine_boots.json
 f9ad064220a74ef531ef6403e5e45c5936cbceb7 data\mcexpanded\recipes\maple_planks.json
@@ -57,9 +57,9 @@ e216b25871f22a4b04871bd6ad83b88f08bbf15a data\mcexpanded\advancements\recipes\fo
 454f53b0d33e42fd459b74a6c937a5ef59913401 data\mcexpanded\recipes\cobalt_shovel.json
 46a74ba0167e02682316872cb9213679bd8c393c data\mcexpanded\recipes\cobalt_helmet.json
 b1f8e144be978d84e1e400e66b98e256c831bfe6 data\mcexpanded\advancements\recipes\redstone\maple_button.json
+17d49f86cbbe7ffa02699dff4deccd3c004efe7f data\mcexpanded\advancements\recipes\misc\slime_totem.json
 0ee6b8904b32ccbce7b3ceac814e0184df74dab2 data\mcexpanded\recipes\bee_leggings.json
 ee78b18753d7754a49a9fa3998d1f6289b1a1097 data\mcexpanded\advancements\recipes\misc\cobalt_ingot_from_blasting_cobalt_ore.json
-17d49f86cbbe7ffa02699dff4deccd3c004efe7f data\mcexpanded\advancements\recipes\misc\slime_totem.json
 39183c620216901a6ba705945acf0418253be7f0 data\mcexpanded\recipes\roasted_leek_from_smoking.json
 d76ac39ff744b15f2d81f3efac13dff17fe96143 data\mcexpanded\advancements\recipes\misc\raw_cobalt.json
 9249752c69941ddfb3230ae7c7400fd334f46577 data\mcexpanded\advancements\recipes\misc\prismarine_totem.json

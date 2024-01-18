@@ -13,7 +13,7 @@ import net.nathan.mcexpanded.entity.ModEntities;
 public class ModEntitySpawns {
     public static void addSpawns() {
         BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.RIVER, BiomeKeys.SWAMP, BiomeKeys.BIRCH_FOREST, BiomeKeys.FOREST),
-                SpawnGroup.CREATURE, ModEntities.DUCK, 2000, 1, 5);
+                SpawnGroup.CREATURE, ModEntities.DUCK, 2000, 2, 5);
 
         SpawnRestriction.register(ModEntities.DUCK, SpawnRestriction.Location.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn);
