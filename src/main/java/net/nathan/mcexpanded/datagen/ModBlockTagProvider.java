@@ -23,7 +23,14 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.COBALT_BLOCK,
                         ModBlocks.RAW_COBALT_BLOCK,
                         ModBlocks.COBALT_ORE,
-                        ModBlocks.DEEPSLATE_COBALT_ORE);
+                        ModBlocks.DEEPSLATE_COBALT_ORE,
+                        ModBlocks.SNOW_BRICKS,
+                        ModBlocks.SNOW_BRICK_SLAB,
+                        ModBlocks.SNOW_BRICK_STAIRS,
+                        ModBlocks.SNOW_BRICK_WALL,
+                        ModBlocks.SNOW_BRICK_PRESSURE_PLATE,
+                        ModBlocks.SNOW_BRICK_BUTTON
+                        );
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
                 .add(ModBlocks.MAPLE_PLANKS,
@@ -59,6 +66,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(BlockTags.WOODEN_FENCES)
                 .add(ModBlocks.MAPLE_FENCE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(ModBlocks.SNOW_BRICK_WALL);
 
         getOrCreateTagBuilder(BlockTags.FENCE_GATES)
                 .add(ModBlocks.MAPLE_FENCE_GATE);

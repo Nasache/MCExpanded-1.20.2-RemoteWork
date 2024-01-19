@@ -54,6 +54,15 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_MAPLE_SAPLING, ModBlocks.POTTED_RED_MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.YELLOW_MAPLE_SAPLING, ModBlocks.POTTED_YELLOW_MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        BlockStateModelGenerator.BlockTexturePool snowBricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SNOW_BRICKS);
+        snowBricksTexturePool.stairs(ModBlocks.SNOW_BRICK_STAIRS);
+        snowBricksTexturePool.slab(ModBlocks.SNOW_BRICK_SLAB);
+        snowBricksTexturePool.button(ModBlocks.SNOW_BRICK_BUTTON);
+        snowBricksTexturePool.pressurePlate(ModBlocks.SNOW_BRICK_PRESSURE_PLATE);
+        snowBricksTexturePool.wall(ModBlocks.SNOW_BRICK_WALL);
+
+
+
         blockStateModelGenerator.registerCrop(ModBlocks.LEEK_CROP, LeekCropBlock.AGE, 0, 1, 2, 3);
         blockStateModelGenerator.registerCrop(ModBlocks.MOON_CROP, MoonCropBlock.AGE, 0, 1, 2, 3, 4, 5);
         blockStateModelGenerator.registerCrop(ModBlocks.SUN_CROP, SunCropBlock.AGE, 0, 1, 2, 3, 4, 5);

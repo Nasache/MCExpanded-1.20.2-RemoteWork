@@ -38,6 +38,12 @@ public class ModItemGroup {
                         entries.add(ModBlocks.YELLOW_MAPLE_LEAVES);
                         entries.add(ModItems.MAPLE_SIGN);
                         entries.add(ModItems.MAPLE_HANGING_SIGN);
+                        entries.add(ModBlocks.SNOW_BRICKS);
+                        entries.add(ModBlocks.SNOW_BRICK_STAIRS);
+                        entries.add(ModBlocks.SNOW_BRICK_SLAB);
+                        entries.add(ModBlocks.SNOW_BRICK_BUTTON);
+                        entries.add(ModBlocks.SNOW_BRICK_PRESSURE_PLATE);
+                        entries.add(ModBlocks.SNOW_BRICK_WALL);
 
                     }).build());
     public static final ItemGroup EX_INGREDIENTS_GROUP = Registry.register(Registries.ITEM_GROUP,

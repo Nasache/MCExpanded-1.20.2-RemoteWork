@@ -4,6 +4,12 @@
     "mcexpanded:cobalt_block",
     "mcexpanded:raw_cobalt_block",
     "mcexpanded:cobalt_ore",
-    "mcexpanded:deepslate_cobalt_ore"
+    "mcexpanded:deepslate_cobalt_ore",
+    "mcexpanded:snow_bricks",
+    "mcexpanded:snow_brick_slab",
+    "mcexpanded:snow_brick_stairs",
+    "mcexpanded:snow_brick_wall",
+    "mcexpanded:snow_brick_pressure_plate",
+    "mcexpanded:snow_brick_button"
   ]
 }

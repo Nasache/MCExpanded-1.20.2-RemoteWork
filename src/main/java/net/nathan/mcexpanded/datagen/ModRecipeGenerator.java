@@ -2,6 +2,7 @@ package net.nathan.mcexpanded.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -71,6 +72,33 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerHangingSignRecipe(exporter, ModItems.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_PLANKS);
         createSignRecipe(ModItems.MAPLE_SIGN, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICKS)
+                .pattern("SS")
+                .pattern("SS")
+                .input('S', Blocks.SNOW_BLOCK)
+                .criterion(hasItem(Blocks.SNOW_BLOCK), conditionsFromItem(Blocks.SNOW_BLOCK))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SNOW_BRICKS)));
+
+        createStairsRecipe(ModBlocks.SNOW_BRICK_STAIRS, Ingredient.ofItems(ModBlocks.SNOW_BRICKS))
+                .criterion(hasItem(ModBlocks.SNOW_BRICKS), conditionsFromItem(ModBlocks.SNOW_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SNOW_BRICK_STAIRS)));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_SLAB, Ingredient.ofItems(ModBlocks.SNOW_BRICKS))
+                .criterion(hasItem(ModBlocks.SNOW_BRICKS), conditionsFromItem(ModBlocks.SNOW_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SNOW_BRICK_SLAB)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.SNOW_BRICK_BUTTON)
+                .input(ModBlocks.SNOW_BRICKS)
+                .criterion(hasItem(ModBlocks.SNOW_BRICKS), conditionsFromItem(ModBlocks.SNOW_BRICKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.SNOW_BRICK_BUTTON)));
+        offerPressurePlateRecipe(exporter, ModBlocks.SNOW_BRICK_PRESSURE_PLATE, ModBlocks.SNOW_BRICKS);
+
+        offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_WALL, ModBlocks.SNOW_BRICKS);
+
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_STAIRS, ModBlocks.SNOW_BRICKS);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_SLAB, ModBlocks.SNOW_BRICKS, 2);
+        offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICK_WALL, ModBlocks.SNOW_BRICKS);
+
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COBALT_SWORD)
                 .pattern("C")

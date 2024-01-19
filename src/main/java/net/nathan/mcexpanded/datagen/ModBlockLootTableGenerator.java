@@ -48,6 +48,14 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAPLE_HANGING_SIGN);
         addDrop(ModBlocks.MAPLE_WALL_HANGING_SIGN);
         addDrop(ModBlocks.MAPLE_TRAPDOOR);
+
+        addDrop(ModBlocks.SNOW_BRICKS);
+        addDrop(ModBlocks.SNOW_BRICK_STAIRS);
+        addDrop(ModBlocks.SNOW_BRICK_SLAB, slabDrops(ModBlocks.SNOW_BRICK_SLAB));
+        addDrop(ModBlocks.SNOW_BRICK_BUTTON);
+        addDrop(ModBlocks.SNOW_BRICK_PRESSURE_PLATE);
+        addDrop(ModBlocks.SNOW_BRICK_WALL);
+
         addDrop(ModBlocks.GARDEN_COSMOS);
         addDrop(ModBlocks.GARDEN_COSMOS);
         addDrop(ModBlocks.POTTED_GARDEN_COSMOS, pottedPlantDrops(ModBlocks.GARDEN_COSMOS));

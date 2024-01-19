@@ -1,10 +1,11 @@
-// 1.20.2	2024-01-18T10:54:50.8235262	MCExpanded/Tags for minecraft:block
+// 1.20.2	2024-01-18T23:30:02.4261584	MCExpanded/Tags for minecraft:block
 d5bb8ba422f11ddc2d9cd951fc241420baefcc11 data\minecraft\tags\blocks\needs_iron_tool.json
 8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
 a3c79f3c556a212b0fde999c79f9400349d68085 data\minecraft\tags\blocks\planks.json
 8519eb2d2da497be80b1487d96e54ca9d9fadb06 data\mcexpanded\tags\blocks\maple_logs.json
 e8cb1b65b0fb67732922324eb715c72430b8c421 data\minecraft\tags\blocks\mineable\axe.json
-d5bb8ba422f11ddc2d9cd951fc241420baefcc11 data\minecraft\tags\blocks\mineable\pickaxe.json
+1ca7ca050b248616a54d442c929b284ca0f86f52 data\minecraft\tags\blocks\mineable\pickaxe.json
+d7aff722047cb1161ea68731e60959630e1c1be6 data\minecraft\tags\blocks\walls.json
 0c3bc64192b681e37d71c3fd16aae7ce7a2dcae3 data\minecraft\tags\blocks\leaves.json
 8519eb2d2da497be80b1487d96e54ca9d9fadb06 data\minecraft\tags\blocks\logs_that_burn.json
 aa398bd469838eb61477d43d694ef16c301a281c data\minecraft\tags\blocks\wooden_fences.json

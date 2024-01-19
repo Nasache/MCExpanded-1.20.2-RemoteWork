@@ -1,9 +1,10 @@
-// 1.20.2	2024-01-18T10:54:50.8165271	MCExpanded/Block Loot Tables
+// 1.20.2	2024-01-18T23:30:02.4171581	MCExpanded/Block Loot Tables
 50da60b505d40f6b7f984ff183b4a1d9cba8973a data\mcexpanded\loot_tables\blocks\potted_blue_mushroom.json
 7e82fc498401fbe1c2ad501c048f241271158c3e data\mcexpanded\loot_tables\blocks\maple_planks.json
 bea5cb7752fba37900348b116e6398ba954b4b74 data\mcexpanded\loot_tables\blocks\deepslate_cobalt_ore.json
 4704f5838cdf4ab233e63cae4a9a580d628fbf81 data\mcexpanded\loot_tables\blocks\maple_button.json
 0d853bccd228d2e846050be244bce1d73b759100 data\mcexpanded\loot_tables\blocks\bitter_berry_bush.json
+8e899cd96723f9beb20e6b534d2cbb25489cf83c data\mcexpanded\loot_tables\blocks\snow_brick_wall.json
 e83415886387f6a7c279a5c8ab9db9c5734551e7 data\mcexpanded\loot_tables\blocks\maple_trapdoor.json
 367c847a12562076e3b0aaa9b2da70925d45a466 data\mcexpanded\loot_tables\blocks\yellow_maple_leaves.json
 4bd407834c64902a61c8e051092063cdab237adf data\mcexpanded\loot_tables\blocks\stripped_maple_log.json
@@ -15,6 +16,7 @@ bb2dbdbfcb27cddc1c91d4b03286c9d84a4f518e data\mcexpanded\loot_tables\blocks\coba
 34e945ea050e948493778a7006078c314e14145e data\mcexpanded\loot_tables\blocks\maple_pressure_plate.json
 63e9ab47ca53679a93e9da100e6c38d968f23bf8 data\mcexpanded\loot_tables\blocks\blue_mushroom.json
 53bec5e31201a640930e705a1af12896c879d55e data\mcexpanded\loot_tables\blocks\red_maple_leaves.json
+7dd0c1f9b7d74ccb7665a15899290d8546f10570 data\mcexpanded\loot_tables\blocks\snow_brick_stairs.json
 9d23e96727a9b288f20dbe5c51fdd975e0538867 data\mcexpanded\loot_tables\blocks\maple_stairs.json
 79b76a24f7f03aaeca694690e05cb72bd214b26d data\mcexpanded\loot_tables\blocks\maple_log.json
 6460f3fbeb563747649d56b15c657918ee9ac812 data\mcexpanded\loot_tables\blocks\cobalt_ore.json
@@ -22,6 +24,9 @@ bb2dbdbfcb27cddc1c91d4b03286c9d84a4f518e data\mcexpanded\loot_tables\blocks\coba
 25553366a9391766a0a5dbf00d2c97aeead3da79 data\mcexpanded\loot_tables\blocks\maple_fence.json
 03f72488a2a609ad697342d164fa82b1e86689d7 data\mcexpanded\loot_tables\blocks\moon_crop.json
 0787a5cb52a52b0a38d05cf1f79b4d48e38ada0a data\minecraft\loot_tables\blocks\oak_sign.json
+93a9ff5e38b8fd8359017bfa5f0b0e5d3f6043c4 data\mcexpanded\loot_tables\blocks\snow_brick_button.json
+0e3109febc4f07154c4a6e284be035b9641746f5 data\mcexpanded\loot_tables\blocks\snow_brick_pressure_plate.json
+15142cb9591e99df5c1e4be41ed7091b3f56c416 data\mcexpanded\loot_tables\blocks\snow_bricks.json
 2bb9e6cc2b6d12e03414e758713e4ae8bb09b4fc data\mcexpanded\loot_tables\blocks\maple_hanging_sign.json
 9c1b5f7be0e0da3ef56a99a963deab71bc6e70af data\mcexpanded\loot_tables\blocks\leek_crop.json
 28d285df37674b28324db53fddc3fc0dd294faaf data\mcexpanded\loot_tables\blocks\sun_crop.json
@@ -31,3 +36,4 @@ bb2dbdbfcb27cddc1c91d4b03286c9d84a4f518e data\mcexpanded\loot_tables\blocks\coba
 af3bd0d335481b5f047a76a5d420c4e1293fb7d3 data\mcexpanded\loot_tables\blocks\maple_wood.json
 aae6b67de16655c1a3c68a4adc7cc2c1e12eb14c data\mcexpanded\loot_tables\blocks\potted_garden_cosmos.json
 d5d180af0d9e049be4344883f2c733c226d2a80f data\mcexpanded\loot_tables\blocks\garden_cosmos.json
+89ee19a11537b27c664088c1e0c8b8aa00122766 data\mcexpanded\loot_tables\blocks\snow_brick_slab.json

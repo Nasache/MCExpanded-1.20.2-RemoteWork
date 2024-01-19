@@ -37,7 +37,7 @@ public class ModBlocks {
     public static final Block MAPLE_SLAB = registerBlock("maple_slab",
             new SlabBlock(FabricBlockSettings.copyOf(Blocks.OAK_SLAB)));
     public static final Block MAPLE_BUTTON = registerBlock("maple_button",
-            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 10, true));
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 15, true));
     public static final Block MAPLE_PRESSURE_PLATE = registerBlock("maple_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
     public static final Block MAPLE_FENCE = registerBlock("maple_fence",
@@ -78,6 +78,21 @@ public class ModBlocks {
             new ModHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_HANGING_SIGN), ModWoodTypes.MAPLE));
     public static final Block MAPLE_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("maple_wall_hanging_sign",
             new ModWallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.OAK_WALL_HANGING_SIGN), ModWoodTypes.MAPLE));
+
+
+
+    public static final Block SNOW_BRICKS = registerBlock("snow_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
+    public static final Block SNOW_BRICK_STAIRS = registerBlock("snow_brick_stairs",
+            new StairsBlock(ModBlocks.SNOW_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS)));
+    public static final Block SNOW_BRICK_SLAB = registerBlock("snow_brick_slab",
+            new SlabBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_SLAB)));
+    public static final Block SNOW_BRICK_BUTTON = registerBlock("snow_brick_button",
+            new ButtonBlock(FabricBlockSettings.copyOf(Blocks.STONE_BUTTON), BlockSetType.STONE, 10, false));
+    public static final Block SNOW_BRICK_PRESSURE_PLATE = registerBlock("snow_brick_pressure_plate",
+            new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.STONE_PRESSURE_PLATE), BlockSetType.STONE));
+    public static final Block SNOW_BRICK_WALL = registerBlock("snow_brick_wall",
+            new WallBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICK_WALL)));
 
     public static final Block LEEK_CROP = registerBlockWithoutBlockItem("leek_crop",
             new LeekCropBlock(FabricBlockSettings.copyOf(Blocks.POTATOES)));

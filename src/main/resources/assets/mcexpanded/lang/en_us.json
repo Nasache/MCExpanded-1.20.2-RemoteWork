@@ -49,6 +49,13 @@
   "block.mcexpanded.stripped_maple_log": "Stripped Maple Log",
   "block.mcexpanded.stripped_maple_wood": "Stripped Maple Wood",
 
+  "block.mcexpanded.snow_bricks": "Snow Bricks",
+  "block.mcexpanded.snow_brick_stairs": "Snow Brick Stairs",
+  "block.mcexpanded.snow_brick_slab": "Snow Brick Slab",
+  "block.mcexpanded.snow_brick_button": "Snow Brick Button",
+  "block.mcexpanded.snow_brick_pressure_plate": "Snow Brick Pressure Plate",
+  "block.mcexpanded.snow_brick_wall": "Snow Brick Wall",
+
   "block.mcexpanded.maple_sign": "Maple Sign",
   "block.mcexpanded.maple_hanging_sign": "Maple Hanging Sign",
 
