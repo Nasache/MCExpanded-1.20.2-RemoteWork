@@ -83,6 +83,8 @@ public class ModBlocks {
 
     public static final Block SNOW_BRICKS = registerBlock("snow_bricks",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
+    public static final Block CHISELED_SNOW_BRICKS = registerBlock("chiseled_snow_bricks",
+            new Block(FabricBlockSettings.copyOf(Blocks.CHISELED_STONE_BRICKS)));
     public static final Block SNOW_BRICK_STAIRS = registerBlock("snow_brick_stairs",
             new StairsBlock(ModBlocks.SNOW_BRICKS.getDefaultState(), FabricBlockSettings.copyOf(Blocks.STONE_BRICK_STAIRS)));
     public static final Block SNOW_BRICK_SLAB = registerBlock("snow_brick_slab",
@@ -118,6 +120,21 @@ public class ModBlocks {
                     TreeConfiguredFeatures.HUGE_RED_MUSHROOM)); //Change once find out how to code saplings to create huge blue mushroom tree
     public static final Block POTTED_BLUE_MUSHROOM = registerBlockWithoutBlockItem("potted_blue_mushroom",
             new FlowerPotBlock(BLUE_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_RED_MUSHROOM).mapColor(MapColor.BLUE)));
+
+
+    public static final Block MALACHITE_BLOCK = registerBlock("malachite_block",
+            new AmethystBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
+
+    public static final Block BUDDING_MALACHITE = registerBlock("budding_malachite",
+            new BuddingAmethystBlock(FabricBlockSettings.copyOf(Blocks.BUDDING_AMETHYST)));
+    public static final Block SMALL_MALACHITE_BUD = registerBlockWithoutBlockItem("small_malachite_bud",
+            new AmethystClusterBlock(1, 0, FabricBlockSettings.copyOf(Blocks.SMALL_AMETHYST_BUD)));
+    public static final Block MEDIUM_MALACHITE_BUD = registerBlockWithoutBlockItem("medium_malachite_bud",
+            new AmethystClusterBlock(1, 0, FabricBlockSettings.copyOf(Blocks.MEDIUM_AMETHYST_BUD)));
+    public static final Block LARGE_MALACHITE_BUD = registerBlockWithoutBlockItem("large_malachite_bud",
+            new AmethystClusterBlock(1, 0, FabricBlockSettings.copyOf(Blocks.LARGE_AMETHYST_BUD)));
+    public static final Block MALACHITE_CLUSTER = registerBlockWithoutBlockItem("malachite_cluster",
+            new AmethystClusterBlock(1, 0, FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER)));
 
 
     public static final Block TEST_BLOCK = registerBlock("test_block",

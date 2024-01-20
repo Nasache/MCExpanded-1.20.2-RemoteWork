@@ -8,12 +8,12 @@ import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.block.ComposterBlock;
-import net.minecraft.command.CommandRegistryAccess;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.command.ReturnHomeCommand;
 import net.nathan.mcexpanded.command.SetHomeCommand;
 import net.nathan.mcexpanded.entity.ModEntities;
 import net.nathan.mcexpanded.entity.custom.DuckEntity;
+import net.nathan.mcexpanded.entity.custom.GhostEntity;
 import net.nathan.mcexpanded.event.AttackEntityHandler;
 import net.nathan.mcexpanded.event.PlayerCopyHandler;
 import net.nathan.mcexpanded.item.ModItems;
@@ -31,6 +31,7 @@ public class ModRegistries {
 
     private static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(ModEntities.DUCK, DuckEntity.createDuckAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.GHOST, GhostEntity.createGhostAttributes());
     }
 
     private static void registerFuels() {

@@ -25,11 +25,18 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.COBALT_ORE,
                         ModBlocks.DEEPSLATE_COBALT_ORE,
                         ModBlocks.SNOW_BRICKS,
+                        ModBlocks.CHISELED_SNOW_BRICKS,
                         ModBlocks.SNOW_BRICK_SLAB,
                         ModBlocks.SNOW_BRICK_STAIRS,
                         ModBlocks.SNOW_BRICK_WALL,
                         ModBlocks.SNOW_BRICK_PRESSURE_PLATE,
-                        ModBlocks.SNOW_BRICK_BUTTON
+                        ModBlocks.SNOW_BRICK_BUTTON,
+                        ModBlocks.MALACHITE_BLOCK,
+                        ModBlocks.MALACHITE_CLUSTER,
+                        ModBlocks.SMALL_MALACHITE_BUD,
+                        ModBlocks.MEDIUM_MALACHITE_BUD,
+                        ModBlocks.LARGE_MALACHITE_BUD,
+                        ModBlocks.BUDDING_MALACHITE
                         );
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)

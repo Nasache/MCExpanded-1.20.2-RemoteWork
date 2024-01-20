@@ -33,6 +33,7 @@
 
   "item.mcexpanded.slimiken": "Slimiken",
   "item.mcexpanded.duck_spawn_egg": "Duck Spawn Egg",
+  "item.mcexpanded.ghost_spawn_egg": "Ghost Spawn Egg",
 
 
   "block.mcexpanded.maple_planks": "Maple Planks",
@@ -50,11 +51,20 @@
   "block.mcexpanded.stripped_maple_wood": "Stripped Maple Wood",
 
   "block.mcexpanded.snow_bricks": "Snow Bricks",
+  "block.mcexpanded.chiseled_snow_bricks": "Chiseled Snow Bricks",
   "block.mcexpanded.snow_brick_stairs": "Snow Brick Stairs",
   "block.mcexpanded.snow_brick_slab": "Snow Brick Slab",
   "block.mcexpanded.snow_brick_button": "Snow Brick Button",
   "block.mcexpanded.snow_brick_pressure_plate": "Snow Brick Pressure Plate",
   "block.mcexpanded.snow_brick_wall": "Snow Brick Wall",
+
+  "block.mcexpanded.malachite_block": "Block Of Malachite",
+  "block.mcexpanded.budding_malachite": "Budding Malachite",
+  "item.mcexpanded.small_malachite_bud": "Small Malachite Bud",
+  "item.mcexpanded.medium_malachite_bud": "Medium Malachite Bud",
+  "item.mcexpanded.large_malachite_bud": "Large Malachite Bud",
+  "item.mcexpanded.malachite_cluster": "Malachite Cluster",
+  "item.mcexpanded.malachite_shard": "Malachite Shard",
 
   "block.mcexpanded.maple_sign": "Maple Sign",
   "block.mcexpanded.maple_hanging_sign": "Maple Hanging Sign",

@@ -5,6 +5,8 @@ import net.nathan.mcexpanded.world.ModOrePlacement;
 
 public class ModWorldGeneration {
     public static void generateModWorldGeneration() {
+        ModGeodeGeneration.generateGeodes();
+
         ModOreGeneration.generateOres();
 
         ModTreeGeneration.generateTrees();

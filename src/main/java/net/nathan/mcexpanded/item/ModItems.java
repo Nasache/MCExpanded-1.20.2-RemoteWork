@@ -108,8 +108,21 @@ public class ModItems {
     public static final Item CONGEALED_SLIME = registerItem("congealed_slime",
             new Item(new FabricItemSettings()));
 
+    public static final Item MALACHITE_SHARD = registerItem("malachite_shard",
+            new Item(new FabricItemSettings()));
+    public static final Item SMALL_MALACHITE_BUD = registerItem("small_malachite_bud",
+            new AliasedBlockItem(ModBlocks.SMALL_MALACHITE_BUD, new FabricItemSettings()));
+    public static final Item MEDIUM_MALACHITE_BUD = registerItem("medium_malachite_bud",
+            new AliasedBlockItem(ModBlocks.MEDIUM_MALACHITE_BUD, new FabricItemSettings()));
+    public static final Item LARGE_MALACHITE_BUD = registerItem("large_malachite_bud",
+            new AliasedBlockItem(ModBlocks.LARGE_MALACHITE_BUD, new FabricItemSettings()));
+    public static final Item MALACHITE_CLUSTER = registerItem("malachite_cluster",
+            new AliasedBlockItem(ModBlocks.MALACHITE_CLUSTER, new FabricItemSettings()));
+
     public static final Item DUCK_SPAWN_EGG = registerItem("duck_spawn_egg",
             new SpawnEggItem(ModEntities.DUCK, 0x593012, 0x095213, new FabricItemSettings()));
+    public static final Item GHOST_SPAWN_EGG = registerItem("ghost_spawn_egg",
+            new SpawnEggItem(ModEntities.GHOST, 0xffffff, 0xffffff, new FabricItemSettings()));
 
 
     public static final Item LIGHTNING_BOTTLE = registerItem("lightning_bottle",

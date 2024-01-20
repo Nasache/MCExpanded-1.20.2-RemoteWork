@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-18T23:30:02.4251589	MCExpanded/World Gen
+// 1.20.2	2024-01-20T15:17:29.9616637	MCExpanded/World Gen
 03d9a73ea77eb2e58bd21c8a0fc6ad18b9f03d4a data\mcexpanded\worldgen\placed_feature\blue_mushroom_placed.json
 8049014f6b29119ce2bb964543d2188cc1241247 data\mcexpanded\worldgen\placed_feature\cobalt_ore_placed.json
 595d6328edf4f35e0686ea7d5de9f341edaccf6e data\mcexpanded\worldgen\placed_feature\red_maple_placed.json
@@ -10,4 +10,6 @@ a313929fdf3e6198a7de6f836e68df4cf27f3966 data\mcexpanded\worldgen\configured_fea
 3b07b54120ccc6fa4c2db21498b6ef8328926f71 data\mcexpanded\worldgen\configured_feature\yellow_maple.json
 92fb78ce14e757eef1e9a37d4e98af6a479c2936 data\mcexpanded\worldgen\configured_feature\red_maple.json
 4738c5f13fd5b27873ae454a2f442d6a47f8b22b data\mcexpanded\worldgen\placed_feature\bitter_berry_placed.json
+0d3e3b4db7d371f8157874fdcd977c3e3b27353a data\mcexpanded\worldgen\configured_feature\malachite_geode.json
+203f327bfee70d2b200161022cbd8a64cab96b42 data\mcexpanded\worldgen\placed_feature\malachite_geode_placed.json
 0b16fc8c519a829f34aafd6278f0086694e0f526 data\mcexpanded\worldgen\placed_feature\garden_cosmos_placed.json

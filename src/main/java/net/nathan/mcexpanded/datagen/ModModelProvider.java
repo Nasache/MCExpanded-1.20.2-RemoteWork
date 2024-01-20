@@ -12,6 +12,7 @@ import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.block.custom.LeekCropBlock;
+import net.nathan.mcexpanded.block.custom.MalachiteClusterBlock;
 import net.nathan.mcexpanded.block.custom.MoonCropBlock;
 import net.nathan.mcexpanded.block.custom.SunCropBlock;
 import net.nathan.mcexpanded.item.ModItems;
@@ -60,6 +61,7 @@ public class ModModelProvider extends FabricModelProvider {
         snowBricksTexturePool.button(ModBlocks.SNOW_BRICK_BUTTON);
         snowBricksTexturePool.pressurePlate(ModBlocks.SNOW_BRICK_PRESSURE_PLATE);
         snowBricksTexturePool.wall(ModBlocks.SNOW_BRICK_WALL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CHISELED_SNOW_BRICKS);
 
 
 
@@ -74,6 +76,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GARDEN_COSMOS, ModBlocks.POTTED_GARDEN_COSMOS, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_MUSHROOM, ModBlocks.POTTED_BLUE_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MALACHITE_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_MALACHITE);
 
 
     }
@@ -92,6 +97,11 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.HONEY_GLAZED_STEAK, Models.GENERATED);
         itemModelGenerator.register(ModItems.LIGHTNING_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CONGEALED_SLIME, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MALACHITE_SHARD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SMALL_MALACHITE_BUD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MEDIUM_MALACHITE_BUD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LARGE_MALACHITE_BUD, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MALACHITE_CLUSTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_SHROOM_SONG, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SLIME_TOTEM, Models.GENERATED);
@@ -125,6 +135,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(((ArmorItem) ModItems.SLIME_BOOTS));
 
         itemModelGenerator.register(ModItems.DUCK_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.GHOST_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
 
     }

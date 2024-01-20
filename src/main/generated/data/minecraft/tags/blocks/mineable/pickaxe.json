@@ -6,10 +6,17 @@
     "mcexpanded:cobalt_ore",
     "mcexpanded:deepslate_cobalt_ore",
     "mcexpanded:snow_bricks",
+    "mcexpanded:chiseled_snow_bricks",
     "mcexpanded:snow_brick_slab",
     "mcexpanded:snow_brick_stairs",
     "mcexpanded:snow_brick_wall",
     "mcexpanded:snow_brick_pressure_plate",
-    "mcexpanded:snow_brick_button"
+    "mcexpanded:snow_brick_button",
+    "mcexpanded:malachite_block",
+    "mcexpanded:malachite_cluster",
+    "mcexpanded:small_malachite_bud",
+    "mcexpanded:medium_malachite_bud",
+    "mcexpanded:large_malachite_bud",
+    "mcexpanded:budding_malachite"
   ]
 }

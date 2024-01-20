@@ -39,11 +39,18 @@ public class ModItemGroup {
                         entries.add(ModItems.MAPLE_SIGN);
                         entries.add(ModItems.MAPLE_HANGING_SIGN);
                         entries.add(ModBlocks.SNOW_BRICKS);
+                        entries.add(ModBlocks.CHISELED_SNOW_BRICKS);
                         entries.add(ModBlocks.SNOW_BRICK_STAIRS);
                         entries.add(ModBlocks.SNOW_BRICK_SLAB);
                         entries.add(ModBlocks.SNOW_BRICK_BUTTON);
                         entries.add(ModBlocks.SNOW_BRICK_PRESSURE_PLATE);
                         entries.add(ModBlocks.SNOW_BRICK_WALL);
+                        entries.add(ModBlocks.MALACHITE_BLOCK);
+                        entries.add(ModBlocks.BUDDING_MALACHITE);
+                        entries.add(ModItems.SMALL_MALACHITE_BUD);
+                        entries.add(ModItems.MEDIUM_MALACHITE_BUD);
+                        entries.add(ModItems.LARGE_MALACHITE_BUD);
+                        entries.add(ModItems.MALACHITE_CLUSTER);
 
                     }).build());
     public static final ItemGroup EX_INGREDIENTS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -55,6 +62,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.GARDEN_COSMOS);
                         entries.add(ModBlocks.BLUE_MUSHROOM);
                         entries.add(ModItems.CONGEALED_SLIME);
+                        entries.add(ModItems.MALACHITE_SHARD);
                         entries.add(ModItems.MUSIC_DISC_SHROOM_SONG);
 
 
@@ -108,6 +116,7 @@ public class ModItemGroup {
                         entries.add(ModItems.SLIME_BOOTS);
                         entries.add(ModItems.LIGHTNING_BOTTLE);
                         entries.add(ModItems.DUCK_SPAWN_EGG);
+                        entries.add(ModItems.GHOST_SPAWN_EGG);
                         entries.add(ModItems.SLIME_TOTEM);
                         entries.add(ModItems.HONEY_TOTEM);
                         entries.add(ModItems.PRISMARINE_TOTEM);
