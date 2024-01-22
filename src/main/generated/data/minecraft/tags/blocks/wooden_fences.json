@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "mcexpanded:maple_fence"
+    "mcexpanded:maple_fence",
+    "mcexpanded:wisteria_fence",
+    "mcexpanded:frost_pine_fence"
   ]
 }

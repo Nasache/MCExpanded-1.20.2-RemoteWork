@@ -47,7 +47,53 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAPLE_WALL_SIGN);
         addDrop(ModBlocks.MAPLE_HANGING_SIGN);
         addDrop(ModBlocks.MAPLE_WALL_HANGING_SIGN);
-        addDrop(ModBlocks.MAPLE_TRAPDOOR);
+        addDrop(ModBlocks.RED_MAPLE_SAPLING);
+        addDrop(ModBlocks.POTTED_RED_MAPLE_SAPLING, pottedPlantDrops(ModBlocks.RED_MAPLE_SAPLING));
+        addDrop(ModBlocks.YELLOW_MAPLE_SAPLING);
+        addDrop(ModBlocks.POTTED_YELLOW_MAPLE_SAPLING, pottedPlantDrops(ModBlocks.YELLOW_MAPLE_SAPLING));
+
+        addDrop(ModBlocks.WISTERIA_PLANKS);
+        addDrop(ModBlocks.WISTERIA_LOG);
+        addDrop(ModBlocks.WISTERIA_WOOD);
+        addDrop(ModBlocks.STRIPPED_WISTERIA_LOG);
+        addDrop(ModBlocks.STRIPPED_WISTERIA_WOOD);
+        addDrop(ModBlocks.WISTERIA_LEAVES, leavesDrops(ModBlocks.WISTERIA_LEAVES, ModBlocks.WISTERIA_SAPLING, .05f));
+        addDrop(ModBlocks.WISTERIA_STAIRS);
+        addDrop(ModBlocks.WISTERIA_SLAB, slabDrops(ModBlocks.WISTERIA_SLAB));
+        addDrop(ModBlocks.WISTERIA_BUTTON);
+        addDrop(ModBlocks.WISTERIA_PRESSURE_PLATE);
+        addDrop(ModBlocks.WISTERIA_FENCE);
+        addDrop(ModBlocks.WISTERIA_FENCE_GATE);
+        addDrop(ModBlocks.WISTERIA_DOOR, doorDrops(ModBlocks.WISTERIA_DOOR));
+        addDrop(ModBlocks.WISTERIA_TRAPDOOR);
+        addDrop(ModBlocks.WISTERIA_SIGN);
+        addDrop(ModBlocks.WISTERIA_WALL_SIGN);
+        addDrop(ModBlocks.WISTERIA_HANGING_SIGN);
+        addDrop(ModBlocks.WISTERIA_WALL_HANGING_SIGN);
+        addDrop(ModBlocks.WISTERIA_SAPLING);
+        addDrop(ModBlocks.POTTED_WISTERIA_SAPLING, pottedPlantDrops(ModBlocks.WISTERIA_SAPLING));
+
+        addDrop(ModBlocks.FROST_PINE_PLANKS);
+        addDrop(ModBlocks.FROST_PINE_LOG);
+        addDrop(ModBlocks.FROST_PINE_WOOD);
+        addDrop(ModBlocks.STRIPPED_FROST_PINE_LOG);
+        addDrop(ModBlocks.STRIPPED_FROST_PINE_WOOD);
+        addDrop(ModBlocks.FROST_PINE_LEAVES, leavesDrops(ModBlocks.FROST_PINE_LEAVES, ModBlocks.FROST_PINE_SAPLING, .05f));
+        addDrop(ModBlocks.FROST_PINE_STAIRS);
+        addDrop(ModBlocks.FROST_PINE_SLAB, slabDrops(ModBlocks.FROST_PINE_SLAB));
+        addDrop(ModBlocks.FROST_PINE_BUTTON);
+        addDrop(ModBlocks.FROST_PINE_PRESSURE_PLATE);
+        addDrop(ModBlocks.FROST_PINE_FENCE);
+        addDrop(ModBlocks.FROST_PINE_FENCE_GATE);
+        addDrop(ModBlocks.FROST_PINE_DOOR, doorDrops(ModBlocks.FROST_PINE_DOOR));
+        addDrop(ModBlocks.FROST_PINE_TRAPDOOR);
+        addDrop(ModBlocks.FROST_PINE_SIGN);
+        addDrop(ModBlocks.FROST_PINE_WALL_SIGN);
+        addDrop(ModBlocks.FROST_PINE_HANGING_SIGN);
+        addDrop(ModBlocks.FROST_PINE_WALL_HANGING_SIGN);
+        addDrop(ModBlocks.FROST_PINE_SAPLING);
+        addDrop(ModBlocks.POTTED_FROST_PINE_SAPLING, pottedPlantDrops(ModBlocks.FROST_PINE_SAPLING));
+
 
         addDrop(ModBlocks.SNOW_BRICKS);
         addDrop(ModBlocks.CHISELED_SNOW_BRICKS);
@@ -60,7 +106,6 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MALACHITE_BLOCK);
         addDrop(ModBlocks.MALACHITE_CLUSTER, oreDrops(ModBlocks.MALACHITE_CLUSTER, ModItems.MALACHITE_SHARD));
 
-        addDrop(ModBlocks.GARDEN_COSMOS);
         addDrop(ModBlocks.GARDEN_COSMOS);
         addDrop(ModBlocks.POTTED_GARDEN_COSMOS, pottedPlantDrops(ModBlocks.GARDEN_COSMOS));
         addDrop(ModBlocks.BLUE_MUSHROOM);

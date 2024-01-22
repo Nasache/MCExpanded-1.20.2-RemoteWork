@@ -17,6 +17,8 @@ import java.util.List;
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> RED_MAPLE_PLACED_KEY = registerKey("red_maple_placed");
     public static final RegistryKey<PlacedFeature> YELLOW_MAPLE_PLACED_KEY = registerKey("yellow_maple_placed");
+    public static final RegistryKey<PlacedFeature> WISTERIA_PLACED_KEY = registerKey("wisteria_placed");
+    public static final RegistryKey<PlacedFeature> FROST_PINE_PLACED_KEY = registerKey("frost_pine_placed");
     public static final RegistryKey<PlacedFeature> GARDEN_COSMOS_PLACED_KEY = registerKey("garden_cosmos_placed");
     public static final RegistryKey<PlacedFeature> PATCH_BITTER_PLACED_KEY = registerKey("bitter_berry_placed");
     public static final RegistryKey<PlacedFeature> BLUE_MUSHROOM_PLACED_KEY = registerKey("blue_mushroom_placed");
@@ -32,6 +34,12 @@ public class ModPlacedFeatures {
         register(context, YELLOW_MAPLE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.YELLOW_MAPLE_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
                         PlacedFeatures.createCountExtraModifier(1, 0.2f, 2), ModBlocks.YELLOW_MAPLE_SAPLING));
+        register(context, WISTERIA_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.WISTERIA_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(1, 0.2f, 2), ModBlocks.WISTERIA_SAPLING));
+        register(context, FROST_PINE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.FROST_PINE_KEY),
+                VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
+                        PlacedFeatures.createCountExtraModifier(1, 0.2f, 2), ModBlocks.FROST_PINE_SAPLING));
 
         register(context, GARDEN_COSMOS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GARDEN_COSMOS_KEY),
                 RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());

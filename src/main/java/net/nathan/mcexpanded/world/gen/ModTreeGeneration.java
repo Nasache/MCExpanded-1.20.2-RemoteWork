@@ -12,5 +12,9 @@ public class ModTreeGeneration {
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.RED_MAPLE_PLACED_KEY);
         BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.FOREST),
                 GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.YELLOW_MAPLE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.CHERRY_GROVE),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.WISTERIA_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.includeByKey(BiomeKeys.SNOWY_TAIGA),
+                GenerationStep.Feature.VEGETAL_DECORATION, ModPlacedFeatures.FROST_PINE_PLACED_KEY);
     }
 }

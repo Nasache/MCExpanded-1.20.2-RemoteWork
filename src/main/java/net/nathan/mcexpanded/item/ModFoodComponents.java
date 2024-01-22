@@ -12,4 +12,6 @@ public class ModFoodComponents {
     public static final FoodComponent RAW_SQUID = new FoodComponent.Builder().hunger(2).saturationModifier(1f).build();
     public static final FoodComponent RAW_GLOW_SQUID = new FoodComponent.Builder().hunger(2).saturationModifier(1f).build();
     public static final FoodComponent HONEY_GLAZED_STEAK = new FoodComponent.Builder().hunger(12).saturationModifier(14f).build();
+    public static final FoodComponent MARSHMALLOW = new FoodComponent.Builder().hunger(5).saturationModifier(0.7f).build();
+    public static final FoodComponent BURNT_MARSHMALLOW = new FoodComponent.Builder().hunger(8).saturationModifier(1.3f).build();
 }

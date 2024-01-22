@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "mcexpanded:maple_planks"
+    "mcexpanded:maple_planks",
+    "mcexpanded:wisteria_planks",
+    "mcexpanded:frost_pine_planks"
   ]
 }

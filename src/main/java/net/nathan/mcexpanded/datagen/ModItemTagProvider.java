@@ -42,14 +42,28 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
                 .add(ModBlocks.MAPLE_LOG.asItem(), ModBlocks.MAPLE_WOOD.asItem(),
-                        ModBlocks.STRIPPED_MAPLE_LOG.asItem(), ModBlocks.STRIPPED_MAPLE_WOOD.asItem());
+                        ModBlocks.STRIPPED_MAPLE_LOG.asItem(), ModBlocks.STRIPPED_MAPLE_WOOD.asItem(),
+                        ModBlocks.WISTERIA_LOG.asItem(), ModBlocks.WISTERIA_WOOD.asItem(),
+                        ModBlocks.STRIPPED_WISTERIA_LOG.asItem(), ModBlocks.STRIPPED_WISTERIA_WOOD.asItem(),
+                        ModBlocks.FROST_PINE_LOG.asItem(), ModBlocks.FROST_PINE_WOOD.asItem(),
+                        ModBlocks.STRIPPED_FROST_PINE_LOG.asItem(), ModBlocks.STRIPPED_FROST_PINE_WOOD.asItem());
 
         getOrCreateTagBuilder(ItemTags.PLANKS)
-                .add(ModBlocks.MAPLE_PLANKS.asItem());
+                .add(ModBlocks.MAPLE_PLANKS.asItem(),
+                        ModBlocks.WISTERIA_PLANKS.asItem(),
+                        ModBlocks.FROST_PINE_PLANKS.asItem());
 
         getOrCreateTagBuilder(ModTags.Items.MAPLE_LOGS)
                 .add(ModBlocks.MAPLE_LOG.asItem(), ModBlocks.MAPLE_WOOD.asItem(),
                         ModBlocks.STRIPPED_MAPLE_LOG.asItem(), ModBlocks.STRIPPED_MAPLE_WOOD.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.WISTERIA_LOGS)
+                .add(ModBlocks.WISTERIA_LOG.asItem(), ModBlocks.WISTERIA_WOOD.asItem(),
+                        ModBlocks.STRIPPED_WISTERIA_LOG.asItem(), ModBlocks.STRIPPED_WISTERIA_WOOD.asItem());
+
+        getOrCreateTagBuilder(ModTags.Items.FROST_PINE_LOGS)
+                .add(ModBlocks.FROST_PINE_LOG.asItem(), ModBlocks.FROST_PINE_WOOD.asItem(),
+                        ModBlocks.STRIPPED_FROST_PINE_LOG.asItem(), ModBlocks.STRIPPED_FROST_PINE_WOOD.asItem());
 
 
     }

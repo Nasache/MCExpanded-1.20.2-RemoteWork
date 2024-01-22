@@ -68,10 +68,95 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.MAPLE_PLANKS), conditionsFromItem(ModBlocks.MAPLE_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MAPLE_FENCE_GATE)));
 
+        createDoorRecipe(ModBlocks.MAPLE_DOOR, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
+                .criterion(hasItem(ModBlocks.MAPLE_PLANKS), conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MAPLE_DOOR)));
+        createTrapdoorRecipe(ModBlocks.MAPLE_TRAPDOOR, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
+                .criterion(hasItem(ModBlocks.MAPLE_PLANKS), conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MAPLE_TRAPDOOR)));
+
         offerPressurePlateRecipe(exporter, ModBlocks.MAPLE_PRESSURE_PLATE, ModBlocks.MAPLE_PLANKS);
 
         offerHangingSignRecipe(exporter, ModItems.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_PLANKS);
-        createSignRecipe(ModItems.MAPLE_SIGN, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS));
+        createSignRecipe(ModItems.MAPLE_SIGN, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
+                .criterion(hasItem(ModBlocks.MAPLE_PLANKS), conditionsFromItem(ModBlocks.MAPLE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MAPLE_SIGN)));;
+
+        offerPlanksRecipe(exporter, ModBlocks.WISTERIA_PLANKS, ModTags.Items.WISTERIA_LOGS, 4);
+
+        offerBarkBlockRecipe(exporter, ModBlocks.WISTERIA_WOOD, ModBlocks.WISTERIA_LOG);
+        offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_WISTERIA_WOOD, ModBlocks.STRIPPED_WISTERIA_LOG);
+
+        createStairsRecipe(ModBlocks.WISTERIA_STAIRS, Ingredient.ofItems(ModBlocks.WISTERIA_PLANKS))
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_STAIRS)));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.WISTERIA_SLAB, Ingredient.ofItems(ModBlocks.WISTERIA_PLANKS))
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_SLAB)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.WISTERIA_BUTTON)
+                .input(ModBlocks.WISTERIA_PLANKS)
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_BUTTON)));
+
+        createFenceRecipe(ModBlocks.WISTERIA_FENCE, Ingredient.ofItems(ModBlocks.WISTERIA_PLANKS))
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_FENCE)));
+        createFenceGateRecipe(ModBlocks.WISTERIA_FENCE_GATE, Ingredient.ofItems(ModBlocks.WISTERIA_PLANKS))
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_FENCE_GATE)));
+
+        offerPressurePlateRecipe(exporter, ModBlocks.WISTERIA_PRESSURE_PLATE, ModBlocks.WISTERIA_PLANKS);
+
+        offerHangingSignRecipe(exporter, ModItems.WISTERIA_HANGING_SIGN, ModBlocks.WISTERIA_PLANKS);
+        createSignRecipe(ModItems.WISTERIA_SIGN, Ingredient.ofItems(ModBlocks.WISTERIA_PLANKS))
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_SIGN)));
+
+        createDoorRecipe(ModBlocks.WISTERIA_DOOR, Ingredient.ofItems(ModBlocks.WISTERIA_PLANKS))
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_DOOR)));
+        createTrapdoorRecipe(ModBlocks.WISTERIA_TRAPDOOR, Ingredient.ofItems(ModBlocks.WISTERIA_PLANKS))
+                .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_TRAPDOOR)));
+
+        offerPlanksRecipe(exporter, ModBlocks.FROST_PINE_PLANKS, ModTags.Items.FROST_PINE_LOGS, 4);
+
+        offerBarkBlockRecipe(exporter, ModBlocks.FROST_PINE_WOOD, ModBlocks.FROST_PINE_LOG);
+        offerBarkBlockRecipe(exporter, ModBlocks.STRIPPED_FROST_PINE_WOOD, ModBlocks.STRIPPED_FROST_PINE_LOG);
+
+        createStairsRecipe(ModBlocks.FROST_PINE_STAIRS, Ingredient.ofItems(ModBlocks.FROST_PINE_PLANKS))
+                .criterion(hasItem(ModBlocks.FROST_PINE_PLANKS), conditionsFromItem(ModBlocks.FROST_PINE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROST_PINE_STAIRS)));
+        createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, ModBlocks.FROST_PINE_SLAB, Ingredient.ofItems(ModBlocks.FROST_PINE_PLANKS))
+                .criterion(hasItem(ModBlocks.FROST_PINE_PLANKS), conditionsFromItem(ModBlocks.FROST_PINE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROST_PINE_SLAB)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.REDSTONE, ModBlocks.FROST_PINE_BUTTON)
+                .input(ModBlocks.FROST_PINE_PLANKS)
+                .criterion(hasItem(ModBlocks.FROST_PINE_PLANKS), conditionsFromItem(ModBlocks.FROST_PINE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROST_PINE_BUTTON)));
+
+        createFenceRecipe(ModBlocks.FROST_PINE_FENCE, Ingredient.ofItems(ModBlocks.FROST_PINE_PLANKS))
+                .criterion(hasItem(ModBlocks.FROST_PINE_PLANKS), conditionsFromItem(ModBlocks.FROST_PINE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROST_PINE_FENCE)));
+        createFenceGateRecipe(ModBlocks.FROST_PINE_FENCE_GATE, Ingredient.ofItems(ModBlocks.FROST_PINE_PLANKS))
+                .criterion(hasItem(ModBlocks.FROST_PINE_PLANKS), conditionsFromItem(ModBlocks.FROST_PINE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROST_PINE_FENCE_GATE)));
+
+        offerPressurePlateRecipe(exporter, ModBlocks.FROST_PINE_PRESSURE_PLATE, ModBlocks.FROST_PINE_PLANKS);
+
+        offerHangingSignRecipe(exporter, ModItems.FROST_PINE_HANGING_SIGN, ModBlocks.FROST_PINE_PLANKS);
+        createSignRecipe(ModItems.FROST_PINE_SIGN, Ingredient.ofItems(ModBlocks.FROST_PINE_PLANKS))
+                .criterion(hasItem(ModBlocks.FROST_PINE_PLANKS), conditionsFromItem(ModBlocks.FROST_PINE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROST_PINE_SIGN)));
+
+        createDoorRecipe(ModBlocks.FROST_PINE_DOOR, Ingredient.ofItems(ModBlocks.FROST_PINE_PLANKS))
+                .criterion(hasItem(ModBlocks.FROST_PINE_PLANKS), conditionsFromItem(ModBlocks.FROST_PINE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROST_PINE_DOOR)));
+        createTrapdoorRecipe(ModBlocks.FROST_PINE_TRAPDOOR, Ingredient.ofItems(ModBlocks.FROST_PINE_PLANKS))
+                .criterion(hasItem(ModBlocks.FROST_PINE_PLANKS), conditionsFromItem(ModBlocks.FROST_PINE_PLANKS))
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROST_PINE_TRAPDOOR)));
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SNOW_BRICKS)
                 .pattern("SS")
@@ -317,5 +402,15 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(new ItemConvertible[]{ModItems.LEEK}), RecipeCategory.FOOD, ModItems.ROASTED_LEEK, 0.35F, 200).criterion("has_leek", conditionsFromItem(ModItems.LEEK)).offerTo(exporter);
         offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING, 100, ModItems.LEEK, ModItems.ROASTED_LEEK, 0.35f);
         offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, 600, ModItems.LEEK, ModItems.ROASTED_LEEK, 0.35f);
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MARSHMALLOW)
+                .input(Items.STICK)
+                .input(Items.EGG)
+                .input(Items.SUGAR)
+                .input(Items.HONEY_BOTTLE)
+                .criterion(hasItem(Items.SUGAR), conditionsFromItem(Items.SUGAR))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MARSHMALLOW)));
+
+        offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, 100, ModItems.MARSHMALLOW, ModItems.BURNT_MARSHMALLOW, 0.35f);
     }
 }

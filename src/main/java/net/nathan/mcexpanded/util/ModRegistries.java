@@ -46,6 +46,24 @@ public class ModRegistries {
         registry.add(ModBlocks.MAPLE_FENCE_GATE, 300);
         registry.add(ModBlocks.MAPLE_DOOR, 300);
         registry.add(ModBlocks.MAPLE_TRAPDOOR, 300);
+        registry.add(ModBlocks.WISTERIA_PLANKS, 300);
+        registry.add(ModBlocks.WISTERIA_STAIRS, 300);
+        registry.add(ModBlocks.WISTERIA_SLAB, 300);
+        registry.add(ModBlocks.WISTERIA_BUTTON, 300);
+        registry.add(ModBlocks.WISTERIA_PRESSURE_PLATE, 300);
+        registry.add(ModBlocks.WISTERIA_FENCE, 300);
+        registry.add(ModBlocks.WISTERIA_FENCE_GATE, 300);
+        registry.add(ModBlocks.WISTERIA_DOOR, 300);
+        registry.add(ModBlocks.WISTERIA_TRAPDOOR, 300);
+        registry.add(ModBlocks.FROST_PINE_PLANKS, 300);
+        registry.add(ModBlocks.FROST_PINE_STAIRS, 300);
+        registry.add(ModBlocks.FROST_PINE_SLAB, 300);
+        registry.add(ModBlocks.FROST_PINE_BUTTON, 300);
+        registry.add(ModBlocks.FROST_PINE_PRESSURE_PLATE, 300);
+        registry.add(ModBlocks.FROST_PINE_FENCE, 300);
+        registry.add(ModBlocks.FROST_PINE_FENCE_GATE, 300);
+        registry.add(ModBlocks.FROST_PINE_DOOR, 300);
+        registry.add(ModBlocks.FROST_PINE_TRAPDOOR, 300);
     }
 
     private static void registerModCompostables () {
@@ -59,6 +77,8 @@ public class ModRegistries {
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModItems.MOON_FRUIT, 0.3f);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.RED_MAPLE_SAPLING, 0.3f);
         ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.YELLOW_MAPLE_SAPLING, 0.3f);
+        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.WISTERIA_SAPLING, 0.3f);
+        ComposterBlock.ITEM_TO_LEVEL_INCREASE_CHANCE.put(ModBlocks.FROST_PINE_SAPLING, 0.3f);
     }
 
     private static void registerFlammables() {
@@ -69,11 +89,27 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MAPLE_PLANKS, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_MAPLE_LEAVES, 30, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.YELLOW_MAPLE_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WISTERIA_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.WISTERIA_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_WISTERIA_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_WISTERIA_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FROST_PINE_PLANKS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FROST_PINE_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FROST_PINE_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FROST_PINE_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_FROST_PINE_LOG, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.STRIPPED_FROST_PINE_WOOD, 5, 5);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FROST_PINE_PLANKS, 5, 20);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.FROST_PINE_LEAVES, 30, 60);
     }
 
     private static void registerStrippables() {
         StrippableBlockRegistry.register(ModBlocks.MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_LOG);
         StrippableBlockRegistry.register(ModBlocks.MAPLE_WOOD, ModBlocks.STRIPPED_MAPLE_WOOD);
+        StrippableBlockRegistry.register(ModBlocks.WISTERIA_LOG, ModBlocks.STRIPPED_WISTERIA_LOG);
+        StrippableBlockRegistry.register(ModBlocks.WISTERIA_WOOD, ModBlocks.STRIPPED_WISTERIA_WOOD);
+        StrippableBlockRegistry.register(ModBlocks.FROST_PINE_LOG, ModBlocks.STRIPPED_FROST_PINE_LOG);
+        StrippableBlockRegistry.register(ModBlocks.FROST_PINE_WOOD, ModBlocks.STRIPPED_FROST_PINE_WOOD);
     }
 
     private static void registerCommands() {

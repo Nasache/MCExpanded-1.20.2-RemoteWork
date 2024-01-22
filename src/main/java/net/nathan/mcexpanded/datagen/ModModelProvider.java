@@ -55,6 +55,49 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_MAPLE_SAPLING, ModBlocks.POTTED_RED_MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.YELLOW_MAPLE_SAPLING, ModBlocks.POTTED_YELLOW_MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
 
+        BlockStateModelGenerator.BlockTexturePool wysteriaPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WISTERIA_PLANKS);
+        wysteriaPlanksTexturePool.stairs(ModBlocks.WISTERIA_STAIRS);
+        wysteriaPlanksTexturePool.slab(ModBlocks.WISTERIA_SLAB);
+        wysteriaPlanksTexturePool.button(ModBlocks.WISTERIA_BUTTON);
+        wysteriaPlanksTexturePool.pressurePlate(ModBlocks.WISTERIA_PRESSURE_PLATE);
+        wysteriaPlanksTexturePool.fence(ModBlocks.WISTERIA_FENCE);
+        wysteriaPlanksTexturePool.fenceGate(ModBlocks.WISTERIA_FENCE_GATE);
+        blockStateModelGenerator.registerDoor(ModBlocks.WISTERIA_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.WISTERIA_TRAPDOOR);
+
+        wysteriaPlanksTexturePool.family(BlockFamilies.register(ModBlocks.WISTERIA_PLANKS).sign(ModBlocks.WISTERIA_SIGN, ModBlocks.WISTERIA_WALL_SIGN).build());
+
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_WISTERIA_LOG, ModBlocks.WISTERIA_HANGING_SIGN, ModBlocks.WISTERIA_WALL_HANGING_SIGN);
+
+        blockStateModelGenerator.registerLog(ModBlocks.WISTERIA_LOG).log(ModBlocks.WISTERIA_LOG).wood(ModBlocks.WISTERIA_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_WISTERIA_LOG).log(ModBlocks.STRIPPED_WISTERIA_LOG).wood(ModBlocks.STRIPPED_WISTERIA_WOOD);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WISTERIA_LEAVES);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.WISTERIA_SAPLING, ModBlocks.POTTED_WISTERIA_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+        BlockStateModelGenerator.BlockTexturePool frostPinePlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FROST_PINE_PLANKS);
+        frostPinePlanksTexturePool.stairs(ModBlocks.FROST_PINE_STAIRS);
+        frostPinePlanksTexturePool.slab(ModBlocks.FROST_PINE_SLAB);
+        frostPinePlanksTexturePool.button(ModBlocks.FROST_PINE_BUTTON);
+        frostPinePlanksTexturePool.pressurePlate(ModBlocks.FROST_PINE_PRESSURE_PLATE);
+        frostPinePlanksTexturePool.fence(ModBlocks.FROST_PINE_FENCE);
+        frostPinePlanksTexturePool.fenceGate(ModBlocks.FROST_PINE_FENCE_GATE);
+        blockStateModelGenerator.registerDoor(ModBlocks.FROST_PINE_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.FROST_PINE_TRAPDOOR);
+
+        frostPinePlanksTexturePool.family(BlockFamilies.register(ModBlocks.FROST_PINE_PLANKS).sign(ModBlocks.FROST_PINE_SIGN, ModBlocks.FROST_PINE_WALL_SIGN).build());
+
+        blockStateModelGenerator.registerHangingSign(ModBlocks.STRIPPED_FROST_PINE_LOG, ModBlocks.FROST_PINE_HANGING_SIGN, ModBlocks.FROST_PINE_WALL_HANGING_SIGN);
+
+        blockStateModelGenerator.registerLog(ModBlocks.FROST_PINE_LOG).log(ModBlocks.FROST_PINE_LOG).wood(ModBlocks.FROST_PINE_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_FROST_PINE_LOG).log(ModBlocks.STRIPPED_FROST_PINE_LOG).wood(ModBlocks.STRIPPED_FROST_PINE_WOOD);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROST_PINE_LEAVES);
+
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.FROST_PINE_SAPLING, ModBlocks.POTTED_FROST_PINE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+
+
         BlockStateModelGenerator.BlockTexturePool snowBricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SNOW_BRICKS);
         snowBricksTexturePool.stairs(ModBlocks.SNOW_BRICK_STAIRS);
         snowBricksTexturePool.slab(ModBlocks.SNOW_BRICK_SLAB);
@@ -95,6 +138,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_SQUID, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_GLOW_SQUID, Models.GENERATED);
         itemModelGenerator.register(ModItems.HONEY_GLAZED_STEAK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MARSHMALLOW, Models.GENERATED);
+        itemModelGenerator.register(ModItems.BURNT_MARSHMALLOW, Models.GENERATED);
         itemModelGenerator.register(ModItems.LIGHTNING_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CONGEALED_SLIME, Models.GENERATED);
         itemModelGenerator.register(ModItems.MALACHITE_SHARD, Models.GENERATED);

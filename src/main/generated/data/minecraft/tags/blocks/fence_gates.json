@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "mcexpanded:maple_fence_gate"
+    "mcexpanded:maple_fence_gate",
+    "mcexpanded:wisteria_fence_gate",
+    "mcexpanded:frost_pine_fence_gate"
   ]
 }

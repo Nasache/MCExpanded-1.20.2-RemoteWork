@@ -144,15 +144,15 @@ public class ModLootTableModifiers {
 
 
 
-        // LootTableEvents.REPLACE.register((resourceManager, lootManager, id, original, source) -> {
-        //     if(SNIFFER_DIGGING_ID.equals(id)) {
-        //         List<LootPoolEntry> entries = new ArrayList<>(Arrays.asList(original.);
-        //         entries.add(ItemEntry.builder(ModItems.MOON_SEEDS).build());
-        //         LootPool.Builder pool = LootPool.builder().with(entries);
-        //         return LootTable.builder().pool(pool).build();
-        //     }
+   //  LootTableEvents.REPLACE.register((resourceManager, lootManager, id, original, source) -> {
+   //       if(SNIFFER_DIGGING_ID.equals(id)) {
+   //           List<LootPoolEntry> entries = new ArrayList<>(Arrays.asList(original.pools(0).entries);
+   //           entries.add(ItemEntry.builder(ModItems.MOON_SEEDS).build());
+   //           LootPool.Builder pool = LootPool.builder().with(entries);
+   //           return LootTable.builder().pool(pool).build();
+   //       }
 
-        //     return null;
-        // });
+   //       return null;
+   //   });
     }
 }

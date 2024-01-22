@@ -50,6 +50,48 @@
   "block.mcexpanded.stripped_maple_log": "Stripped Maple Log",
   "block.mcexpanded.stripped_maple_wood": "Stripped Maple Wood",
 
+  "block.mcexpanded.wisteria_planks": "Wisteria Planks",
+  "block.mcexpanded.wisteria_stairs": "Wisteria Stairs",
+  "block.mcexpanded.wisteria_slab": "Wisteria Slab",
+  "block.mcexpanded.wisteria_button": "Wisteria Button",
+  "block.mcexpanded.wisteria_pressure_plate": "Wisteria Pressure Plate",
+  "block.mcexpanded.wisteria_fence": "Wisteria Fence",
+  "block.mcexpanded.wisteria_fence_gate": "Wisteria Fence Gate",
+  "block.mcexpanded.wisteria_door": "Wisteria Door",
+  "block.mcexpanded.wisteria_trapdoor": "Wisteria Trapdoor",
+  "block.mcexpanded.wisteria_log": "Wisteria Log",
+  "block.mcexpanded.wisteria_wood": "Wisteria Wood",
+  "block.mcexpanded.stripped_wisteria_log": "Stripped Wisteria Log",
+  "block.mcexpanded.stripped_wisteria_wood": "Stripped Wisteria Wood",
+
+  "block.mcexpanded.wisteria_sign": "Wisteria Sign",
+  "block.mcexpanded.wisteria_hanging_sign": "Wisteria Hanging Sign",
+
+  "block.mcexpanded.wisteria_leaves": "Wisteria Leaves",
+
+  "block.mcexpanded.wisteria_sapling": "Wisteria Sapling",
+
+  "block.mcexpanded.frost_pine_planks": "Frost Pine Planks",
+  "block.mcexpanded.frost_pine_stairs": "Frost Pine Stairs",
+  "block.mcexpanded.frost_pine_slab": "Frost Pine Slab",
+  "block.mcexpanded.frost_pine_button": "Frost Pine Button",
+  "block.mcexpanded.frost_pine_pressure_plate": "Frost Pine Pressure Plate",
+  "block.mcexpanded.frost_pine_fence": "Frost Pine Fence",
+  "block.mcexpanded.frost_pine_fence_gate": "Frost Pine Fence Gate",
+  "block.mcexpanded.frost_pine_door": "Frost Pine Door",
+  "block.mcexpanded.frost_pine_trapdoor": "Frost Pine Trapdoor",
+  "block.mcexpanded.frost_pine_log": "Frost Pine Log",
+  "block.mcexpanded.frost_pine_wood": "Frost Pine Wood",
+  "block.mcexpanded.stripped_frost_pine_log": "Stripped Frost Pine Log",
+  "block.mcexpanded.stripped_frost_pine_wood": "Stripped Frost Pine Wood",
+
+  "block.mcexpanded.frost_pine_sign": "Frost Pine Sign",
+  "block.mcexpanded.frost_pine_hanging_sign": "Frost Pine Hanging Sign",
+
+  "block.mcexpanded.frost_pine_leaves": "Frost Pine Leaves",
+
+  "block.mcexpanded.frost_pine_sapling": "Frost Pine Sapling",
+
   "block.mcexpanded.snow_bricks": "Snow Bricks",
   "block.mcexpanded.chiseled_snow_bricks": "Chiseled Snow Bricks",
   "block.mcexpanded.snow_brick_stairs": "Snow Brick Stairs",
@@ -86,6 +128,8 @@
   "item.mcexpanded.raw_squid": "Raw Squid",
   "item.mcexpanded.raw_glow_squid": "Raw Glow Squid",
   "item.mcexpanded.honey_glazed_steak": "Honey Glazed Steak",
+  "item.mcexpanded.marshmallow": "Marshmallow",
+  "item.mcexpanded.burnt_marshmallow": "Burnt Marshmallow",
   "block.mcexpanded.garden_cosmos": "Garden Cosmos",
   "block.mcexpanded.blue_mushroom": "Blue Mushroom",
 

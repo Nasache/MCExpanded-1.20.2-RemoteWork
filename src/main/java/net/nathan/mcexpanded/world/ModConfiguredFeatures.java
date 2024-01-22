@@ -3,11 +3,18 @@ package net.nathan.mcexpanded.world;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SweetBerryBushBlock;
+import net.minecraft.client.gl.Uniform;
 import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.foliage.AcaciaFoliagePlacer;
+import net.minecraft.world.gen.foliage.CherryFoliagePlacer;
+import net.minecraft.world.gen.foliage.SpruceFoliagePlacer;
+import net.minecraft.world.gen.trunk.BendingTrunkPlacer;
+import net.minecraft.world.gen.trunk.CherryTrunkPlacer;
+import net.minecraft.world.gen.trunk.ForkingTrunkPlacer;
 import net.nathan.mcexpanded.MCExpanded;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.minecraft.registry.Registerable;
@@ -26,6 +33,8 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> RED_MAPLE_KEY = registerKey("red_maple");
     public static final RegistryKey<ConfiguredFeature<?, ?>> YELLOW_MAPLE_KEY = registerKey("yellow_maple");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> WISTERIA_KEY = registerKey("wisteria");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> FROST_PINE_KEY = registerKey("frost_pine");
     public static final RegistryKey<ConfiguredFeature<?, ?>> GARDEN_COSMOS_KEY = registerKey("garden_cosmos");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_BLUE_MUSHROOM = registerKey("blue_mushroom");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_BITTER_BUSH = registerKey("bitter_bush");
@@ -54,6 +63,21 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(5, 2, 3),
                 BlockStateProvider.of(ModBlocks.YELLOW_MAPLE_LEAVES),
                 new MapleFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(1), 2),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, WISTERIA_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.WISTERIA_LOG),
+                new StraightTrunkPlacer(5, 2, 3),
+                BlockStateProvider.of(ModBlocks.WISTERIA_LEAVES),
+                new CherryFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(0), ConstantIntProvider.create(4),
+                        0, 0.5f, 0.9f, 0.7f),
+                new TwoLayersFeatureSize(1, 0, 2)).build());
+
+        register(context, FROST_PINE_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.FROST_PINE_LOG),
+                new StraightTrunkPlacer(5, 2, 3),
+                BlockStateProvider.of(ModBlocks.FROST_PINE_LEAVES),
+                new SpruceFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(0), ConstantIntProvider.create(5)),
                 new TwoLayersFeatureSize(1, 0, 2)).build());
 
         register(context, COBALT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobaltOres, 8));

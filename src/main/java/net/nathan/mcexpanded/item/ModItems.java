@@ -81,6 +81,16 @@ public class ModItems {
     public static final Item MAPLE_HANGING_SIGN = registerItem("maple_hanging_sign",
             new HangingSignItem(ModBlocks.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
 
+    public static final Item WISTERIA_SIGN = registerItem("wisteria_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.WISTERIA_SIGN, ModBlocks.WISTERIA_WALL_SIGN));
+    public static final Item WISTERIA_HANGING_SIGN = registerItem("wisteria_hanging_sign",
+            new HangingSignItem(ModBlocks.WISTERIA_HANGING_SIGN, ModBlocks.WISTERIA_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
+
+    public static final Item FROST_PINE_SIGN = registerItem("frost_pine_sign",
+            new SignItem(new FabricItemSettings().maxCount(16), ModBlocks.FROST_PINE_SIGN, ModBlocks.FROST_PINE_WALL_SIGN));
+    public static final Item FROST_PINE_HANGING_SIGN = registerItem("frost_pine_hanging_sign",
+            new HangingSignItem(ModBlocks.FROST_PINE_HANGING_SIGN, ModBlocks.FROST_PINE_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
+
     public static final Item BITTER_BERRIES = registerItem("bitter_berries",
             new AliasedBlockItem(ModBlocks.BITTER_BERRY_BUSH, new FabricItemSettings().food(ModFoodComponents.BITTER_BERRIES)));
 
@@ -104,6 +114,11 @@ public class ModItems {
             new Item(new FabricItemSettings().food(ModFoodComponents.RAW_GLOW_SQUID)));
     public static final Item HONEY_GLAZED_STEAK = registerItem("honey_glazed_steak",
             new Item(new FabricItemSettings().food(ModFoodComponents.HONEY_GLAZED_STEAK)));
+
+    public static final Item MARSHMALLOW = registerItem("marshmallow",
+            new Item(new FabricItemSettings().food(ModFoodComponents.MARSHMALLOW)));
+    public static final Item BURNT_MARSHMALLOW = registerItem("burnt_marshmallow",
+            new Item(new FabricItemSettings().food(ModFoodComponents.BURNT_MARSHMALLOW)));
 
     public static final Item CONGEALED_SLIME = registerItem("congealed_slime",
             new Item(new FabricItemSettings()));

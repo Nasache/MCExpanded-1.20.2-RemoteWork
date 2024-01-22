@@ -12,12 +12,17 @@ public class ModBlockEntities {
     public static final BlockEntityType<ModSignBlockEntity> MOD_SIGN_BLOCK_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
             new Identifier(MCExpanded.MOD_ID, "mod_sign_entity"),
             FabricBlockEntityTypeBuilder.create(ModSignBlockEntity::new,
-                    ModBlocks.MAPLE_SIGN, ModBlocks.MAPLE_WALL_SIGN).build());
+                    ModBlocks.MAPLE_SIGN, ModBlocks.MAPLE_WALL_SIGN,
+                    ModBlocks.WISTERIA_SIGN, ModBlocks.WISTERIA_WALL_SIGN,
+                    ModBlocks.FROST_PINE_SIGN, ModBlocks.FROST_PINE_WALL_SIGN).build());
 
     public static final BlockEntityType<ModHangingSignBlockEntity> MOD_HANGING_SIGN_BLOCK_ENTITY = Registry.register(Registries.BLOCK_ENTITY_TYPE,
             new Identifier(MCExpanded.MOD_ID, "mod_hanging_sign_entity"),
             FabricBlockEntityTypeBuilder.create(ModHangingSignBlockEntity::new,
-                    ModBlocks.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_WALL_HANGING_SIGN).build(null));
+                    ModBlocks.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_WALL_HANGING_SIGN,
+                    ModBlocks.WISTERIA_HANGING_SIGN, ModBlocks.WISTERIA_WALL_HANGING_SIGN,
+                    ModBlocks.FROST_PINE_HANGING_SIGN, ModBlocks.FROST_PINE_WALL_HANGING_SIGN).build());
+
 
     public static void registerBlockEntities() {
         MCExpanded.LOGGER.info("Registering Block Entities for " + MCExpanded.MOD_ID);

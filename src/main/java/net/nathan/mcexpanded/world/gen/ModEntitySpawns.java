@@ -14,7 +14,7 @@ import net.nathan.mcexpanded.entity.ModEntities;
 public class ModEntitySpawns {
     public static void addSpawns() {
         BiomeModifications.addSpawn(BiomeSelectors.includeByKey(BiomeKeys.RIVER, BiomeKeys.SWAMP, BiomeKeys.BIRCH_FOREST, BiomeKeys.FOREST),
-                SpawnGroup.CREATURE, ModEntities.DUCK, 2000, 2, 5);
+                SpawnGroup.CREATURE, ModEntities.DUCK, 100, 2, 5);
 
         SpawnRestriction.register(ModEntities.DUCK, SpawnRestriction.Location.ON_GROUND,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, AnimalEntity::isValidNaturalSpawn);
@@ -22,7 +22,7 @@ public class ModEntitySpawns {
 
 
         BiomeModifications.addSpawn(BiomeSelectors.excludeByKey(BiomeKeys.MUSHROOM_FIELDS),
-                SpawnGroup.MONSTER, ModEntities.GHOST, 100, 1, 5);
+                SpawnGroup.MONSTER, ModEntities.GHOST, 100, 1, 4);
 
         SpawnRestriction.register(ModEntities.GHOST, SpawnRestriction.Location.NO_RESTRICTIONS,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, HostileEntity::canSpawnInDark);
