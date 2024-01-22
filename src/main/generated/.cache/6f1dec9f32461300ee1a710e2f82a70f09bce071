@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-21T22:37:50.0550901	MCExpanded/Block Loot Tables
+// 1.20.2	2024-01-22T12:57:44.9829938	MCExpanded/Block Loot Tables
 50da60b505d40f6b7f984ff183b4a1d9cba8973a data\mcexpanded\loot_tables\blocks\potted_blue_mushroom.json
 75a5206a9a711a72f94cb01b2a3732e15b1424b0 data\mcexpanded\loot_tables\blocks\stripped_frost_pine_log.json
 7e82fc498401fbe1c2ad501c048f241271158c3e data\mcexpanded\loot_tables\blocks\maple_planks.json
@@ -57,8 +57,8 @@ c1fc81cfa78a31e9c43fb4be5bfc18631714d54e data\mcexpanded\loot_tables\blocks\pott
 9fa786d9a018240f3d0e4b979415ef79da1812f7 data\mcexpanded\loot_tables\blocks\wisteria_sign.json
 86451b9aa6a352c2d6477bf18289f279a8ddc4d3 data\mcexpanded\loot_tables\blocks\wisteria_fence_gate.json
 7ea43a161f2310f6e0e6e459e04cb09362987300 data\mcexpanded\loot_tables\blocks\frost_pine_stairs.json
-19622ecc14ab60818f274c73f5c367c91cab215c data\mcexpanded\loot_tables\blocks\wisteria_leaves.json
 6ec5486ab76576dce6e31337b0757062c1ad8299 data\mcexpanded\loot_tables\blocks\frost_pine_fence_gate.json
+19622ecc14ab60818f274c73f5c367c91cab215c data\mcexpanded\loot_tables\blocks\wisteria_leaves.json
 bd1d2604bb411973154b51c3599831dd2ce28ef0 data\mcexpanded\loot_tables\blocks\frost_pine_sign.json
 bd1d2604bb411973154b51c3599831dd2ce28ef0 data\minecraft\loot_tables\blocks\spruce_sign.json
 25b8fa30298f28e355c3acca8095db89f3ad7a9f data\mcexpanded\loot_tables\blocks\stripped_maple_wood.json

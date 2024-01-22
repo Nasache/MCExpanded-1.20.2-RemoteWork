@@ -23,6 +23,9 @@
 		],
 		"client": [
 			"net.nathan.mcexpanded.MCExpandedClient"
+		],
+		"terrablender": [
+			"net.nathan.mcexpanded.world.biome.ModTerraBlenderAPI"
 		]
 	},
 	"mixins": [

@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-21T22:37:50.0630901	MCExpanded/Recipes
+// 1.20.2	2024-01-22T12:57:44.988006	MCExpanded/Recipes
 9d7ad407473b82defecec30e4d26a41310621cd8 data\mcexpanded\recipes\maple_trapdoor.json
 13e174c8f36af16d299d641ecb479234ee3e2aaf data\mcexpanded\recipes\chiseled_snow_bricks_from_snow_bricks_stonecutting.json
 039cc2b557e63e2f6ff940926c0f8260df00e912 data\mcexpanded\advancements\recipes\redstone\frost_pine_fence_gate.json
@@ -65,8 +65,8 @@ d2701b92c899aeddca23cf2171421b1f0078d332 data\mcexpanded\recipes\maple_door.json
 544847a87d343c2689fe737c0ed37b22c5627ad7 data\mcexpanded\advancements\recipes\building_blocks\snow_brick_stairs.json
 11ef065c6fb7dc147995b2e21ddc7b3b3fc295c0 data\mcexpanded\advancements\recipes\misc\prismarine_chestplate.json
 54968aff82dee80a8093928e63d6b77d9560cc67 data\mcexpanded\advancements\recipes\building_blocks\frost_pine_stairs.json
-0085b80278212f51acac6a135df87d3f7dd191e5 data\mcexpanded\advancements\recipes\decorations\maple_sign.json
 470bb74e51285c38ea789baeb1e929a7e01c9d2b data\mcexpanded\recipes\maple_sign.json
+0085b80278212f51acac6a135df87d3f7dd191e5 data\mcexpanded\advancements\recipes\decorations\maple_sign.json
 8e240d36c608373c847ad0000e3b982d14a25f16 data\mcexpanded\recipes\cobalt_ingot.json
 71e44222922947569b0aa26d8f9ded77308f25a5 data\mcexpanded\recipes\cobalt_ingot_from_smelting_deepslate_cobalt_ore.json
 2ba01748e50a68b7146cff2d785d42b0c792c62a data\mcexpanded\advancements\recipes\misc\prismarine_helmet.json

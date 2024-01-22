@@ -1,5 +1,6 @@
 package net.nathan.mcexpanded.world;
 
+import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SweetBerryBushBlock;
@@ -38,6 +39,12 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> GARDEN_COSMOS_KEY = registerKey("garden_cosmos");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_BLUE_MUSHROOM = registerKey("blue_mushroom");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_BITTER_BUSH = registerKey("bitter_bush");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ALLIUM_FLOWERS = registerKey("allium_flowers");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PEONY_FLOWERS = registerKey("peony_flowers");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> LILAC_FLOWERS = registerKey("lilac_flowers");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> CORNFLOWER_FLOWERS = registerKey("cornflower_flowers");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BLUE_ORCHID_FLOWERS = registerKey("blue_orchid_flowers");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PINK_TULIP_FLOWERS = registerKey("pink_tulip_flowers");
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBALT_ORE_KEY = registerKey("cobalt_ore");
 
@@ -84,6 +91,20 @@ public class ModConfiguredFeatures {
 
         register(context, GARDEN_COSMOS_KEY, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.GARDEN_COSMOS)))));
+        register(context, PINK_TULIP_FLOWERS, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.PINK_TULIP)))));
+        register(context, PEONY_FLOWERS, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.PEONY)))));
+        register(context, LILAC_FLOWERS, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.LILAC)))));
+        register(context, ALLIUM_FLOWERS, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.ALLIUM)))));
+        register(context, CORNFLOWER_FLOWERS, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.CORNFLOWER)))));
+        register(context, BLUE_ORCHID_FLOWERS, Feature.FLOWER, new RandomPatchFeatureConfig(32, 6, 2, PlacedFeatures.createEntry(Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(Blocks.BLUE_ORCHID)))));
+
+
         register(context, PATCH_BLUE_MUSHROOM, Feature.RANDOM_PATCH, ConfiguredFeatures.createRandomPatchFeatureConfig
                 (Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUE_MUSHROOM))));
         ConfiguredFeatures.register(context, PATCH_BITTER_BUSH, Feature.RANDOM_PATCH,

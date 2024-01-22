@@ -7,6 +7,7 @@ import net.minecraft.registry.RegistryKeys;
 import net.nathan.mcexpanded.datagen.*;
 import net.nathan.mcexpanded.world.ModConfiguredFeatures;
 import net.nathan.mcexpanded.world.ModPlacedFeatures;
+import net.nathan.mcexpanded.world.biome.ModBiomes;
 
 public class MCExpandedDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -26,5 +27,6 @@ public class MCExpandedDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
 		registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.BIOME, ModBiomes::bootstrap);
 	}
 }

@@ -20,6 +20,12 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> WISTERIA_PLACED_KEY = registerKey("wisteria_placed");
     public static final RegistryKey<PlacedFeature> FROST_PINE_PLACED_KEY = registerKey("frost_pine_placed");
     public static final RegistryKey<PlacedFeature> GARDEN_COSMOS_PLACED_KEY = registerKey("garden_cosmos_placed");
+    public static final RegistryKey<PlacedFeature> ALLIUM_FLOWERS_PLACED = registerKey("allium_flowers_placed");
+    public static final RegistryKey<PlacedFeature> PEONY_FLOWERS_PLACED = registerKey("peony_flowers_placed");
+    public static final RegistryKey<PlacedFeature> LILAC_FLOWERS_PLACED = registerKey("lilac_flowers_placed");
+    public static final RegistryKey<PlacedFeature> CORNFLOWER_FLOWERS_PLACED = registerKey("cornflower_flowers_placed");
+    public static final RegistryKey<PlacedFeature> BLUE_ORCHID_FLOWERS_PLACED = registerKey("blue_orchid_flowers_placed");
+    public static final RegistryKey<PlacedFeature> PINK_TULIP_FLOWERS_PLACED = registerKey("pink_tulip_flowers_placed");
     public static final RegistryKey<PlacedFeature> PATCH_BITTER_PLACED_KEY = registerKey("bitter_berry_placed");
     public static final RegistryKey<PlacedFeature> BLUE_MUSHROOM_PLACED_KEY = registerKey("blue_mushroom_placed");
     public static final RegistryKey<PlacedFeature> COBALT_ORE_PLACED_KEY = registerKey("cobalt_ore_placed");
@@ -36,13 +42,26 @@ public class ModPlacedFeatures {
                         PlacedFeatures.createCountExtraModifier(1, 0.2f, 2), ModBlocks.YELLOW_MAPLE_SAPLING));
         register(context, WISTERIA_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.WISTERIA_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(1, 0.2f, 2), ModBlocks.WISTERIA_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(8, 0.2f, 2), ModBlocks.WISTERIA_SAPLING));
         register(context, FROST_PINE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.FROST_PINE_KEY),
                 VegetationPlacedFeatures.treeModifiersWithWouldSurvive(
-                        PlacedFeatures.createCountExtraModifier(1, 0.2f, 2), ModBlocks.FROST_PINE_SAPLING));
+                        PlacedFeatures.createCountExtraModifier(10, 0.2f, 2), ModBlocks.FROST_PINE_SAPLING));
 
         register(context, GARDEN_COSMOS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GARDEN_COSMOS_KEY),
                 RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+        register(context, PINK_TULIP_FLOWERS_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PINK_TULIP_FLOWERS),
+                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+        register(context, PEONY_FLOWERS_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PEONY_FLOWERS),
+                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+        register(context, LILAC_FLOWERS_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.LILAC_FLOWERS),
+                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+        register(context, ALLIUM_FLOWERS_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ALLIUM_FLOWERS),
+                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+        register(context, CORNFLOWER_FLOWERS_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.CORNFLOWER_FLOWERS),
+                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+        register(context, BLUE_ORCHID_FLOWERS_PLACED, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.BLUE_ORCHID_FLOWERS),
+                RarityFilterPlacementModifier.of(4), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
+
         register(context, PATCH_BITTER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_BITTER_BUSH),
                 new PlacementModifier[]{RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
                         PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of()});
