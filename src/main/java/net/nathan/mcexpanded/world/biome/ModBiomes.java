@@ -43,8 +43,6 @@ public class ModBiomes {
 
     public static Biome wisteriaForest(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.GHOST, 30, 3, 5));
-
 
         DefaultBiomeFeatures.addFarmAnimals(spawnBuilder);
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
@@ -78,11 +76,7 @@ public class ModBiomes {
     }
 
     public static Biome frostPineForest(Registerable<Biome> context) {
-        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.GHOST, 10, 3, 5));
-        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.FOX, 50, 3, 5));
-
-
+        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();;
 
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
         DefaultBiomeFeatures.addSnowyMobs(spawnBuilder);
@@ -115,7 +109,6 @@ public class ModBiomes {
     }
     public static Biome snowyCaves(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.GHOST, 30, 3, 5));
         spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.STRAY, 100, 3, 5));
 
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
@@ -130,6 +123,7 @@ public class ModBiomes {
 
         DefaultBiomeFeatures.addDefaultMushrooms(biomeBuilder);
         DefaultBiomeFeatures.addTaigaGrass(biomeBuilder);
+        ModBiomeFeatures.addSnowyCavesVegetation(biomeBuilder);
 
         return new Biome.Builder()
                 .precipitation(true)

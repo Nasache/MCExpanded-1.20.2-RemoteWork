@@ -8,10 +8,7 @@ import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.predicate.StatePredicate;
 import net.nathan.mcexpanded.block.ModBlocks;
-import net.nathan.mcexpanded.block.custom.BitterBerryBush;
-import net.nathan.mcexpanded.block.custom.LeekCropBlock;
-import net.nathan.mcexpanded.block.custom.MoonCropBlock;
-import net.nathan.mcexpanded.block.custom.SunCropBlock;
+import net.nathan.mcexpanded.block.custom.*;
 import net.nathan.mcexpanded.item.ModItems;
 
 public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
@@ -125,5 +122,9 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         LootCondition.Builder builder5 = BlockStatePropertyLootCondition.builder(ModBlocks.BITTER_BERRY_BUSH)
                 .properties(StatePredicate.Builder.create().exactMatch(BitterBerryBush.AGE, 3));
         this.addDrop(ModBlocks.BITTER_BERRY_BUSH, this.cropDrops(ModBlocks.BITTER_BERRY_BUSH, ModItems.BITTER_BERRIES, Items.AIR, builder5));
+
+        LootCondition.Builder builder6 = BlockStatePropertyLootCondition.builder(ModBlocks.FROST_BERRY_BUSH)
+                .properties(StatePredicate.Builder.create().exactMatch(FrostBerryBush.AGE, 3));
+        this.addDrop(ModBlocks.FROST_BERRY_BUSH, this.cropDrops(ModBlocks.FROST_BERRY_BUSH, ModItems.FROST_BERRIES, Items.AIR, builder6));
     }
 }

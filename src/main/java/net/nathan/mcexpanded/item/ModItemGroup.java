@@ -105,6 +105,7 @@ public class ModItemGroup {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_food_and_drinks_group"))
                     .icon(() -> new ItemStack(ModItems.BITTER_BERRIES)).entries((displayContext, entries) -> {
                         entries.add(ModItems.BITTER_BERRIES);
+                        entries.add(ModItems.FROST_BERRIES);
                         entries.add(ModItems.LEEK_SEEDS);
                         entries.add(ModItems.LEEK);
                         entries.add(ModItems.ROASTED_LEEK);

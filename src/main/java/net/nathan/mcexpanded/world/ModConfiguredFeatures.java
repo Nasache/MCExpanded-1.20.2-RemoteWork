@@ -27,6 +27,7 @@ import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
 import net.minecraft.world.gen.stateprovider.BlockStateProvider;
 import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 import net.nathan.mcexpanded.block.custom.BitterBerryBush;
+import net.nathan.mcexpanded.block.custom.FrostBerryBush;
 import net.nathan.mcexpanded.world.tree.custom.MapleFoliagePlacer;
 
 import java.util.List;
@@ -39,6 +40,7 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> GARDEN_COSMOS_KEY = registerKey("garden_cosmos");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_BLUE_MUSHROOM = registerKey("blue_mushroom");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_BITTER_BUSH = registerKey("bitter_bush");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_FROST_BUSH = registerKey("frost_bush");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ALLIUM_FLOWERS = registerKey("allium_flowers");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PEONY_FLOWERS = registerKey("peony_flowers");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LILAC_FLOWERS = registerKey("lilac_flowers");
@@ -111,6 +113,10 @@ public class ModConfiguredFeatures {
                 ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
                         (BlockStateProvider.of((BlockState)ModBlocks.BITTER_BERRY_BUSH.getDefaultState()
                                 .with(BitterBerryBush.AGE, 3))), List.of(Blocks.GRASS_BLOCK)));
+        ConfiguredFeatures.register(context, PATCH_FROST_BUSH, Feature.RANDOM_PATCH,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
+                        (BlockStateProvider.of((BlockState)ModBlocks.FROST_BERRY_BUSH.getDefaultState()
+                                .with(FrostBerryBush.AGE, 3))), List.of(Blocks.SNOW_BLOCK, Blocks.STONE, Blocks.DEEPSLATE, Blocks.DIRT)));
 
 
         register(context, MALACHITE_GEODE_KEY, Feature.GEODE, new GeodeFeatureConfig(new GeodeLayerConfig(

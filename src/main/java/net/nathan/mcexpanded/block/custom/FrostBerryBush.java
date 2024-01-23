@@ -33,20 +33,20 @@ import net.minecraft.world.event.GameEvent;
 import net.minecraft.world.event.GameEvent.Emitter;
 import net.nathan.mcexpanded.item.ModItems;
 
-public class BitterBerryBush extends PlantBlock implements Fertilizable {
+public class FrostBerryBush extends PlantBlock implements Fertilizable {
     private static final float field_31260 = 0.003F;
     public static final int MAX_AGE = 3;
     public static final IntProperty AGE;
     private static final VoxelShape SMALL_SHAPE;
     private static final VoxelShape LARGE_SHAPE;
 
-    public BitterBerryBush(AbstractBlock.Settings settings) {
+    public FrostBerryBush(Settings settings) {
         super(settings);
         this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(AGE, 0));
     }
 
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
-        return new ItemStack(ModItems.BITTER_BERRIES);
+        return new ItemStack(ModItems.FROST_BERRIES);
     }
 
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
@@ -57,13 +57,19 @@ public class BitterBerryBush extends PlantBlock implements Fertilizable {
         }
     }
 
+    @Override
+    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+        return floor.isOf(Blocks.SNOW_BLOCK) || floor.isOf(Blocks.PACKED_ICE) || floor.isOf(Blocks.BLUE_ICE);
+    }
+
+
     public boolean hasRandomTicks(BlockState state) {
         return (Integer)state.get(AGE) < 3;
     }
 
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
         int i = (Integer)state.get(AGE);
-        if (i < 3 && random.nextInt(5) == 0 && world.getBaseLightLevel(pos.up(), 0) >= 9) {
+        if (i < 3 && random.nextInt(5) == 0) {
             BlockState blockState = (BlockState)state.with(AGE, i + 1);
             world.setBlockState(pos, blockState, 2);
             world.emitGameEvent(GameEvent.BLOCK_CHANGE, pos, Emitter.of(blockState));
@@ -84,7 +90,7 @@ public class BitterBerryBush extends PlantBlock implements Fertilizable {
             return ActionResult.PASS;
         } else if (i > 1) {
             int j = 1 + world.random.nextInt(2);
-            dropStack(world, pos, new ItemStack(ModItems.BITTER_BERRIES, j + (bl ? 1 : 0)));
+            dropStack(world, pos, new ItemStack(ModItems.FROST_BERRIES, j + (bl ? 1 : 0)));
             world.playSound((PlayerEntity)null, pos, SoundEvents.BLOCK_SWEET_BERRY_BUSH_PICK_BERRIES, SoundCategory.BLOCKS, 1.0F, 0.8F + world.random.nextFloat() * 0.4F);
             BlockState blockState = (BlockState)state.with(AGE, 1);
             world.setBlockState(pos, blockState, 2);

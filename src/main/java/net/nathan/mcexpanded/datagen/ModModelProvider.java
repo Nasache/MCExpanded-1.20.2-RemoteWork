@@ -116,6 +116,10 @@ public class ModModelProvider extends FabricModelProvider {
             return BlockStateVariant.create().put(VariantSettings.MODEL, blockStateModelGenerator.createSubModel(ModBlocks.BITTER_BERRY_BUSH, "_stage" + stage, Models.CROSS, TextureMap::cross));
         })));
 
+        blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.FROST_BERRY_BUSH).coordinate(BlockStateVariantMap.create(Properties.AGE_3).register((stage) -> {
+            return BlockStateVariant.create().put(VariantSettings.MODEL, blockStateModelGenerator.createSubModel(ModBlocks.FROST_BERRY_BUSH, "_stage" + stage, Models.CROSS, TextureMap::cross));
+        })));
+
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GARDEN_COSMOS, ModBlocks.POTTED_GARDEN_COSMOS, BlockStateModelGenerator.TintType.NOT_TINTED);
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_MUSHROOM, ModBlocks.POTTED_BLUE_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
 
@@ -131,6 +135,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.COBALT_INGOT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_COBALT, Models.GENERATED);
         itemModelGenerator.register(ModItems.BITTER_BERRIES, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FROST_BERRIES, Models.GENERATED);
         itemModelGenerator.register(ModItems.LEEK, Models.GENERATED);
         itemModelGenerator.register(ModItems.ROASTED_LEEK, Models.GENERATED);
         itemModelGenerator.register(ModItems.MOON_FRUIT, Models.GENERATED);

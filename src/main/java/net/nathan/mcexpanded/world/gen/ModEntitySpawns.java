@@ -3,6 +3,7 @@ package net.nathan.mcexpanded.world.gen;
 import net.fabricmc.fabric.api.biome.v1.BiomeModification;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.entity.SpawnRestriction;
 import net.minecraft.entity.mob.HostileEntity;
@@ -10,6 +11,7 @@ import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.world.Heightmap;
 import net.minecraft.world.biome.BiomeKeys;
 import net.nathan.mcexpanded.entity.ModEntities;
+import net.nathan.mcexpanded.world.biome.ModBiomes;
 
 public class ModEntitySpawns {
     public static void addSpawns() {

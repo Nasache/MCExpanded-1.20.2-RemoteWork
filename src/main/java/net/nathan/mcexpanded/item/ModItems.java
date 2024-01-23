@@ -94,6 +94,10 @@ public class ModItems {
     public static final Item BITTER_BERRIES = registerItem("bitter_berries",
             new AliasedBlockItem(ModBlocks.BITTER_BERRY_BUSH, new FabricItemSettings().food(ModFoodComponents.BITTER_BERRIES)));
 
+    public static final Item FROST_BERRIES = registerItem("frost_berries",
+            new AliasedBlockItem(ModBlocks.FROST_BERRY_BUSH, new FabricItemSettings().food(ModFoodComponents.FROST_BERRIES)));
+
+
     public static final Item LEEK_SEEDS = registerItem("leek_seeds",
             new AliasedBlockItem(ModBlocks.LEEK_CROP, new FabricItemSettings()));
     public static final Item ROASTED_LEEK = registerItem("roasted_leek",

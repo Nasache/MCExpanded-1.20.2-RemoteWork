@@ -1,6 +1,9 @@
 package net.nathan.mcexpanded.world;
 
+import net.minecraft.util.math.Direction;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.YOffset;
+import net.minecraft.world.gen.blockpredicate.BlockPredicate;
 import net.minecraft.world.gen.placementmodifier.*;
 import net.nathan.mcexpanded.MCExpanded;
 import net.nathan.mcexpanded.block.ModBlocks;
@@ -27,6 +30,7 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> BLUE_ORCHID_FLOWERS_PLACED = registerKey("blue_orchid_flowers_placed");
     public static final RegistryKey<PlacedFeature> PINK_TULIP_FLOWERS_PLACED = registerKey("pink_tulip_flowers_placed");
     public static final RegistryKey<PlacedFeature> PATCH_BITTER_PLACED_KEY = registerKey("bitter_berry_placed");
+    public static final RegistryKey<PlacedFeature> PATCH_FROST_PLACED_KEY = registerKey("frost_berry_placed");
     public static final RegistryKey<PlacedFeature> BLUE_MUSHROOM_PLACED_KEY = registerKey("blue_mushroom_placed");
     public static final RegistryKey<PlacedFeature> COBALT_ORE_PLACED_KEY = registerKey("cobalt_ore_placed");
     public static final RegistryKey<PlacedFeature> MALACHITE_GEODE_PLACED_KEY = registerKey("malachite_geode_placed");
@@ -65,6 +69,13 @@ public class ModPlacedFeatures {
         register(context, PATCH_BITTER_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_BITTER_BUSH),
                 new PlacementModifier[]{RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
                         PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of()});
+        register(context, PATCH_FROST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_FROST_BUSH),
+                new PlacementModifier[]{CountPlacementModifier.of(125), SquarePlacementModifier.of(),
+                        PlacedFeatures.BOTTOM_TO_TOP_RANGE, EnvironmentScanPlacementModifier.of(Direction.DOWN,
+                        BlockPredicate.solid(), BlockPredicate.IS_AIR, 12),
+                        RandomOffsetPlacementModifier.vertically(ConstantIntProvider.create(1)), BiomePlacementModifier.of()});
+
+
         register(context, BLUE_MUSHROOM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_BLUE_MUSHROOM),
                 RarityFilterPlacementModifier.of(8), SquarePlacementModifier.of(), PlacedFeatures.MOTION_BLOCKING_HEIGHTMAP, BiomePlacementModifier.of());
 
