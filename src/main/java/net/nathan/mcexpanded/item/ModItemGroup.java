@@ -83,6 +83,7 @@ public class ModItemGroup {
                         entries.add(ModItems.MEDIUM_MALACHITE_BUD);
                         entries.add(ModItems.LARGE_MALACHITE_BUD);
                         entries.add(ModItems.MALACHITE_CLUSTER);
+                        entries.add(ModBlocks.FROST_BUD_BLOCK);
 
                     }).build());
     public static final ItemGroup EX_INGREDIENTS_GROUP = Registry.register(Registries.ITEM_GROUP,

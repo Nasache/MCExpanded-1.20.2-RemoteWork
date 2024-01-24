@@ -192,6 +192,8 @@ public class ModBlocks {
     public static final Block FROST_BERRY_BUSH = registerBlockWithoutBlockItem("frost_berry_bush",
             new FrostBerryBush(AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).ticksRandomly().noCollision().sounds(BlockSoundGroup.SWEET_BERRY_BUSH).pistonBehavior(PistonBehavior.DESTROY)));
 
+    public static final Block FROST_BUD_BLOCK = registerBlock("frost_bud",
+            new FrostBudBlock(FabricBlockSettings.copyOf(Blocks.SPORE_BLOSSOM)));
 
     public static final Block MOON_CROP = registerBlockWithoutBlockItem("moon_crop",
             new MoonCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));

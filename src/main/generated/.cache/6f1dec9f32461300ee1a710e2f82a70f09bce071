@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-23T13:15:30.0578695	MCExpanded/Block Loot Tables
+// 1.20.2	2024-01-23T21:46:39.04947	MCExpanded/Block Loot Tables
 50da60b505d40f6b7f984ff183b4a1d9cba8973a data\mcexpanded\loot_tables\blocks\potted_blue_mushroom.json
 75a5206a9a711a72f94cb01b2a3732e15b1424b0 data\mcexpanded\loot_tables\blocks\stripped_frost_pine_log.json
 7e82fc498401fbe1c2ad501c048f241271158c3e data\mcexpanded\loot_tables\blocks\maple_planks.json
@@ -17,6 +17,7 @@ bb2dbdbfcb27cddc1c91d4b03286c9d84a4f518e data\mcexpanded\loot_tables\blocks\coba
 63e9ab47ca53679a93e9da100e6c38d968f23bf8 data\mcexpanded\loot_tables\blocks\blue_mushroom.json
 1e9433f82360b1589895b497ea8746a8af067865 data\mcexpanded\loot_tables\blocks\red_maple_sapling.json
 79b76a24f7f03aaeca694690e05cb72bd214b26d data\mcexpanded\loot_tables\blocks\maple_log.json
+1a837d8cb1cc141fd2eca59860cf75d4527c764e data\mcexpanded\loot_tables\blocks\frost_bud.json
 6460f3fbeb563747649d56b15c657918ee9ac812 data\mcexpanded\loot_tables\blocks\cobalt_ore.json
 25553366a9391766a0a5dbf00d2c97aeead3da79 data\mcexpanded\loot_tables\blocks\maple_fence.json
 5ff8d25bf51d08709fb63c2b5b053fb5ca7c6334 data\mcexpanded\loot_tables\blocks\stripped_wisteria_log.json

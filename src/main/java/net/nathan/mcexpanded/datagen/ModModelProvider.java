@@ -20,6 +20,8 @@ import net.nathan.mcexpanded.item.ModItems;
 import java.util.IdentityHashMap;
 import java.util.Optional;
 
+import static net.minecraft.data.client.BlockStateModelGenerator.TintType.NOT_TINTED;
+
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
@@ -52,8 +54,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_MAPLE_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YELLOW_MAPLE_LEAVES);
 
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_MAPLE_SAPLING, ModBlocks.POTTED_RED_MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.YELLOW_MAPLE_SAPLING, ModBlocks.POTTED_YELLOW_MAPLE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.RED_MAPLE_SAPLING, ModBlocks.POTTED_RED_MAPLE_SAPLING, NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.YELLOW_MAPLE_SAPLING, ModBlocks.POTTED_YELLOW_MAPLE_SAPLING, NOT_TINTED);
 
         BlockStateModelGenerator.BlockTexturePool wysteriaPlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.WISTERIA_PLANKS);
         wysteriaPlanksTexturePool.stairs(ModBlocks.WISTERIA_STAIRS);
@@ -74,7 +76,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WISTERIA_LEAVES);
 
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.WISTERIA_SAPLING, ModBlocks.POTTED_WISTERIA_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.WISTERIA_SAPLING, ModBlocks.POTTED_WISTERIA_SAPLING, NOT_TINTED);
 
         BlockStateModelGenerator.BlockTexturePool frostPinePlanksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.FROST_PINE_PLANKS);
         frostPinePlanksTexturePool.stairs(ModBlocks.FROST_PINE_STAIRS);
@@ -95,7 +97,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FROST_PINE_LEAVES);
 
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.FROST_PINE_SAPLING, ModBlocks.POTTED_FROST_PINE_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.FROST_PINE_SAPLING, ModBlocks.POTTED_FROST_PINE_SAPLING, NOT_TINTED);
 
 
         BlockStateModelGenerator.BlockTexturePool snowBricksTexturePool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.SNOW_BRICKS);
@@ -120,13 +122,14 @@ public class ModModelProvider extends FabricModelProvider {
             return BlockStateVariant.create().put(VariantSettings.MODEL, blockStateModelGenerator.createSubModel(ModBlocks.FROST_BERRY_BUSH, "_stage" + stage, Models.CROSS, TextureMap::cross));
         })));
 
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GARDEN_COSMOS, ModBlocks.POTTED_GARDEN_COSMOS, BlockStateModelGenerator.TintType.NOT_TINTED);
-        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_MUSHROOM, ModBlocks.POTTED_BLUE_MUSHROOM, BlockStateModelGenerator.TintType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.GARDEN_COSMOS, ModBlocks.POTTED_GARDEN_COSMOS, NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_MUSHROOM, ModBlocks.POTTED_BLUE_MUSHROOM, NOT_TINTED);
 
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MALACHITE_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_MALACHITE);
 
+        blockStateModelGenerator.registerTintableCross(ModBlocks.FROST_BUD_BLOCK, NOT_TINTED);
 
     }
 

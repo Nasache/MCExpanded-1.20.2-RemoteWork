@@ -112,7 +112,7 @@ public class ModBiomes {
         spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.STRAY, 100, 3, 5));
 
         DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
-        DefaultBiomeFeatures.addSnowyMobs(spawnBuilder);
+        ModBiomeFeatures.addSnowyCavesMobs(spawnBuilder);
 
         GenerationSettings.LookupBackedBuilder biomeBuilder =
                 new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),

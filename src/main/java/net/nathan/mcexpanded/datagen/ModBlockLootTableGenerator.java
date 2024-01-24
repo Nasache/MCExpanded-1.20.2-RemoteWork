@@ -126,5 +126,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         LootCondition.Builder builder6 = BlockStatePropertyLootCondition.builder(ModBlocks.FROST_BERRY_BUSH)
                 .properties(StatePredicate.Builder.create().exactMatch(FrostBerryBush.AGE, 3));
         this.addDrop(ModBlocks.FROST_BERRY_BUSH, this.cropDrops(ModBlocks.FROST_BERRY_BUSH, ModItems.FROST_BERRIES, Items.AIR, builder6));
+
+        addDrop(ModBlocks.FROST_BUD_BLOCK);
     }
 }
