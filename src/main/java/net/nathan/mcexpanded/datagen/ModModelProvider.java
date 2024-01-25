@@ -130,6 +130,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_MALACHITE);
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.FROST_BUD_BLOCK, NOT_TINTED);
+        blockStateModelGenerator.registerTintableCross(ModBlocks.SNOW_GRASS, NOT_TINTED);
 
     }
 

@@ -195,6 +195,9 @@ public class ModBlocks {
     public static final Block FROST_BUD_BLOCK = registerBlock("frost_bud",
             new FrostBudBlock(FabricBlockSettings.copyOf(Blocks.SPORE_BLOSSOM)));
 
+    public static final Block SNOW_GRASS = registerBlock("snow_grass",
+            new SnowGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS)));
+
     public static final Block MOON_CROP = registerBlockWithoutBlockItem("moon_crop",
             new MoonCropBlock(FabricBlockSettings.copyOf(Blocks.WHEAT)));
     public static final Block SUN_CROP = registerBlockWithoutBlockItem("sun_crop",

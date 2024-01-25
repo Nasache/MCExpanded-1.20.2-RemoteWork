@@ -3,9 +3,16 @@ package net.nathan.mcexpanded.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Blocks;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
+import net.minecraft.loot.condition.RandomChanceLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LeafEntry;
+import net.minecraft.loot.entry.LootPoolEntry;
+import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.predicate.StatePredicate;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.block.custom.*;
@@ -128,5 +135,6 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.FROST_BERRY_BUSH, this.cropDrops(ModBlocks.FROST_BERRY_BUSH, ModItems.FROST_BERRIES, Items.AIR, builder6));
 
         addDrop(ModBlocks.FROST_BUD_BLOCK);
+        addDrop(ModBlocks.SNOW_GRASS, grassDrops(ModBlocks.SNOW_GRASS));
     }
 }

@@ -34,24 +34,29 @@ public class FrostBudBlock extends Block {
     }
 
     public void randomDisplayTick(BlockState state, World world, BlockPos pos, Random random) {
-        int i = pos.getX();
-        int j = pos.getY();
-        int k = pos.getZ();
-        double d = (double)i + 0.7;
-        double e = (double)j + 0.7;
-        double f = (double)k + 0.7;
-        world.addParticle(ParticleTypes.SNOWFLAKE, d, e, f, 0.0, -0.1, 0.0);
         BlockPos.Mutable mutable = new BlockPos.Mutable();
 
-        for(int l = 0; l < 14; ++l) {
-            mutable.set(i + MathHelper.nextInt(random, -2, 2), j - random.nextInt(2), k + MathHelper.nextInt(random, -2, 2));
+        // Further increase the range for particle spread
+        for (int l = 0; l < 40; ++l) {
+            // Significantly widen the area around the block where particles can appear
+            mutable.set(pos.getX() + MathHelper.nextDouble(random, -10.0, 10.0),
+                    pos.getY() + MathHelper.nextDouble(random, -5.0, 5.0),
+                    pos.getZ() + MathHelper.nextDouble(random, -10.0, 10.0));
+
+            // Check to ensure particles are not generated inside other full blocks
             BlockState blockState = world.getBlockState(mutable);
             if (!blockState.isFullCube(world, mutable)) {
-                world.addParticle(ParticleTypes.SNOWFLAKE, (double)mutable.getX() + random.nextDouble(), (double)mutable.getY() + random.nextDouble(), (double)mutable.getZ() + random.nextDouble(), 0.0, -0.1, 0.0);
+                // Create a snowflake particle with slight variations in the y-velocity
+                world.addParticle(ParticleTypes.SNOWFLAKE,
+                        (double) mutable.getX() + random.nextDouble(),
+                        (double) mutable.getY() + random.nextDouble(),
+                        (double) mutable.getZ() + random.nextDouble(),
+                        0.0, MathHelper.nextDouble(random, -0.05, -0.15), 0.0);
             }
         }
-
     }
+
+
 
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext context) {
         return SHAPE;

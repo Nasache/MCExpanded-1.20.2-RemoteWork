@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-24T21:46:56.9753587	MCExpanded/Recipes
+// 1.20.2	2024-01-24T23:50:52.8961196	MCExpanded/Recipes
 9d7ad407473b82defecec30e4d26a41310621cd8 data\mcexpanded\recipes\maple_trapdoor.json
 13e174c8f36af16d299d641ecb479234ee3e2aaf data\mcexpanded\recipes\chiseled_snow_bricks_from_snow_bricks_stonecutting.json
 039cc2b557e63e2f6ff940926c0f8260df00e912 data\mcexpanded\advancements\recipes\redstone\frost_pine_fence_gate.json
@@ -10,8 +10,8 @@ bdcb746034d1fd4ebb16a56a209e25ad8021ce77 data\mcexpanded\recipes\frost_pine_pres
 acf11d1bcd2e6e4f995a2053add58f7f38f4a4cf data\mcexpanded\recipes\cobalt_block.json
 6137a2e4c830e23944397f39df587729997cff1c data\mcexpanded\advancements\recipes\decorations\frost_pine_sign.json
 e1920037830c7c80d8735b9a2e7665e00ced0db8 data\mcexpanded\recipes\frost_pine_door.json
-f3326e8f7c61bd7e263d95b9af330f8b8ddd584a data\mcexpanded\recipes\cobalt_ingot_from_blasting_raw_cobalt.json
 128e2aae7da16e04d9826d3ede569750afe4a3b3 data\mcexpanded\recipes\cobalt_ingot_from_blasting_cobalt_ore.json
+f3326e8f7c61bd7e263d95b9af330f8b8ddd584a data\mcexpanded\recipes\cobalt_ingot_from_blasting_raw_cobalt.json
 6e15c21222b38ad5e7a3a10e6911817cbb53666e data\mcexpanded\advancements\recipes\misc\slime_helmet.json
 65c40053b6df5c1ab8136cff9ed8bb2d15528319 data\mcexpanded\recipes\snow_brick_slab_from_snow_bricks_stonecutting.json
 ffebcefbea74eb98ac09a84bbbd7477cc70b3967 data\mcexpanded\recipes\wisteria_button.json

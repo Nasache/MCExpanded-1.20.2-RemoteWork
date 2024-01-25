@@ -9,6 +9,7 @@ import net.minecraft.world.gen.feature.DefaultBiomeFeatures;
 import net.minecraft.world.gen.feature.MiscPlacedFeatures;
 import net.minecraft.world.gen.feature.PlacedFeatures;
 import net.minecraft.world.gen.feature.VegetationPlacedFeatures;
+import net.nathan.mcexpanded.entity.ModEntities;
 import net.nathan.mcexpanded.world.ModPlacedFeatures;
 
 public class ModBiomeFeatures {
@@ -31,6 +32,11 @@ public class ModBiomeFeatures {
         builder.feature(GenerationStep.Feature.UNDERGROUND_DECORATION, ModPlacedFeatures.FROST_PINE_PLACED_KEY);
     }
     public static void addSnowyCavesMobs(SpawnSettings.Builder builder) {
-        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.STRAY, 10000, 1, 5));
+        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.STRAY, 100, 1, 4));
+        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.ZOMBIE, 70, 1, 4));
+        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.CREEPER, 50, 1, 3));
+        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.SPIDER, 50, 1, 4));
+        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.ENDERMAN, 25, 1, 3));
+        builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.GHOST, 60, 1, 4));
     }
 }

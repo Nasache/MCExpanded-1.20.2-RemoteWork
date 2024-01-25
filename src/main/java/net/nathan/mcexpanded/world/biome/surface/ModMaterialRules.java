@@ -15,7 +15,7 @@ public class ModMaterialRules {
     public static MaterialRules.MaterialRule makeRules() {
         MaterialRules.MaterialCondition isSnowyCaves = MaterialRules.biome(ModBiomes.SNOWY_CAVES);
         MaterialRules.MaterialRule snowyCavesSurface = MaterialRules.sequence(
-                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR_WITH_SURFACE_DEPTH, SNOW),
+                MaterialRules.condition(MaterialRules.STONE_DEPTH_FLOOR, SNOW),
                 MaterialRules.condition(MaterialRules.STONE_DEPTH_CEILING_WITH_SURFACE_DEPTH, ICE)
         );
 
