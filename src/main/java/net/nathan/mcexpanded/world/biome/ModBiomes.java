@@ -16,7 +16,7 @@ import net.nathan.mcexpanded.entity.ModEntities;
 
 public class ModBiomes {
     public static final RegistryKey<Biome> WISTERIA_FOREST = register("wisteria_forest");
-    public static final RegistryKey<Biome> FROST_PINE_FOREST = register("frost_pine_forest");
+
     public static final RegistryKey<Biome> SNOWY_CAVES = register("snowy_caves");
     public static final RegistryKey<Biome> SANDY_CAVES = register("sandy_caves");
 
@@ -26,7 +26,6 @@ public class ModBiomes {
 
     public static void bootstrap(Registerable<Biome> context) {
         context.register(WISTERIA_FOREST, wisteriaForest(context));
-        context.register(FROST_PINE_FOREST, frostPineForest(context));
         context.register(SNOWY_CAVES, snowyCaves(context));
         context.register(SANDY_CAVES, sandyCaves(context));
 
@@ -75,43 +74,10 @@ public class ModBiomes {
                 .build();
     }
 
-    public static Biome frostPineForest(Registerable<Biome> context) {
-        SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();;
-
-        DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
-        DefaultBiomeFeatures.addSnowyMobs(spawnBuilder);
-
-        GenerationSettings.LookupBackedBuilder biomeBuilder =
-                new GenerationSettings.LookupBackedBuilder(context.getRegistryLookup(RegistryKeys.PLACED_FEATURE),
-                        context.getRegistryLookup(RegistryKeys.CONFIGURED_CARVER));
-
-        globalOverworldGeneration(biomeBuilder);
-
-
-        DefaultBiomeFeatures.addDefaultOres(biomeBuilder);
-        DefaultBiomeFeatures.addTaigaGrass(biomeBuilder);
-
-
-        return new Biome.Builder()
-                .precipitation(true)
-                .downfall(0.4f)
-                .temperature(-0.7f)
-                .generationSettings(biomeBuilder.build())
-                .spawnSettings(spawnBuilder.build())
-                .effects((new BiomeEffects.Builder())
-                        .grassColor(0x599e91)
-                        .fogColor(0x75b7c9)
-                        .waterColor(0x31699e)
-                        .waterFogColor(0x75b7c9)
-                        .foliageColor(0x469983)
-                        .skyColor(0x98d5e3).build())
-                .build();
-    }
     public static Biome snowyCaves(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
-        spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.STRAY, 100, 3, 5));
 
-        DefaultBiomeFeatures.addBatsAndMonsters(spawnBuilder);
+        DefaultBiomeFeatures.addSnowyMobs(spawnBuilder);
         ModBiomeFeatures.addSnowyCavesMobs(spawnBuilder);
 
         GenerationSettings.LookupBackedBuilder biomeBuilder =
@@ -128,7 +94,8 @@ public class ModBiomes {
         return new Biome.Builder()
                 .precipitation(true)
                 .downfall(0.4f)
-                .temperature(-0.7f)
+                .temperature(-5f)
+                .temperatureModifier(Biome.TemperatureModifier.FROZEN)
                 .generationSettings(biomeBuilder.build())
                 .spawnSettings(spawnBuilder.build())
                 .effects((new BiomeEffects.Builder())

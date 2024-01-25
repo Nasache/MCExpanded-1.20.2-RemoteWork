@@ -23,7 +23,10 @@ public class FrostBudBlock extends Block {
     }
 
     public boolean canPlaceAt(BlockState state, WorldView world, BlockPos pos) {
-        return Block.sideCoversSmallSquare(world, pos.up(), Direction.DOWN) && !world.isWater(pos);
+        BlockState blockAbove = world.getBlockState(pos.up());
+        boolean isLeaves = blockAbove.getBlock() instanceof LeavesBlock;
+        boolean canCoverSmallSquare = Block.sideCoversSmallSquare(world, pos.up(), Direction.DOWN);
+        return (isLeaves || canCoverSmallSquare) && !world.isWater(pos);
     }
 
     public BlockState getStateForNeighborUpdate(BlockState state, Direction direction, BlockState neighborState, WorldAccess world, BlockPos pos, BlockPos neighborPos) {

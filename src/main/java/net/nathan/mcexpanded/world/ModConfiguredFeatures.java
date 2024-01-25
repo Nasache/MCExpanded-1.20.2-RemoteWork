@@ -88,7 +88,7 @@ public class ModConfiguredFeatures {
                 new StraightTrunkPlacer(5, 2, 3),
                 BlockStateProvider.of(ModBlocks.FROST_PINE_LEAVES),
                 new SpruceFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(0), ConstantIntProvider.create(5)),
-                new TwoLayersFeatureSize(1, 0, 2)).build());
+                new TwoLayersFeatureSize(1, 0, 2)).dirtProvider(BlockStateProvider.of(Blocks.SNOW_BLOCK)).build());
 
         register(context, COBALT_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldCobaltOres, 8));
 

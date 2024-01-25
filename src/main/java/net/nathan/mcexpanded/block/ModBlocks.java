@@ -163,7 +163,7 @@ public class ModBlocks {
             new ModWallHangingSignBlock(FabricBlockSettings.copyOf(Blocks.SPRUCE_WALL_HANGING_SIGN), ModWoodTypes.FROST_PINE));
 
     public static final Block FROST_PINE_SAPLING = registerBlock("frost_pine_sapling",
-            new SaplingBlock(new FrostPineSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.SPRUCE_SAPLING).mapColor(MapColor.LIGHT_BLUE)));
+            new FrostPineSapling(new FrostPineSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.SPRUCE_SAPLING).mapColor(MapColor.LIGHT_BLUE)));
     public static final Block POTTED_FROST_PINE_SAPLING = registerBlockWithoutBlockItem("potted_frost_pine_sapling",
             new FlowerPotBlock(FROST_PINE_SAPLING, FabricBlockSettings.copyOf(Blocks.POTTED_SPRUCE_SAPLING).mapColor(MapColor.LIGHT_BLUE)));
 

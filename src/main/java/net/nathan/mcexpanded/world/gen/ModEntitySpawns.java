@@ -28,5 +28,6 @@ public class ModEntitySpawns {
 
         SpawnRestriction.register(ModEntities.GHOST, SpawnRestriction.Location.NO_RESTRICTIONS,
                 Heightmap.Type.MOTION_BLOCKING_NO_LEAVES, HostileEntity::canSpawnInDark);
+
     }
 }
