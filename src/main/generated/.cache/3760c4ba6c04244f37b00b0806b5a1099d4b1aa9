@@ -1,7 +1,7 @@
-// 1.20.2	2024-01-24T23:50:52.8971181	MCExpanded/Tags for minecraft:block
+// 1.20.2	2024-01-26T16:35:52.4347375	MCExpanded/Tags for minecraft:block
 d5bb8ba422f11ddc2d9cd951fc241420baefcc11 data\minecraft\tags\blocks\needs_iron_tool.json
-8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
 ed9c57aefff0ae2b4cf14a283de7c486e901db43 data\mcexpanded\tags\blocks\wisteria_logs.json
+8a23702b05296c8af5014d6aa6e9265ded85c7d9 data\fabric\tags\blocks\needs_tool_level_4.json
 a92e0cf7f9a98bc3e2ad2205fa9c4ea7f4997ab1 data\minecraft\tags\blocks\mineable\axe.json
 c5c470e69608f52de2721f35793281114988c64c data\minecraft\tags\blocks\leaves.json
 af1721405c30593a1205ee02ecb0fa9b90c0f645 data\minecraft\tags\blocks\wooden_fences.json

@@ -111,6 +111,8 @@ public class ModItemGroup {
                         entries.add(ModItems.LEEK_SEEDS);
                         entries.add(ModItems.LEEK);
                         entries.add(ModItems.ROASTED_LEEK);
+                        entries.add(ModItems.SNOW_LEAF_SEEDS);
+                        entries.add(ModItems.SNOW_LEAF);
                         entries.add(ModItems.MOON_FRUIT);
                         entries.add(ModItems.MOON_SEEDS);
                         entries.add(ModItems.SUN_FRUIT);

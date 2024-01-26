@@ -2,10 +2,12 @@ package net.nathan.mcexpanded.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
+import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
 import net.minecraft.loot.condition.LootCondition;
 import net.minecraft.loot.condition.RandomChanceLootCondition;
@@ -21,6 +23,10 @@ import net.nathan.mcexpanded.item.ModItems;
 public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
     public ModBlockLootTableGenerator(FabricDataOutput dataOutput) {
         super(dataOutput);
+    }
+
+    public LootTable.Builder snowGrassDrops(Block dropWithShears) {
+        return dropsWithShears(dropWithShears, (LootPoolEntry.Builder)this.applyExplosionDecay(dropWithShears, ((LeafEntry.Builder)ItemEntry.builder(ModItems.SNOW_LEAF_SEEDS).conditionally(RandomChanceLootCondition.builder(0.125F))).apply(ApplyBonusLootFunction.uniformBonusCount(Enchantments.FORTUNE, 2))));
     }
 
     @Override
@@ -135,6 +141,10 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         this.addDrop(ModBlocks.FROST_BERRY_BUSH, this.cropDrops(ModBlocks.FROST_BERRY_BUSH, ModItems.FROST_BERRIES, Items.AIR, builder6));
 
         addDrop(ModBlocks.FROST_BUD_BLOCK);
-        addDrop(ModBlocks.SNOW_GRASS, grassDrops(ModBlocks.SNOW_GRASS));
+        addDrop(ModBlocks.SNOW_GRASS, snowGrassDrops(ModBlocks.SNOW_GRASS));
+
+        LootCondition.Builder builder7 = BlockStatePropertyLootCondition.builder(ModBlocks.SNOW_LEAF_CROP)
+                .properties(StatePredicate.Builder.create().exactMatch(SnowLeafCropBlock.AGE, 3));
+        this.addDrop(ModBlocks.SNOW_LEAF_CROP, this.cropDrops(ModBlocks.SNOW_LEAF_CROP, ModItems.SNOW_LEAF, ModItems.SNOW_LEAF_SEEDS, builder7));
     }
 }

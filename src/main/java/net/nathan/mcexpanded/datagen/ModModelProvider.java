@@ -11,10 +11,7 @@ import net.minecraft.item.Items;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.nathan.mcexpanded.block.ModBlocks;
-import net.nathan.mcexpanded.block.custom.LeekCropBlock;
-import net.nathan.mcexpanded.block.custom.MalachiteClusterBlock;
-import net.nathan.mcexpanded.block.custom.MoonCropBlock;
-import net.nathan.mcexpanded.block.custom.SunCropBlock;
+import net.nathan.mcexpanded.block.custom.*;
 import net.nathan.mcexpanded.item.ModItems;
 
 import java.util.IdentityHashMap;
@@ -111,6 +108,7 @@ public class ModModelProvider extends FabricModelProvider {
 
 
         blockStateModelGenerator.registerCrop(ModBlocks.LEEK_CROP, LeekCropBlock.AGE, 0, 1, 2, 3);
+        blockStateModelGenerator.registerCrop(ModBlocks.SNOW_LEAF_CROP, SnowLeafCropBlock.AGE, 0, 1, 2, 3);
         blockStateModelGenerator.registerCrop(ModBlocks.MOON_CROP, MoonCropBlock.AGE, 0, 1, 2, 3, 4, 5);
         blockStateModelGenerator.registerCrop(ModBlocks.SUN_CROP, SunCropBlock.AGE, 0, 1, 2, 3, 4, 5);
 
@@ -142,6 +140,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FROST_BERRIES, Models.GENERATED);
         itemModelGenerator.register(ModItems.LEEK, Models.GENERATED);
         itemModelGenerator.register(ModItems.ROASTED_LEEK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SNOW_LEAF, Models.GENERATED);
         itemModelGenerator.register(ModItems.MOON_FRUIT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUN_FRUIT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_SQUID, Models.GENERATED);
