@@ -141,6 +141,11 @@ public class ModItems {
     public static final Item MALACHITE_CLUSTER = registerItem("malachite_cluster",
             new AliasedBlockItem(ModBlocks.MALACHITE_CLUSTER, new FabricItemSettings()));
 
+    public static final Item ICE_CRYSTAL = registerItem("ice_crystal",
+            new AliasedBlockItem(ModBlocks.ICE_CRYSTAL, new FabricItemSettings()));
+
+
+
     public static final Item DUCK_SPAWN_EGG = registerItem("duck_spawn_egg",
             new SpawnEggItem(ModEntities.DUCK, 0x593012, 0x095213, new FabricItemSettings()));
     public static final Item GHOST_SPAWN_EGG = registerItem("ghost_spawn_egg",

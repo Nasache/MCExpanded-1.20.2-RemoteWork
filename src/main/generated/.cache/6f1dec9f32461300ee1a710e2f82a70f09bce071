@@ -1,4 +1,4 @@
-// 1.20.2	2024-01-26T16:35:52.4250381	MCExpanded/Block Loot Tables
+// 1.20.2	2024-01-26T21:21:31.4187201	MCExpanded/Block Loot Tables
 50da60b505d40f6b7f984ff183b4a1d9cba8973a data\mcexpanded\loot_tables\blocks\potted_blue_mushroom.json
 75a5206a9a711a72f94cb01b2a3732e15b1424b0 data\mcexpanded\loot_tables\blocks\stripped_frost_pine_log.json
 7e82fc498401fbe1c2ad501c048f241271158c3e data\mcexpanded\loot_tables\blocks\maple_planks.json
@@ -38,6 +38,7 @@ d026d5dd09dc3d689772241e3fb555f76c14ae2b data\mcexpanded\loot_tables\blocks\mala
 1c389902a4900d838131c5666e4059b19599ff46 data\mcexpanded\loot_tables\blocks\stripped_wisteria_wood.json
 4dd8c6f17a1e3ef162c329f7a32a9da85bb28e94 data\mcexpanded\loot_tables\blocks\wisteria_sapling.json
 5c75e227c12e8e11eb185da915778da28a274689 data\mcexpanded\loot_tables\blocks\wisteria_planks.json
+e36ee0b6e79a8e7d4c12a37a5a51c19f6425bf18 data\mcexpanded\loot_tables\blocks\ice_crystal.json
 89ee19a11537b27c664088c1e0c8b8aa00122766 data\mcexpanded\loot_tables\blocks\snow_brick_slab.json
 bea5cb7752fba37900348b116e6398ba954b4b74 data\mcexpanded\loot_tables\blocks\deepslate_cobalt_ore.json
 4704f5838cdf4ab233e63cae4a9a580d628fbf81 data\mcexpanded\loot_tables\blocks\maple_button.json
@@ -60,8 +61,8 @@ c1fc81cfa78a31e9c43fb4be5bfc18631714d54e data\mcexpanded\loot_tables\blocks\pott
 9fa786d9a018240f3d0e4b979415ef79da1812f7 data\mcexpanded\loot_tables\blocks\wisteria_sign.json
 86451b9aa6a352c2d6477bf18289f279a8ddc4d3 data\mcexpanded\loot_tables\blocks\wisteria_fence_gate.json
 7ea43a161f2310f6e0e6e459e04cb09362987300 data\mcexpanded\loot_tables\blocks\frost_pine_stairs.json
-6ec5486ab76576dce6e31337b0757062c1ad8299 data\mcexpanded\loot_tables\blocks\frost_pine_fence_gate.json
 19622ecc14ab60818f274c73f5c367c91cab215c data\mcexpanded\loot_tables\blocks\wisteria_leaves.json
+6ec5486ab76576dce6e31337b0757062c1ad8299 data\mcexpanded\loot_tables\blocks\frost_pine_fence_gate.json
 bd1d2604bb411973154b51c3599831dd2ce28ef0 data\mcexpanded\loot_tables\blocks\frost_pine_sign.json
 bd1d2604bb411973154b51c3599831dd2ce28ef0 data\minecraft\loot_tables\blocks\spruce_sign.json
 25b8fa30298f28e355c3acca8095db89f3ad7a9f data\mcexpanded\loot_tables\blocks\stripped_maple_wood.json

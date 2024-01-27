@@ -2,10 +2,14 @@ package net.nathan.mcexpanded.block.custom;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.CropBlock;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.world.BlockView;
 import net.nathan.mcexpanded.item.ModItems;
 
 public class SnowLeafCropBlock extends CropBlock {
@@ -14,6 +18,10 @@ public class SnowLeafCropBlock extends CropBlock {
 
     public SnowLeafCropBlock(Settings settings) {
         super(settings);
+    }
+
+    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+        return floor.isOf(Blocks.SNOW_BLOCK);
     }
 
 

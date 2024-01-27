@@ -42,6 +42,8 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_BITTER_BUSH = registerKey("bitter_bush");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_FROST_BUSH = registerKey("frost_bush");
     public static final RegistryKey<ConfiguredFeature<?, ?>> FROST_BUD = registerKey("frost_bud");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> ICE_CRYSTAL = registerKey("ice_crystal");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> PATCH_SNOW_GRASS = registerKey("patch_snow_grass");
     public static final RegistryKey<ConfiguredFeature<?, ?>> ALLIUM_FLOWERS = registerKey("allium_flowers");
     public static final RegistryKey<ConfiguredFeature<?, ?>> PEONY_FLOWERS = registerKey("peony_flowers");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LILAC_FLOWERS = registerKey("lilac_flowers");
@@ -120,6 +122,11 @@ public class ModConfiguredFeatures {
                                 .with(FrostBerryBush.AGE, 3))), List.of(Blocks.SNOW_BLOCK, Blocks.STONE, Blocks.DEEPSLATE, Blocks.DIRT)));
         ConfiguredFeatures.register(context, FROST_BUD, Feature.SIMPLE_BLOCK,
                 new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.FROST_BUD_BLOCK)));
+        ConfiguredFeatures.register(context, ICE_CRYSTAL, Feature.SIMPLE_BLOCK,
+                new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.ICE_CRYSTAL)));
+        ConfiguredFeatures.register(context, PATCH_SNOW_GRASS, Feature.RANDOM_PATCH,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
+                        (BlockStateProvider.of((BlockState)ModBlocks.SNOW_GRASS.getDefaultState())), List.of(Blocks.SNOW_BLOCK)));
 
         register(context, MALACHITE_GEODE_KEY, Feature.GEODE, new GeodeFeatureConfig(new GeodeLayerConfig(
                 BlockStateProvider.of(Blocks.AIR),

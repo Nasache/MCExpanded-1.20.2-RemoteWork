@@ -95,7 +95,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.FROST_PINE_WALL_HANGING_SIGN);
 
 
-
         getOrCreateTagBuilder(BlockTags.PLANKS)
                 .add(ModBlocks.MAPLE_PLANKS,
                         ModBlocks.WISTERIA_PLANKS,

@@ -85,6 +85,7 @@ public class ModItemGroup {
                         entries.add(ModItems.MALACHITE_CLUSTER);
                         entries.add(ModBlocks.FROST_BUD_BLOCK);
                         entries.add(ModBlocks.SNOW_GRASS);
+                        entries.add(ModItems.ICE_CRYSTAL);
 
                     }).build());
     public static final ItemGroup EX_INGREDIENTS_GROUP = Registry.register(Registries.ITEM_GROUP,

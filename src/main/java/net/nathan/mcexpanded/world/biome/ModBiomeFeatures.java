@@ -30,6 +30,8 @@ public class ModBiomeFeatures {
         builder.feature(GenerationStep.Feature.UNDERGROUND_DECORATION, ModPlacedFeatures.PATCH_FROST_PLACED_KEY);
         builder.feature(GenerationStep.Feature.UNDERGROUND_DECORATION, ModPlacedFeatures.FROST_BUD_PLACED_KEY);
         builder.feature(GenerationStep.Feature.UNDERGROUND_DECORATION, ModPlacedFeatures.FROST_PINE_PLACED_KEY);
+        builder.feature(GenerationStep.Feature.UNDERGROUND_DECORATION, ModPlacedFeatures.ICE_CRYSTAL_PLACED_KEY);
+        builder.feature(GenerationStep.Feature.UNDERGROUND_DECORATION, ModPlacedFeatures.PATCH_SNOW_GRASS_PLACED_KEY);
     }
     public static void addSnowyCavesMobs(SpawnSettings.Builder builder) {
         builder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(EntityType.STRAY, 100, 1, 4));

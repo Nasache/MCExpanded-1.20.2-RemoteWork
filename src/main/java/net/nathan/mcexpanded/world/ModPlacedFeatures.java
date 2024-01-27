@@ -32,6 +32,8 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> PATCH_BITTER_PLACED_KEY = registerKey("bitter_berry_placed");
     public static final RegistryKey<PlacedFeature> PATCH_FROST_PLACED_KEY = registerKey("frost_berry_placed");
     public static final RegistryKey<PlacedFeature> FROST_BUD_PLACED_KEY = registerKey("frost_bud_placed");
+    public static final RegistryKey<PlacedFeature> ICE_CRYSTAL_PLACED_KEY = registerKey("ice_crystal_placed");
+    public static final RegistryKey<PlacedFeature> PATCH_SNOW_GRASS_PLACED_KEY = registerKey("snow_grass_placed");
     public static final RegistryKey<PlacedFeature> BLUE_MUSHROOM_PLACED_KEY = registerKey("blue_mushroom_placed");
     public static final RegistryKey<PlacedFeature> COBALT_ORE_PLACED_KEY = registerKey("cobalt_ore_placed");
     public static final RegistryKey<PlacedFeature> MALACHITE_GEODE_PLACED_KEY = registerKey("malachite_geode_placed");
@@ -73,15 +75,27 @@ public class ModPlacedFeatures {
                 new PlacementModifier[]{RarityFilterPlacementModifier.of(32), SquarePlacementModifier.of(),
                         PlacedFeatures.WORLD_SURFACE_WG_HEIGHTMAP, BiomePlacementModifier.of()});
         register(context, PATCH_FROST_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_FROST_BUSH),
-                new PlacementModifier[]{CountPlacementModifier.of(75), SquarePlacementModifier.of(),
+                new PlacementModifier[]{CountPlacementModifier.of(60), SquarePlacementModifier.of(),
                         PlacedFeatures.BOTTOM_TO_TOP_RANGE, EnvironmentScanPlacementModifier.of(Direction.DOWN,
                         BlockPredicate.solid(), BlockPredicate.IS_AIR, 12),
                         RandomOffsetPlacementModifier.vertically(ConstantIntProvider.create(1)), BiomePlacementModifier.of()});
         register(context, FROST_BUD_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.FROST_BUD),
-                new PlacementModifier[]{CountPlacementModifier.of(80), SquarePlacementModifier.of(),
+                new PlacementModifier[]{CountPlacementModifier.of(100), SquarePlacementModifier.of(),
                         PlacedFeatures.BOTTOM_TO_TOP_RANGE, EnvironmentScanPlacementModifier.of(Direction.UP,
                         BlockPredicate.solid(), BlockPredicate.IS_AIR, 12),
                         RandomOffsetPlacementModifier.vertically(ConstantIntProvider.create(-1)), BiomePlacementModifier.of()});
+        register(context, ICE_CRYSTAL_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.ICE_CRYSTAL),
+                new PlacementModifier[]{CountPlacementModifier.of(150), SquarePlacementModifier.of(),
+                        PlacedFeatures.BOTTOM_TO_TOP_RANGE, EnvironmentScanPlacementModifier.of(Direction.DOWN,
+                        BlockPredicate.solid(), BlockPredicate.IS_AIR, 12),
+                        RandomOffsetPlacementModifier.vertically(ConstantIntProvider.create(1)), BiomePlacementModifier.of()});
+        register(context, PATCH_SNOW_GRASS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_SNOW_GRASS),
+                new PlacementModifier[]{CountPlacementModifier.of(255), SquarePlacementModifier.of(),
+                        PlacedFeatures.BOTTOM_TO_TOP_RANGE, EnvironmentScanPlacementModifier.of(Direction.DOWN,
+                        BlockPredicate.solid(), BlockPredicate.IS_AIR, 12),
+                        RandomOffsetPlacementModifier.vertically(ConstantIntProvider.create(1)), BiomePlacementModifier.of()});
+
+
 
 
         register(context, BLUE_MUSHROOM_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.PATCH_BLUE_MUSHROOM),

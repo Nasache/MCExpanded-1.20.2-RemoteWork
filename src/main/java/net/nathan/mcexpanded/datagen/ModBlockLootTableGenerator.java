@@ -142,6 +142,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
 
         addDrop(ModBlocks.FROST_BUD_BLOCK);
         addDrop(ModBlocks.SNOW_GRASS, snowGrassDrops(ModBlocks.SNOW_GRASS));
+        addDrop(ModBlocks.ICE_CRYSTAL, drops(ModItems.ICE_CRYSTAL));
 
         LootCondition.Builder builder7 = BlockStatePropertyLootCondition.builder(ModBlocks.SNOW_LEAF_CROP)
                 .properties(StatePredicate.Builder.create().exactMatch(SnowLeafCropBlock.AGE, 3));

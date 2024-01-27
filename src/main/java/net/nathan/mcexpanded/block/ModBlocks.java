@@ -195,6 +195,10 @@ public class ModBlocks {
     public static final Block FROST_BUD_BLOCK = registerBlock("frost_bud",
             new FrostBudBlock(FabricBlockSettings.copyOf(Blocks.SPORE_BLOSSOM)));
 
+    public static final Block ICE_CRYSTAL = registerBlockWithoutBlockItem("ice_crystal",
+            new AmethystClusterBlock(7, 3, FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER).sounds(BlockSoundGroup.GLASS).luminance((state) -> {
+                return 8; })));
+
     public static final Block SNOW_GRASS = registerBlock("snow_grass",
             new SnowGrassBlock(FabricBlockSettings.copyOf(Blocks.GRASS)));
 

@@ -130,6 +130,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTintableCross(ModBlocks.FROST_BUD_BLOCK, NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.SNOW_GRASS, NOT_TINTED);
 
+        blockStateModelGenerator.registerAmethyst(ModBlocks.ICE_CRYSTAL);
+
     }
 
     @Override
@@ -155,6 +157,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MEDIUM_MALACHITE_BUD, Models.GENERATED);
         itemModelGenerator.register(ModItems.LARGE_MALACHITE_BUD, Models.GENERATED);
         itemModelGenerator.register(ModItems.MALACHITE_CLUSTER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ICE_CRYSTAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_SHROOM_SONG, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SLIME_TOTEM, Models.GENERATED);
