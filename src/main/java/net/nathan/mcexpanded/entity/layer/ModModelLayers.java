@@ -10,4 +10,7 @@ public class ModModelLayers {
 
     public static final EntityModelLayer GHOST =
             new EntityModelLayer(new Identifier(MCExpanded.MOD_ID, "ghost"), "main");
+
+    public static final EntityModelLayer JUNGLE_SKELETON =
+            new EntityModelLayer(new Identifier(MCExpanded.MOD_ID, "jungle_skeleton"), "main");
 }

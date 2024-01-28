@@ -7,6 +7,7 @@ import net.nathan.mcexpanded.block.entity.ModBlockEntities;
 import net.nathan.mcexpanded.effect.ModEffects;
 import net.nathan.mcexpanded.enchantment.ModEnchantments;
 import net.nathan.mcexpanded.entity.ModEntities;
+import net.nathan.mcexpanded.entity.ModSkeletonEntity;
 import net.nathan.mcexpanded.item.ModItemGroup;
 import net.nathan.mcexpanded.item.ModItems;
 import net.nathan.mcexpanded.item.custom.ModItemEffect;
@@ -45,5 +46,7 @@ public class MCExpanded implements ModInitializer {
 		ModEventListeners.registerEventListeners();
 
 		ModEntities.registerModEntities();
+
+
 	}
 }

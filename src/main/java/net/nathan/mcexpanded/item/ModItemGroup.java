@@ -159,6 +159,7 @@ public class ModItemGroup {
                         entries.add(ModItems.LIGHTNING_BOTTLE);
                         entries.add(ModItems.DUCK_SPAWN_EGG);
                         entries.add(ModItems.GHOST_SPAWN_EGG);
+                        entries.add(ModItems.JUNGLE_SKELETON_SPAWN_EGG);
                         entries.add(ModItems.SLIME_TOTEM);
                         entries.add(ModItems.HONEY_TOTEM);
                         entries.add(ModItems.PRISMARINE_TOTEM);

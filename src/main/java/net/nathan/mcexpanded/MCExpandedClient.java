@@ -12,10 +12,7 @@ import net.minecraft.client.render.block.entity.SignBlockEntityRenderer;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.block.entity.ModBlockEntities;
 import net.nathan.mcexpanded.entity.ModEntities;
-import net.nathan.mcexpanded.entity.client.DuckModel;
-import net.nathan.mcexpanded.entity.client.DuckRenderer;
-import net.nathan.mcexpanded.entity.client.GhostModel;
-import net.nathan.mcexpanded.entity.client.GhostRenderer;
+import net.nathan.mcexpanded.entity.client.*;
 import net.nathan.mcexpanded.entity.layer.ModModelLayers;
 import net.nathan.mcexpanded.util.ModWoodTypes;
 
@@ -61,5 +58,8 @@ public class MCExpandedClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.GHOST, GhostModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.GHOST, GhostRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.JUNGLE_SKELETON, JungleSkeletonModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.JUNGLE_SKELETON, JungleSkeletonRenderer::new);
     }
 }
