@@ -1,20 +1,15 @@
 package net.nathan.mcexpanded.entity.client;
 
-import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.render.entity.feature.ElytraFeatureRenderer;
-import net.minecraft.client.render.entity.feature.HeadFeatureRenderer;
 import net.minecraft.client.render.entity.feature.HeldItemFeatureRenderer;
-import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.util.Identifier;
 import net.nathan.mcexpanded.MCExpanded;
-import net.nathan.mcexpanded.entity.custom.JungleSkeletonEntity;
-import net.nathan.mcexpanded.entity.client.JungleSkeletonModel;
+import net.nathan.mcexpanded.entity.custom.VagrantEntity;
 import net.nathan.mcexpanded.entity.layer.ModModelLayers;
 
-public class JungleSkeletonRenderer extends MobEntityRenderer<JungleSkeletonEntity, JungleSkeletonModel<JungleSkeletonEntity>> {
+public class JungleSkeletonRenderer extends MobEntityRenderer<VagrantEntity, JungleSkeletonModel<VagrantEntity>> {
     private static final Identifier TEXTURE = new Identifier(MCExpanded.MOD_ID, "textures/entity/jungle_skeleton.png");
 
     public JungleSkeletonRenderer(EntityRendererFactory.Context context) {
@@ -24,7 +19,7 @@ public class JungleSkeletonRenderer extends MobEntityRenderer<JungleSkeletonEnti
     }
 
     @Override
-    public Identifier getTexture(JungleSkeletonEntity entity) {
+    public Identifier getTexture(VagrantEntity entity) {
         return TEXTURE;
     }
 }
