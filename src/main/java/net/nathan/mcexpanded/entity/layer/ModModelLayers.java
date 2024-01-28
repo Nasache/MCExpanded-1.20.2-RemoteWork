@@ -13,4 +13,7 @@ public class ModModelLayers {
 
     public static final EntityModelLayer JUNGLE_SKELETON =
             new EntityModelLayer(new Identifier(MCExpanded.MOD_ID, "jungle_skeleton"), "main");
+
+    public static final EntityModelLayer WISTERIA_SPIDER =
+            new EntityModelLayer(new Identifier(MCExpanded.MOD_ID, "wisteria_spider"), "main");
 }

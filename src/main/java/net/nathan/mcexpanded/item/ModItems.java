@@ -155,6 +155,8 @@ public class ModItems {
             new SpawnEggItem(ModEntities.GHOST, 0xffffff, 0xffffff, new FabricItemSettings()));
     public static final Item JUNGLE_SKELETON_SPAWN_EGG = registerItem("jungle_skeleton_spawn_egg",
             new SpawnEggItem(ModEntities.JUNGLE_SKELETON, 0x892343, 0x908238, new FabricItemSettings()));
+    public static final Item WISTERIA_SPIDER_SPAWN_EGG = registerItem("wisteria_spider_spawn_egg",
+            new SpawnEggItem(ModEntities.WISTERIA_SPIDER, 0x893423, 0x201849, new FabricItemSettings()));
 
 
     public static final Item LIGHTNING_BOTTLE = registerItem("lightning_bottle",

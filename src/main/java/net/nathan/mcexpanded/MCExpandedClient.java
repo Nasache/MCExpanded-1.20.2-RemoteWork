@@ -61,5 +61,8 @@ public class MCExpandedClient implements ClientModInitializer {
 
         EntityModelLayerRegistry.registerModelLayer(ModModelLayers.JUNGLE_SKELETON, JungleSkeletonModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.JUNGLE_SKELETON, JungleSkeletonRenderer::new);
+
+        EntityModelLayerRegistry.registerModelLayer(ModModelLayers.WISTERIA_SPIDER, WisteriaSpiderModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.WISTERIA_SPIDER, WisteriaSpiderRenderer::new);
     }
 }

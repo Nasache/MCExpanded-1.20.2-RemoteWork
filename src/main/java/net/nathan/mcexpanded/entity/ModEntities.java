@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 import net.nathan.mcexpanded.entity.custom.DuckEntity;
 import net.nathan.mcexpanded.entity.custom.GhostEntity;
 import net.nathan.mcexpanded.entity.custom.JungleSkeletonEntity;
+import net.nathan.mcexpanded.entity.custom.WisteriaSpiderEntity;
 
 public class ModEntities {
 
@@ -28,6 +29,11 @@ public class ModEntities {
     public static final EntityType<JungleSkeletonEntity> JUNGLE_SKELETON = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(MCExpanded.MOD_ID, "jungle_skeleton"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, JungleSkeletonEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5f, 1.5f)).build());
+
+    public static final EntityType<WisteriaSpiderEntity> WISTERIA_SPIDER = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(MCExpanded.MOD_ID, "wisteria_spider"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, WisteriaSpiderEntity::new)
                     .dimensions(EntityDimensions.fixed(0.5f, 1.5f)).build());
 
     public static void registerModEntities() {
