@@ -100,7 +100,10 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.SNOW_LEAF_CROP, new FabricItemSettings()));
     public static final Item SNOW_LEAF = registerItem("snow_leaf",
             new Item(new FabricItemSettings().food(ModFoodComponents.SNOW_LEAF)));
-
+    public static final Item DUCK_FEATHER = registerItem("duck_feather",
+            new Item(new FabricItemSettings()));
+    public static final Item RAW_DUCK = registerItem("raw_duck",
+            new Item(new FabricItemSettings().food(ModFoodComponents.RAW_DUCK)));
     public static final Item LEEK_SEEDS = registerItem("leek_seeds",
             new AliasedBlockItem(ModBlocks.LEEK_CROP, new FabricItemSettings()));
     public static final Item ROASTED_LEEK = registerItem("roasted_leek",

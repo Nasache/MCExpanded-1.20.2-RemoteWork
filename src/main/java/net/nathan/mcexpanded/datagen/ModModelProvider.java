@@ -158,6 +158,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.LARGE_MALACHITE_BUD, Models.GENERATED);
         itemModelGenerator.register(ModItems.MALACHITE_CLUSTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.ICE_CRYSTAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.RAW_DUCK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DUCK_FEATHER, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_SHROOM_SONG, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SLIME_TOTEM, Models.GENERATED);

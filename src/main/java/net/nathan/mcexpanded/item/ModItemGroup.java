@@ -98,6 +98,7 @@ public class ModItemGroup {
                         entries.add(ModBlocks.BLUE_MUSHROOM);
                         entries.add(ModItems.CONGEALED_SLIME);
                         entries.add(ModItems.MALACHITE_SHARD);
+                        entries.add(ModItems.DUCK_FEATHER);
                         entries.add(ModItems.MUSIC_DISC_SHROOM_SONG);
 
 
@@ -107,6 +108,7 @@ public class ModItemGroup {
             new Identifier(MCExpanded.MOD_ID, "ex_food_and_drinks_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_food_and_drinks_group"))
                     .icon(() -> new ItemStack(ModItems.BITTER_BERRIES)).entries((displayContext, entries) -> {
+                        entries.add(ModItems.RAW_DUCK);
                         entries.add(ModItems.BITTER_BERRIES);
                         entries.add(ModItems.FROST_BERRIES);
                         entries.add(ModItems.LEEK_SEEDS);
