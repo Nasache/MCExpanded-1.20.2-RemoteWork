@@ -150,13 +150,13 @@ public class ModItems {
 
 
     public static final Item DUCK_SPAWN_EGG = registerItem("duck_spawn_egg",
-            new SpawnEggItem(ModEntities.DUCK, 0x593012, 0x095213, new FabricItemSettings()));
+            new SpawnEggItem(ModEntities.DUCK, 0xff2f2717, 0xff1b4921, new FabricItemSettings()));
     public static final Item GHOST_SPAWN_EGG = registerItem("ghost_spawn_egg",
-            new SpawnEggItem(ModEntities.GHOST, 0xffffff, 0xffffff, new FabricItemSettings()));
+            new SpawnEggItem(ModEntities.GHOST, 0xffffff, 0xff8fc9c9, new FabricItemSettings()));
     public static final Item VAGRANT_SPAWN_EGG = registerItem("vagrant_spawn_egg",
-            new SpawnEggItem(ModEntities.VAGRANT, 0x892343, 0x908238, new FabricItemSettings()));
+            new SpawnEggItem(ModEntities.VAGRANT, 0xff1c7108, 0xffcfdec4, new FabricItemSettings()));
     public static final Item WISTERIA_SPIDER_SPAWN_EGG = registerItem("wisteria_spider_spawn_egg",
-            new SpawnEggItem(ModEntities.WISTERIA_SPIDER, 0x893423, 0x201849, new FabricItemSettings()));
+            new SpawnEggItem(ModEntities.WISTERIA_SPIDER, 0xffbe7cdf, 0xff762496, new FabricItemSettings()));
 
 
     public static final Item LIGHTNING_BOTTLE = registerItem("lightning_bottle",

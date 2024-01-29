@@ -167,8 +167,15 @@
   "effect.mcexpanded.leather": "Leather",
   "effect.mcexpanded.chain": "Chain",
 
-  "itemgroup.ex_ingredients_group": "MCEX Ingredients",
   "itemgroup.ex_building_blocks_group": "MCEX Building Blocks",
-  "itemgroup.ex_food_and_drinks_group": "MCEX Food and Drinks",
-  "itemgroup.ex_tools": "MCEX Tools"
+  "itemgroup.ex_colored_blocks_group": "MCEX Colored Blocks",
+  "itemgroup.ex_natural_blocks_group": "MCEX Natural Blocks",
+  "itemgroup.ex_functional_blocks_group": "MCEX Functional Blocks",
+  "itemgroup.ex_redstone_blocks_group": "MCEX Redstone Blocks",
+  "itemgroup.ex_tools_and_utilities_group": "MCEX Tools & Utilities",
+  "itemgroup.ex_combat_group": "MCEX Combat",
+  "itemgroup.ex_food_and_drinks_group": "MCEX Food & Drinks",
+  "itemgroup.ex_ingredients_group": "MCEX Ingredients",
+  "itemgroup.ex_spawn_eggs_group": "MCEX Spawn Eggs"
+
 }
