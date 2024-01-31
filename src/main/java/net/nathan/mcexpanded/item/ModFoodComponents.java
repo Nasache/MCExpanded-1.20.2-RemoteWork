@@ -11,7 +11,9 @@ public class ModFoodComponents {
     public static final FoodComponent LUNAR_BURST = new FoodComponent.Builder().hunger(6).saturationModifier(6.5f).build();
     public static final FoodComponent SOLAR_FLARE = new FoodComponent.Builder().hunger(6).saturationModifier(6.5f).build();
     public static final FoodComponent RAW_SQUID = new FoodComponent.Builder().hunger(2).saturationModifier(1f).build();
+    public static final FoodComponent COOKED_SQUID = new FoodComponent.Builder().hunger(6).saturationModifier(1.7f).build();
     public static final FoodComponent RAW_GLOW_SQUID = new FoodComponent.Builder().hunger(2).saturationModifier(1f).build();
+    public static final FoodComponent COOKED_GLOW_SQUID = new FoodComponent.Builder().hunger(6).saturationModifier(1.7f).build();
     public static final FoodComponent RAW_DUCK = new FoodComponent.Builder().hunger(4).saturationModifier(0.6f).build();
     public static final FoodComponent COOKED_DUCK = new FoodComponent.Builder().hunger(8).saturationModifier(1.2f).build();
     public static final FoodComponent HONEY_GLAZED_STEAK = new FoodComponent.Builder().hunger(12).saturationModifier(14f).build();

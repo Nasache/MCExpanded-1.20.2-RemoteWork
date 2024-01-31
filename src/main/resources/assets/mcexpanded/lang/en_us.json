@@ -138,7 +138,9 @@
   "item.mcexpanded.sun_fruit": "Solar Flare",
   "item.mcexpanded.sun_seeds": "Solar Seeds",
   "item.mcexpanded.raw_squid": "Raw Squid",
+  "item.mcexpanded.cooked_squid": "Cooked Squid",
   "item.mcexpanded.raw_glow_squid": "Raw Glow Squid",
+  "item.mcexpanded.cooked_glow_squid": "Cooked Glow Squid",
   "item.mcexpanded.honey_glazed_steak": "Honey Glazed Steak",
   "item.mcexpanded.marshmallow": "Marshmallow",
   "item.mcexpanded.burnt_marshmallow": "Burnt Marshmallow",
@@ -167,15 +169,15 @@
   "effect.mcexpanded.leather": "Leather",
   "effect.mcexpanded.chain": "Chain",
 
-  "itemgroup.ex_building_blocks_group": "MCEX Building Blocks",
-  "itemgroup.ex_colored_blocks_group": "MCEX Colored Blocks",
-  "itemgroup.ex_natural_blocks_group": "MCEX Natural Blocks",
-  "itemgroup.ex_functional_blocks_group": "MCEX Functional Blocks",
-  "itemgroup.ex_redstone_blocks_group": "MCEX Redstone Blocks",
-  "itemgroup.ex_tools_and_utilities_group": "MCEX Tools & Utilities",
-  "itemgroup.ex_combat_group": "MCEX Combat",
-  "itemgroup.ex_food_and_drinks_group": "MCEX Food & Drinks",
-  "itemgroup.ex_ingredients_group": "MCEX Ingredients",
-  "itemgroup.ex_spawn_eggs_group": "MCEX Spawn Eggs"
+  "itemgroup.group_a": "MCEX Building Blocks",
+  "itemgroup.group_b": "MCEX Colored Blocks",
+  "itemgroup.group_c": "MCEX Natural Blocks",
+  "itemgroup.group_d": "MCEX Functional Blocks",
+  "itemgroup.group_e": "MCEX Redstone Blocks",
+  "itemgroup.group_f": "MCEX Tools & Utilities",
+  "itemgroup.group_g": "MCEX Combat",
+  "itemgroup.group_h": "MCEX Food & Drinks",
+  "itemgroup.group_i": "MCEX Ingredients",
+  "itemgroup.group_j": "MCEX Spawn Eggs"
 
 }

@@ -15,9 +15,9 @@ import net.nathan.mcexpanded.block.ModBlocks;
 
 public class ModItemGroup {
 
-    public static final ItemGroup EX_BUILDING_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MCExpanded.MOD_ID, "ex_building_blocks_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_building_blocks_group"))
+    public static final ItemGroup GROUP_A = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MCExpanded.MOD_ID, "group_a"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.group_a"))
                     .icon(() -> new ItemStack(ModBlocks.MAPLE_LOG)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.MAPLE_LOG);
                         entries.add(ModBlocks.MAPLE_WOOD);
@@ -75,16 +75,16 @@ public class ModItemGroup {
                         entries.add(ModBlocks.DEEPSLATE_COBALT_ORE);
 
                     }).build());
-    public static final ItemGroup EX_COLORED_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MCExpanded.MOD_ID, "ex_colored_blocks_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_colored_blocks_group"))
+    public static final ItemGroup GROUP_B = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MCExpanded.MOD_ID, "group_b"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.group_b"))
                     .icon(() -> new ItemStack(Blocks.ORANGE_WOOL)).entries((displayContext, entries) -> {
                         entries.add(Blocks.ORANGE_WOOL);
 
                     }).build());
-    public static final ItemGroup EX_NATURAL_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MCExpanded.MOD_ID, "ex_natural_blocks_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_natural_blocks_group"))
+    public static final ItemGroup GROUP_C = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MCExpanded.MOD_ID, "group_c"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.group_c"))
                     .icon(() -> new ItemStack(ModBlocks.RED_MAPLE_LEAVES)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.RED_MAPLE_LEAVES);
                         entries.add(ModBlocks.YELLOW_MAPLE_LEAVES);
@@ -111,9 +111,9 @@ public class ModItemGroup {
                         entries.add(ModItems.ICE_CRYSTAL);
 
                     }).build());
-    public static final ItemGroup EX_FUNCTIONAL_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MCExpanded.MOD_ID, "ex_functional_blocks_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_functional_blocks_group"))
+    public static final ItemGroup GROUP_D = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MCExpanded.MOD_ID, "group_d"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.group_d"))
                     .icon(() -> new ItemStack(ModItems.MAPLE_SIGN)).entries((displayContext, entries) -> {
                         entries.add(ModItems.MAPLE_SIGN);
                         entries.add(ModItems.MAPLE_HANGING_SIGN);
@@ -124,18 +124,18 @@ public class ModItemGroup {
 
                     }).build());
 
-    public static final ItemGroup EX_REDSTONE_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MCExpanded.MOD_ID, "ex_redstone_blocks_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_redstone_blocks_group"))
+    public static final ItemGroup GROUP_E = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MCExpanded.MOD_ID, "group_e"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.group_e"))
                     .icon(() -> new ItemStack(Items.REDSTONE)).entries((displayContext, entries) -> {
                         entries.add(ModBlocks.MAPLE_BUTTON);
                         entries.add(ModBlocks.WISTERIA_BUTTON);
                         entries.add(ModBlocks.FROST_PINE_BUTTON);
 
                     }).build());
-    public static final ItemGroup EX_TOOLS_AND_UTILITIES_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MCExpanded.MOD_ID, "ex_tools_and_utilities_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_tools_and_utilities_group"))
+    public static final ItemGroup GROUP_F = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MCExpanded.MOD_ID, "group_f"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.group_f"))
                     .icon(() -> new ItemStack(ModItems.COBALT_PICKAXE)).entries((displayContext, entries) -> {
                         entries.add(ModItems.COBALT_SHOVEL);
                         entries.add(ModItems.COBALT_PICKAXE);
@@ -145,9 +145,9 @@ public class ModItemGroup {
                         entries.add(ModItems.MUSIC_DISC_SHROOM_SONG);
 
                     }).build());
-    public static final ItemGroup EX_COMBAT_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MCExpanded.MOD_ID, "ex_combat_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_combat_group"))
+    public static final ItemGroup GROUP_G = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MCExpanded.MOD_ID, "group_g"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.group_g"))
                     .icon(() -> new ItemStack(ModItems.COBALT_SWORD)).entries((displayContext, entries) -> {
                         entries.add(ModItems.COBALT_SWORD);
 
@@ -178,9 +178,9 @@ public class ModItemGroup {
                         entries.add(ModItems.PRISMARINE_TOTEM);
 
                     }).build());
-    public static final ItemGroup EX_FOOD_AND_DRINKS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MCExpanded.MOD_ID, "ex_food_and_drinks_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_food_and_drinks_group"))
+    public static final ItemGroup GROUP_H = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MCExpanded.MOD_ID, "group_h"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.group_h"))
                     .icon(() -> new ItemStack(ModItems.LEEK)).entries((displayContext, entries) -> {
                         entries.add(ModItems.MOON_FRUIT);
                         entries.add(ModItems.SUN_FRUIT);
@@ -189,10 +189,13 @@ public class ModItemGroup {
                         entries.add(ModItems.SNOW_LEAF);
 
                         entries.add(ModItems.RAW_SQUID);
+                        entries.add(ModItems.COOKED_SQUID);
 
                         entries.add(ModItems.RAW_GLOW_SQUID);
+                        entries.add(ModItems.COOKED_GLOW_SQUID);
 
                         entries.add(ModItems.RAW_DUCK);
+                        entries.add(ModItems.COOKED_DUCK);
 
                         entries.add(ModItems.HONEY_GLAZED_STEAK);
 
@@ -200,9 +203,9 @@ public class ModItemGroup {
                         entries.add(ModItems.BURNT_MARSHMALLOW);
 
                     }).build());
-    public static final ItemGroup EX_INGREDIENTS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MCExpanded.MOD_ID, "ex_ingredients_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_ingredients_group"))
+    public static final ItemGroup GROUP_I = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MCExpanded.MOD_ID, "group_i"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.group_i"))
                     .icon(() -> new ItemStack(ModItems.COBALT_INGOT)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RAW_COBALT);
                         entries.add(ModItems.COBALT_INGOT);
@@ -212,9 +215,9 @@ public class ModItemGroup {
                         entries.add(ModItems.CONGEALED_SLIME);
 
                     }).build());
-    public static final ItemGroup EX_SPAWN_EGGS_GROUP = Registry.register(Registries.ITEM_GROUP,
-            new Identifier(MCExpanded.MOD_ID, "ex_spawn_eggs_group"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ex_spawn_eggs_group"))
+    public static final ItemGroup GROUP_J = Registry.register(Registries.ITEM_GROUP,
+            new Identifier(MCExpanded.MOD_ID, "group_j"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.group_j"))
                     .icon(() -> new ItemStack(ModItems.DUCK_SPAWN_EGG)).entries((displayContext, entries) -> {
                         entries.add(ModItems.DUCK_SPAWN_EGG);
                         entries.add(ModItems.GHOST_SPAWN_EGG);

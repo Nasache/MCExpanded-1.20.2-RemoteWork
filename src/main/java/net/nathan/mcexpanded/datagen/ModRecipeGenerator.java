@@ -28,15 +28,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     }
     @Override
     public void generate(RecipeExporter exporter) {
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.LIGHTNING_BOTTLE)
-                .pattern("GGG")
-                .pattern("GAG")
-                .pattern("GGG")
-                .input('G', Items.GLASS)
-                .input('A', Items.AMETHYST_SHARD)
-                .criterion(hasItem(Items.GLASS), conditionsFromItem(Items.GLASS))
-                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
-                .offerTo(exporter, new Identifier(getRecipeName(ModItems.LIGHTNING_BOTTLE)));
 
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.COBALT_INGOT, RecipeCategory.MISC, ModBlocks.COBALT_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.RAW_COBALT, RecipeCategory.MISC, ModBlocks.RAW_COBALT_BLOCK);
@@ -402,6 +393,18 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(new ItemConvertible[]{ModItems.LEEK}), RecipeCategory.FOOD, ModItems.ROASTED_LEEK, 0.35F, 200).criterion("has_leek", conditionsFromItem(ModItems.LEEK)).offerTo(exporter);
         offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING, 100, ModItems.LEEK, ModItems.ROASTED_LEEK, 0.35f);
         offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, 600, ModItems.LEEK, ModItems.ROASTED_LEEK, 0.35f);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(new ItemConvertible[]{ModItems.RAW_DUCK}), RecipeCategory.FOOD, ModItems.COOKED_DUCK, 0.35F, 200).criterion("has_raw_duck", conditionsFromItem(ModItems.RAW_DUCK)).offerTo(exporter);
+        offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING, 100, ModItems.RAW_DUCK, ModItems.COOKED_DUCK, 0.35f);
+        offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, 600, ModItems.RAW_DUCK, ModItems.COOKED_DUCK, 0.35f);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(new ItemConvertible[]{ModItems.RAW_SQUID}), RecipeCategory.FOOD, ModItems.COOKED_SQUID, 0.35F, 200).criterion("has_raw_squid", conditionsFromItem(ModItems.RAW_SQUID)).offerTo(exporter);
+        offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING, 100, ModItems.RAW_SQUID, ModItems.COOKED_SQUID, 0.35f);
+        offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, 600, ModItems.RAW_SQUID, ModItems.COOKED_SQUID, 0.35f);
+
+        CookingRecipeJsonBuilder.createSmelting(Ingredient.ofItems(new ItemConvertible[]{ModItems.RAW_GLOW_SQUID}), RecipeCategory.FOOD, ModItems.COOKED_GLOW_SQUID, 0.35F, 200).criterion("has_raw_glow_squid", conditionsFromItem(ModItems.RAW_GLOW_SQUID)).offerTo(exporter);
+        offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING, 100, ModItems.RAW_GLOW_SQUID, ModItems.COOKED_GLOW_SQUID, 0.35f);
+        offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, 600, ModItems.RAW_GLOW_SQUID, ModItems.COOKED_GLOW_SQUID, 0.35f);
 
         ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MARSHMALLOW)
                 .input(Items.STICK)

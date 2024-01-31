@@ -104,6 +104,8 @@ public class ModItems {
             new Item(new FabricItemSettings()));
     public static final Item RAW_DUCK = registerItem("raw_duck",
             new Item(new FabricItemSettings().food(ModFoodComponents.RAW_DUCK)));
+    public static final Item COOKED_DUCK = registerItem("cooked_duck",
+            new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_DUCK)));
     public static final Item LEEK_SEEDS = registerItem("leek_seeds",
             new AliasedBlockItem(ModBlocks.LEEK_CROP, new FabricItemSettings()));
     public static final Item ROASTED_LEEK = registerItem("roasted_leek",
@@ -120,8 +122,12 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.SUN_CROP, new FabricItemSettings()));
     public static final Item RAW_SQUID = registerItem("raw_squid",
             new Item(new FabricItemSettings().food(ModFoodComponents.RAW_SQUID)));
+    public static final Item COOKED_SQUID = registerItem("cooked_squid",
+            new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_SQUID)));
     public static final Item RAW_GLOW_SQUID = registerItem("raw_glow_squid",
             new Item(new FabricItemSettings().food(ModFoodComponents.RAW_GLOW_SQUID)));
+    public static final Item COOKED_GLOW_SQUID = registerItem("cooked_glow_squid",
+            new Item(new FabricItemSettings().food(ModFoodComponents.COOKED_GLOW_SQUID)));
     public static final Item HONEY_GLAZED_STEAK = registerItem("honey_glazed_steak",
             new Item(new FabricItemSettings().food(ModFoodComponents.HONEY_GLAZED_STEAK)));
 

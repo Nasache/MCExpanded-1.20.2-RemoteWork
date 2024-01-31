@@ -146,7 +146,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MOON_FRUIT, Models.GENERATED);
         itemModelGenerator.register(ModItems.SUN_FRUIT, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_SQUID, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_SQUID, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_GLOW_SQUID, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_GLOW_SQUID, Models.GENERATED);
         itemModelGenerator.register(ModItems.HONEY_GLAZED_STEAK, Models.GENERATED);
         itemModelGenerator.register(ModItems.MARSHMALLOW, Models.GENERATED);
         itemModelGenerator.register(ModItems.BURNT_MARSHMALLOW, Models.GENERATED);
@@ -159,6 +161,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.MALACHITE_CLUSTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.ICE_CRYSTAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_DUCK, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COOKED_DUCK, Models.GENERATED);
         itemModelGenerator.register(ModItems.DUCK_FEATHER, Models.GENERATED);
         itemModelGenerator.register(ModItems.MUSIC_DISC_SHROOM_SONG, Models.GENERATED);
 
