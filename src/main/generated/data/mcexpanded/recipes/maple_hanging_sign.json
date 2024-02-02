@@ -4,7 +4,7 @@
   "group": "hanging_sign",
   "key": {
     "#": {
-      "item": "mcexpanded:maple_planks"
+      "item": "mcexpanded:stripped_maple_log"
     },
     "X": {
       "item": "minecraft:chain"

@@ -51,9 +51,9 @@ public class ModBlocks {
     public static final Block MAPLE_TRAPDOOR = registerBlock("maple_trapdoor",
             new TrapdoorBlock(FabricBlockSettings.copyOf(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
     public static final Block MAPLE_LOG = registerBlock("maple_log",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
+            new MapleLogBlock(FabricBlockSettings.copyOf(Blocks.OAK_LOG)));
     public static final Block MAPLE_WOOD = registerBlock("maple_wood",
-            new PillarBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
+            new MapleWoodBlock(FabricBlockSettings.copyOf(Blocks.OAK_WOOD)));
     public static final Block STRIPPED_MAPLE_LOG = registerBlock("stripped_maple_log",
             new PillarBlock(FabricBlockSettings.copyOf(Blocks.STRIPPED_OAK_LOG)));
     public static final Block STRIPPED_MAPLE_WOOD = registerBlock("stripped_maple_wood",

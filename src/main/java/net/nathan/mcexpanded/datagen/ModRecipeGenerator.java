@@ -68,7 +68,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerPressurePlateRecipe(exporter, ModBlocks.MAPLE_PRESSURE_PLATE, ModBlocks.MAPLE_PLANKS);
 
-        offerHangingSignRecipe(exporter, ModItems.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_PLANKS);
+        offerHangingSignRecipe(exporter, ModItems.MAPLE_HANGING_SIGN, ModBlocks.STRIPPED_MAPLE_LOG);
         createSignRecipe(ModItems.MAPLE_SIGN, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
                 .criterion(hasItem(ModBlocks.MAPLE_PLANKS), conditionsFromItem(ModBlocks.MAPLE_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MAPLE_SIGN)));;
@@ -99,7 +99,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerPressurePlateRecipe(exporter, ModBlocks.WISTERIA_PRESSURE_PLATE, ModBlocks.WISTERIA_PLANKS);
 
-        offerHangingSignRecipe(exporter, ModItems.WISTERIA_HANGING_SIGN, ModBlocks.WISTERIA_PLANKS);
+        offerHangingSignRecipe(exporter, ModItems.WISTERIA_HANGING_SIGN, ModBlocks.STRIPPED_WISTERIA_LOG);
         createSignRecipe(ModItems.WISTERIA_SIGN, Ingredient.ofItems(ModBlocks.WISTERIA_PLANKS))
                 .criterion(hasItem(ModBlocks.WISTERIA_PLANKS), conditionsFromItem(ModBlocks.WISTERIA_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.WISTERIA_SIGN)));
@@ -137,7 +137,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerPressurePlateRecipe(exporter, ModBlocks.FROST_PINE_PRESSURE_PLATE, ModBlocks.FROST_PINE_PLANKS);
 
-        offerHangingSignRecipe(exporter, ModItems.FROST_PINE_HANGING_SIGN, ModBlocks.FROST_PINE_PLANKS);
+        offerHangingSignRecipe(exporter, ModItems.FROST_PINE_HANGING_SIGN, ModBlocks.STRIPPED_FROST_PINE_LOG);
         createSignRecipe(ModItems.FROST_PINE_SIGN, Ingredient.ofItems(ModBlocks.FROST_PINE_PLANKS))
                 .criterion(hasItem(ModBlocks.FROST_PINE_PLANKS), conditionsFromItem(ModBlocks.FROST_PINE_PLANKS))
                 .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.FROST_PINE_SIGN)));
