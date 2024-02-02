@@ -41,6 +41,6 @@ public class MapleWoodBlock extends PillarBlock {
     }
 
     public static void dropMaple(World world, BlockPos pos) {
-        dropStack(world, pos, new ItemStack(ModItems.LEEK, 1));
+        dropStack(world, pos, new ItemStack(ModItems.MAPLE_SAP, 1));
     }
 }

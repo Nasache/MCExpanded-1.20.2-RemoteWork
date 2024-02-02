@@ -214,6 +214,8 @@ public class ModItemGroup {
 
                         entries.add(ModItems.CONGEALED_SLIME);
 
+                        entries.add(ModItems.MAPLE_SAP);
+
                     }).build());
     public static final ItemGroup GROUP_J = Registry.register(Registries.ITEM_GROUP,
             new Identifier(MCExpanded.MOD_ID, "group_j"),

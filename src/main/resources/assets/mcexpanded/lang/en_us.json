@@ -102,14 +102,6 @@
   "block.mcexpanded.snow_brick_pressure_plate": "Snow Brick Pressure Plate",
   "block.mcexpanded.snow_brick_wall": "Snow Brick Wall",
 
-  "block.mcexpanded.malachite_block": "Block Of Malachite",
-  "block.mcexpanded.budding_malachite": "Budding Malachite",
-  "item.mcexpanded.small_malachite_bud": "Small Malachite Bud",
-  "item.mcexpanded.medium_malachite_bud": "Medium Malachite Bud",
-  "item.mcexpanded.large_malachite_bud": "Large Malachite Bud",
-  "item.mcexpanded.malachite_cluster": "Malachite Cluster",
-  "item.mcexpanded.malachite_shard": "Malachite Shard",
-
   "block.mcexpanded.maple_sign": "Maple Sign",
   "block.mcexpanded.maple_hanging_sign": "Maple Hanging Sign",
 
@@ -129,6 +121,7 @@
   "item.mcexpanded.raw_duck": "Raw Duck",
   "item.mcexpanded.cooked_duck": "Cooked Duck",
   "item.mcexpanded.duck_feather": "Duck Feather",
+  "item.mcexpanded.maple_sap": "Maple Sap",
 
   "item.mcexpanded.leek": "Leek",
   "item.mcexpanded.roasted_leek": "Roasted Leek",

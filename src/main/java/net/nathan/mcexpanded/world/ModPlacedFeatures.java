@@ -36,7 +36,6 @@ public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> PATCH_SNOW_GRASS_PLACED_KEY = registerKey("snow_grass_placed");
     public static final RegistryKey<PlacedFeature> BLUE_MUSHROOM_PLACED_KEY = registerKey("blue_mushroom_placed");
     public static final RegistryKey<PlacedFeature> COBALT_ORE_PLACED_KEY = registerKey("cobalt_ore_placed");
-    public static final RegistryKey<PlacedFeature> MALACHITE_GEODE_PLACED_KEY = registerKey("malachite_geode_placed");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
@@ -105,9 +104,6 @@ public class ModPlacedFeatures {
                 ModOrePlacement.modifiersWithCount(10,
                         HeightRangePlacementModifier.uniform(YOffset.fixed(-64), YOffset.fixed(32))));
 
-        register(context, MALACHITE_GEODE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.MALACHITE_GEODE_KEY),
-                RarityFilterPlacementModifier.of(42), SquarePlacementModifier.of(), HeightRangePlacementModifier.uniform(YOffset.fixed(-16),
-                        YOffset.fixed(32)), BiomePlacementModifier.of());
 
     }
 

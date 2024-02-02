@@ -225,19 +225,6 @@ public class ModBlocks {
             new FlowerPotBlock(BLUE_MUSHROOM, FabricBlockSettings.copyOf(Blocks.POTTED_RED_MUSHROOM).mapColor(MapColor.BLUE)));
 
 
-    public static final Block MALACHITE_BLOCK = registerBlock("malachite_block",
-            new AmethystBlock(FabricBlockSettings.copyOf(Blocks.AMETHYST_BLOCK)));
-
-    public static final Block BUDDING_MALACHITE = registerBlock("budding_malachite",
-            new BuddingAmethystBlock(FabricBlockSettings.copyOf(Blocks.BUDDING_AMETHYST)));
-    public static final Block SMALL_MALACHITE_BUD = registerBlockWithoutBlockItem("small_malachite_bud",
-            new AmethystClusterBlock(1, 0, FabricBlockSettings.copyOf(Blocks.SMALL_AMETHYST_BUD)));
-    public static final Block MEDIUM_MALACHITE_BUD = registerBlockWithoutBlockItem("medium_malachite_bud",
-            new AmethystClusterBlock(1, 0, FabricBlockSettings.copyOf(Blocks.MEDIUM_AMETHYST_BUD)));
-    public static final Block LARGE_MALACHITE_BUD = registerBlockWithoutBlockItem("large_malachite_bud",
-            new AmethystClusterBlock(1, 0, FabricBlockSettings.copyOf(Blocks.LARGE_AMETHYST_BUD)));
-    public static final Block MALACHITE_CLUSTER = registerBlockWithoutBlockItem("malachite_cluster",
-            new AmethystClusterBlock(1, 0, FabricBlockSettings.copyOf(Blocks.AMETHYST_CLUSTER)));
 
 
     public static final Block TEST_BLOCK = registerBlock("test_block",

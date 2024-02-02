@@ -30,13 +30,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                         ModBlocks.SNOW_BRICK_STAIRS,
                         ModBlocks.SNOW_BRICK_WALL,
                         ModBlocks.SNOW_BRICK_PRESSURE_PLATE,
-                        ModBlocks.SNOW_BRICK_BUTTON,
-                        ModBlocks.MALACHITE_BLOCK,
-                        ModBlocks.MALACHITE_CLUSTER,
-                        ModBlocks.SMALL_MALACHITE_BUD,
-                        ModBlocks.MEDIUM_MALACHITE_BUD,
-                        ModBlocks.LARGE_MALACHITE_BUD,
-                        ModBlocks.BUDDING_MALACHITE
+                        ModBlocks.SNOW_BRICK_BUTTON
                         );
 
         getOrCreateTagBuilder(BlockTags.AXE_MINEABLE)
@@ -141,7 +135,6 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
         getOrCreateTagBuilder(ModTags.Blocks.MAPLE_LOGS)
                 .add(ModBlocks.MAPLE_LOG, ModBlocks.MAPLE_WOOD, ModBlocks.STRIPPED_MAPLE_LOG, ModBlocks.STRIPPED_MAPLE_WOOD);
-
         getOrCreateTagBuilder(ModTags.Blocks.WISTERIA_LOGS)
                 .add(ModBlocks.WISTERIA_LOG, ModBlocks.WISTERIA_WOOD, ModBlocks.STRIPPED_WISTERIA_LOG, ModBlocks.STRIPPED_WISTERIA_WOOD);
         getOrCreateTagBuilder(ModTags.Blocks.FROST_PINE_LOGS)

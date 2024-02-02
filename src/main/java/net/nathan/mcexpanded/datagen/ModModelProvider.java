@@ -124,8 +124,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerFlowerPotPlant(ModBlocks.BLUE_MUSHROOM, ModBlocks.POTTED_BLUE_MUSHROOM, NOT_TINTED);
 
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MALACHITE_BLOCK);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BUDDING_MALACHITE);
 
         blockStateModelGenerator.registerTintableCross(ModBlocks.FROST_BUD_BLOCK, NOT_TINTED);
         blockStateModelGenerator.registerTintableCross(ModBlocks.SNOW_GRASS, NOT_TINTED);
@@ -154,12 +152,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BURNT_MARSHMALLOW, Models.GENERATED);
         itemModelGenerator.register(ModItems.LIGHTNING_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.CONGEALED_SLIME, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MALACHITE_SHARD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.SMALL_MALACHITE_BUD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MEDIUM_MALACHITE_BUD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.LARGE_MALACHITE_BUD, Models.GENERATED);
-        itemModelGenerator.register(ModItems.MALACHITE_CLUSTER, Models.GENERATED);
         itemModelGenerator.register(ModItems.ICE_CRYSTAL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAPLE_SAP, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_DUCK, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_DUCK, Models.GENERATED);
         itemModelGenerator.register(ModItems.DUCK_FEATHER, Models.GENERATED);

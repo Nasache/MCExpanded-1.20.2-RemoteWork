@@ -53,7 +53,6 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> COBALT_ORE_KEY = registerKey("cobalt_ore");
 
-    public static final RegistryKey<ConfiguredFeature<?, ?>> MALACHITE_GEODE_KEY = registerKey("malachite_geode");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -128,22 +127,6 @@ public class ModConfiguredFeatures {
                 ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig
                         (BlockStateProvider.of((BlockState)ModBlocks.SNOW_GRASS.getDefaultState())), List.of(Blocks.SNOW_BLOCK)));
 
-        register(context, MALACHITE_GEODE_KEY, Feature.GEODE, new GeodeFeatureConfig(new GeodeLayerConfig(
-                BlockStateProvider.of(Blocks.AIR),
-                BlockStateProvider.of(ModBlocks.MALACHITE_BLOCK),
-                BlockStateProvider.of(ModBlocks.BUDDING_MALACHITE),
-                BlockStateProvider.of(Blocks.CALCITE),
-                BlockStateProvider.of(Blocks.SMOOTH_BASALT),
-                List.of(ModBlocks.SMALL_MALACHITE_BUD.getDefaultState(),
-                        ModBlocks.MEDIUM_MALACHITE_BUD.getDefaultState(),
-                        ModBlocks.LARGE_MALACHITE_BUD.getDefaultState(),
-                        ModBlocks.MALACHITE_CLUSTER.getDefaultState()),
-                BlockTags.FEATURES_CANNOT_REPLACE , BlockTags.GEODE_INVALID_BLOCKS),
-                new GeodeLayerThicknessConfig(1.7, 2.2, 3.2, 4.2),
-                new GeodeCrackConfig(0.95, 2.0, 2),
-                0.35, 0.083, true,
-                UniformIntProvider.create(4, 6), UniformIntProvider.create(3, 4), UniformIntProvider.create(1, 2),
-                -16, 16, 0.05, 1));
 
     }
 

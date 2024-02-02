@@ -7,7 +7,6 @@ import net.nathan.mcexpanded.world.ModPlacedFeatures;
 
 public class ModGeodeGeneration {
     public static void generateGeodes() {
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(),
-                GenerationStep.Feature.LOCAL_MODIFICATIONS, ModPlacedFeatures.MALACHITE_GEODE_PLACED_KEY);
+
     }
 }

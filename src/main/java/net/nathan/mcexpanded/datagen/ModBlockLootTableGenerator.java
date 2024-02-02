@@ -113,9 +113,6 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SNOW_BRICK_PRESSURE_PLATE);
         addDrop(ModBlocks.SNOW_BRICK_WALL);
 
-        addDrop(ModBlocks.MALACHITE_BLOCK);
-        addDrop(ModBlocks.MALACHITE_CLUSTER, oreDrops(ModBlocks.MALACHITE_CLUSTER, ModItems.MALACHITE_SHARD));
-
         addDrop(ModBlocks.GARDEN_COSMOS);
         addDrop(ModBlocks.POTTED_GARDEN_COSMOS, pottedPlantDrops(ModBlocks.GARDEN_COSMOS));
         addDrop(ModBlocks.BLUE_MUSHROOM);

@@ -91,6 +91,9 @@ public class ModItems {
     public static final Item FROST_PINE_HANGING_SIGN = registerItem("frost_pine_hanging_sign",
             new HangingSignItem(ModBlocks.FROST_PINE_HANGING_SIGN, ModBlocks.FROST_PINE_WALL_HANGING_SIGN, new FabricItemSettings().maxCount(16)));
 
+    public static final Item MAPLE_SAP = registerItem("maple_sap",
+            new Item(new FabricItemSettings()));
+
     public static final Item BITTER_BERRIES = registerItem("bitter_berries",
             new AliasedBlockItem(ModBlocks.BITTER_BERRY_BUSH, new FabricItemSettings().food(ModFoodComponents.BITTER_BERRIES)));
 
@@ -139,16 +142,6 @@ public class ModItems {
     public static final Item CONGEALED_SLIME = registerItem("congealed_slime",
             new Item(new FabricItemSettings()));
 
-    public static final Item MALACHITE_SHARD = registerItem("malachite_shard",
-            new Item(new FabricItemSettings()));
-    public static final Item SMALL_MALACHITE_BUD = registerItem("small_malachite_bud",
-            new AliasedBlockItem(ModBlocks.SMALL_MALACHITE_BUD, new FabricItemSettings()));
-    public static final Item MEDIUM_MALACHITE_BUD = registerItem("medium_malachite_bud",
-            new AliasedBlockItem(ModBlocks.MEDIUM_MALACHITE_BUD, new FabricItemSettings()));
-    public static final Item LARGE_MALACHITE_BUD = registerItem("large_malachite_bud",
-            new AliasedBlockItem(ModBlocks.LARGE_MALACHITE_BUD, new FabricItemSettings()));
-    public static final Item MALACHITE_CLUSTER = registerItem("malachite_cluster",
-            new AliasedBlockItem(ModBlocks.MALACHITE_CLUSTER, new FabricItemSettings()));
 
     public static final Item ICE_CRYSTAL = registerItem("ice_crystal",
             new AliasedBlockItem(ModBlocks.ICE_CRYSTAL, new FabricItemSettings()));
