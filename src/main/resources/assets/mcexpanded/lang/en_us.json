@@ -35,6 +35,7 @@
   "item.mcexpanded.duck_spawn_egg": "Duck Spawn Egg",
   "item.mcexpanded.ghost_spawn_egg": "Ghost Spawn Egg",
   "item.mcexpanded.vagrant_spawn_egg": "Vagrant Spawn Egg",
+  "item.mcexpanded.mire_spawn_egg": "Mire Spawn Egg",
   "item.mcexpanded.wisteria_spider_spawn_egg": "Wisteria Spider Spawn Egg",
 
 
@@ -122,6 +123,10 @@
   "item.mcexpanded.cooked_duck": "Cooked Duck",
   "item.mcexpanded.duck_feather": "Duck Feather",
   "item.mcexpanded.maple_sap": "Maple Sap",
+  "item.mcexpanded.maple_syrup_bottle": "Maple Syrup Bottle",
+  "item.mcexpanded.maple_candy": "Maple Candy",
+  "item.mcexpanded.milk_bottle": "Milk Bottle",
+  "item.mcexpanded.pancake": "Pancake",
 
   "item.mcexpanded.leek": "Leek",
   "item.mcexpanded.roasted_leek": "Roasted Leek",

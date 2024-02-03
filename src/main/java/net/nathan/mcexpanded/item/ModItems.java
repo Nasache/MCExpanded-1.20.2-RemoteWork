@@ -93,6 +93,15 @@ public class ModItems {
 
     public static final Item MAPLE_SAP = registerItem("maple_sap",
             new Item(new FabricItemSettings()));
+    public static final Item MAPLE_SYRUP_BOTTLE = registerItem("maple_syrup_bottle",
+            new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item MAPLE_CANDY = registerItem("maple_candy",
+            new Item(new FabricItemSettings().food(ModFoodComponents.MAPLE_CANDY)));
+    public static final Item PANCAKE = registerItem("pancake",
+            new Item(new FabricItemSettings().food(ModFoodComponents.PANCAKE)));
+    public static final Item MILK_BOTTLE = registerItem("milk_bottle",
+            new Item(new FabricItemSettings().maxCount(16)));
+
 
     public static final Item BITTER_BERRIES = registerItem("bitter_berries",
             new AliasedBlockItem(ModBlocks.BITTER_BERRY_BUSH, new FabricItemSettings().food(ModFoodComponents.BITTER_BERRIES)));
@@ -154,6 +163,8 @@ public class ModItems {
             new SpawnEggItem(ModEntities.GHOST, 0xffffff, 0xff8fc9c9, new FabricItemSettings()));
     public static final Item VAGRANT_SPAWN_EGG = registerItem("vagrant_spawn_egg",
             new SpawnEggItem(ModEntities.VAGRANT, 0xff1c7108, 0xffcfdec4, new FabricItemSettings()));
+    public static final Item MIRE_SPAWN_EGG = registerItem("mire_spawn_egg",
+            new SpawnEggItem(ModEntities.MIRE, 0xffffff, 0xffffff, new FabricItemSettings()));
     public static final Item WISTERIA_SPIDER_SPAWN_EGG = registerItem("wisteria_spider_spawn_egg",
             new SpawnEggItem(ModEntities.WISTERIA_SPIDER, 0xffbe7cdf, 0xff762496, new FabricItemSettings()));
 

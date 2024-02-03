@@ -9,10 +9,7 @@ import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-import net.nathan.mcexpanded.entity.custom.DuckEntity;
-import net.nathan.mcexpanded.entity.custom.GhostEntity;
-import net.nathan.mcexpanded.entity.custom.VagrantEntity;
-import net.nathan.mcexpanded.entity.custom.WisteriaSpiderEntity;
+import net.nathan.mcexpanded.entity.custom.*;
 
 public class ModEntities {
 
@@ -31,10 +28,17 @@ public class ModEntities {
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, VagrantEntity::new)
                     .dimensions(EntityDimensions.fixed(0.5f, 1.5f)).build());
 
+    public static final EntityType<MireEntity> MIRE = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(MCExpanded.MOD_ID, "mire"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, MireEntity::new)
+                    .dimensions(EntityDimensions.fixed(0.5f, 1.5f)).build());
+
     public static final EntityType<WisteriaSpiderEntity> WISTERIA_SPIDER = Registry.register(Registries.ENTITY_TYPE,
             new Identifier(MCExpanded.MOD_ID, "wisteria_spider"),
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, WisteriaSpiderEntity::new)
                     .dimensions(EntityDimensions.fixed(0.5f, 1.5f)).build());
+
+
 
     public static void registerModEntities() {
         MCExpanded.LOGGER.info("Registering Mod Entities for " + MCExpanded.MOD_ID);

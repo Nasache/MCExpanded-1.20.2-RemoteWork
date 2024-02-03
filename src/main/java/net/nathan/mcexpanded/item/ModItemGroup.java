@@ -202,6 +202,9 @@ public class ModItemGroup {
                         entries.add(ModItems.MARSHMALLOW);
                         entries.add(ModItems.BURNT_MARSHMALLOW);
 
+                        entries.add(ModItems.PANCAKE);
+                        entries.add(ModItems.MAPLE_CANDY);
+
                     }).build());
     public static final ItemGroup GROUP_I = Registry.register(Registries.ITEM_GROUP,
             new Identifier(MCExpanded.MOD_ID, "group_i"),
@@ -215,6 +218,8 @@ public class ModItemGroup {
                         entries.add(ModItems.CONGEALED_SLIME);
 
                         entries.add(ModItems.MAPLE_SAP);
+                        entries.add(ModItems.MAPLE_SYRUP_BOTTLE);
+                        entries.add(ModItems.MILK_BOTTLE);
 
                     }).build());
     public static final ItemGroup GROUP_J = Registry.register(Registries.ITEM_GROUP,
@@ -224,6 +229,7 @@ public class ModItemGroup {
                         entries.add(ModItems.DUCK_SPAWN_EGG);
                         entries.add(ModItems.GHOST_SPAWN_EGG);
                         entries.add(ModItems.VAGRANT_SPAWN_EGG);
+                        entries.add(ModItems.MIRE_SPAWN_EGG);
                         entries.add(ModItems.WISTERIA_SPIDER_SPAWN_EGG);
 
                     }).build());

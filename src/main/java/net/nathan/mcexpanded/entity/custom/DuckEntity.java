@@ -15,10 +15,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Util;
 import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
+import net.minecraft.world.event.GameEvent;
 import net.nathan.mcexpanded.entity.ModEntities;
 import net.nathan.mcexpanded.entity.variant.DuckVariant;
 import net.nathan.mcexpanded.item.ModItems;
@@ -29,8 +31,12 @@ public class DuckEntity extends AnimalEntity {
             DataTracker.registerData(DuckEntity.class, TrackedDataHandlerRegistry.INTEGER);
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
+
+    public int featherDropTime;
+
     public DuckEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
+        this.featherDropTime = this.random.nextInt(6000) + 6000;
     }
 
     @Override
@@ -75,8 +81,16 @@ public class DuckEntity extends AnimalEntity {
         }
     }
 
+    public void tickMovement() {
+        super.tickMovement();
+        if (!this.getWorld().isClient && this.isAlive() && !this.isBaby() && --this.featherDropTime <= 0) {
+            this.playSound(SoundEvents.ENTITY_CHICKEN_EGG, 1.0F, (this.random.nextFloat() - this.random.nextFloat()) * 0.2F + 1.0F);
+            this.dropItem(ModItems.DUCK_FEATHER);
+            this.emitGameEvent(GameEvent.ENTITY_PLACE);
+            this.featherDropTime = this.random.nextInt(6000) + 6000;
+        }
 
-
+    }
 
     public static DefaultAttributeContainer.Builder createDuckAttributes() {
         return MobEntity.createMobAttributes()
@@ -125,11 +139,15 @@ public class DuckEntity extends AnimalEntity {
     public void readCustomDataFromNbt(NbtCompound nbt) {
         super.readCustomDataFromNbt(nbt);
         this.dataTracker.set(DATA_ID_TYPE_VARIANT, nbt.getInt("Variant"));
+        if (nbt.contains("FeatherDropTime")) {
+            this.featherDropTime = nbt.getInt("FeatherDropTime");
+        }
     }
 
     @Override
     public void writeCustomDataToNbt(NbtCompound nbt) {
         super.writeCustomDataToNbt(nbt);
         nbt.putInt("Variant", this.getTypeVariant());
+        nbt.putInt("FeatherDropTime", this.featherDropTime);
     }
 }

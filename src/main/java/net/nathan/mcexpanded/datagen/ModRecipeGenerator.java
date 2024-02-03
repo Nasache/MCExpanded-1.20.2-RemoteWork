@@ -2,7 +2,6 @@ package net.nathan.mcexpanded.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.CookingRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -12,9 +11,7 @@ import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.RecipeSerializer;
-import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
-import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.item.ModItems;
@@ -71,7 +68,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerHangingSignRecipe(exporter, ModItems.MAPLE_HANGING_SIGN, ModBlocks.STRIPPED_MAPLE_LOG);
         createSignRecipe(ModItems.MAPLE_SIGN, Ingredient.ofItems(ModBlocks.MAPLE_PLANKS))
                 .criterion(hasItem(ModBlocks.MAPLE_PLANKS), conditionsFromItem(ModBlocks.MAPLE_PLANKS))
-                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MAPLE_SIGN)));;
+                .offerTo(exporter, new Identifier(getRecipeName(ModBlocks.MAPLE_SIGN)));
 
         offerPlanksRecipe(exporter, ModBlocks.WISTERIA_PLANKS, ModTags.Items.WISTERIA_LOGS, 4);
 
@@ -413,6 +410,42 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .input(Items.HONEY_BOTTLE)
                 .criterion(hasItem(Items.SUGAR), conditionsFromItem(Items.SUGAR))
                 .offerTo(exporter, new Identifier(getRecipeName(ModItems.MARSHMALLOW)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MAPLE_SYRUP_BOTTLE, 3)
+                .input(ModItems.MAPLE_SAP)
+                .input(Items.GLASS_BOTTLE)
+                .input(Items.GLASS_BOTTLE)
+                .input(Items.GLASS_BOTTLE)
+                .criterion(hasItem(ModItems.MAPLE_SAP), conditionsFromItem(ModItems.MAPLE_SAP))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MAPLE_SYRUP_BOTTLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MAPLE_CANDY, 4)
+                .pattern(" S ")
+                .pattern("SMS")
+                .pattern(" S ")
+                .input('S', Items.SUGAR)
+                .input('M', ModItems.MAPLE_SYRUP_BOTTLE)
+                .criterion(hasItem(ModItems.MAPLE_SYRUP_BOTTLE), conditionsFromItem(ModItems.MAPLE_SYRUP_BOTTLE))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MAPLE_CANDY)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.MILK_BOTTLE, 3)
+                .input(Items.MILK_BUCKET)
+                .input(Items.GLASS_BOTTLE)
+                .input(Items.GLASS_BOTTLE)
+                .input(Items.GLASS_BOTTLE)
+                .criterion(hasItem(Items.MILK_BUCKET), conditionsFromItem(Items.MILK_BUCKET))
+                .offerTo(exporter, new Identifier(getRecipeName(ModItems.MILK_BOTTLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, Items.CAKE)
+                .pattern("MMM")
+                .pattern("SES")
+                .pattern("WWW")
+                .input('S', Items.SUGAR)
+                .input('M', ModItems.MILK_BOTTLE)
+                .input('E', Items.EGG)
+                .input('W', Items.WHEAT)
+                .criterion(hasItem(ModItems.MILK_BOTTLE), conditionsFromItem(ModItems.MILK_BOTTLE))
+                .offerTo(exporter, new Identifier(getRecipeName(Items.CAKE)));
 
         offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING, 100, ModItems.MARSHMALLOW, ModItems.BURNT_MARSHMALLOW, 0.35f);
     }

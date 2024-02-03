@@ -3,18 +3,14 @@ package net.nathan.mcexpanded.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Blocks;
 import net.minecraft.data.client.*;
 import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Items;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.block.custom.*;
 import net.nathan.mcexpanded.item.ModItems;
-
-import java.util.IdentityHashMap;
 import java.util.Optional;
 
 import static net.minecraft.data.client.BlockStateModelGenerator.TintType.NOT_TINTED;
@@ -154,6 +150,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.CONGEALED_SLIME, Models.GENERATED);
         itemModelGenerator.register(ModItems.ICE_CRYSTAL, Models.GENERATED);
         itemModelGenerator.register(ModItems.MAPLE_SAP, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAPLE_SYRUP_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MAPLE_CANDY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PANCAKE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MILK_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.RAW_DUCK, Models.GENERATED);
         itemModelGenerator.register(ModItems.COOKED_DUCK, Models.GENERATED);
         itemModelGenerator.register(ModItems.DUCK_FEATHER, Models.GENERATED);
@@ -194,6 +194,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GHOST_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
         itemModelGenerator.register(ModItems.VAGRANT_SPAWN_EGG,
+                new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
+        itemModelGenerator.register(ModItems.MIRE_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));
         itemModelGenerator.register(ModItems.WISTERIA_SPIDER_SPAWN_EGG,
                 new Model(Optional.of(new Identifier("item/template_spawn_egg")), Optional.empty()));

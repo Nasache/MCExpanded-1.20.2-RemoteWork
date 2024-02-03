@@ -1,6 +1,5 @@
 package net.nathan.mcexpanded.world.biome;
 
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -16,7 +15,6 @@ import net.nathan.mcexpanded.entity.ModEntities;
 
 public class ModBiomes {
     public static final RegistryKey<Biome> WISTERIA_FOREST = register("wisteria_forest");
-
     public static final RegistryKey<Biome> SNOWY_CAVES = register("snowy_caves");
     public static final RegistryKey<Biome> SANDY_CAVES = register("sandy_caves");
 
@@ -107,6 +105,7 @@ public class ModBiomes {
                         .skyColor(0x98d5e3).build())
                 .build();
     }
+
     public static Biome sandyCaves(Registerable<Biome> context) {
         SpawnSettings.Builder spawnBuilder = new SpawnSettings.Builder();
         spawnBuilder.spawn(SpawnGroup.MONSTER, new SpawnSettings.SpawnEntry(ModEntities.GHOST, 30, 3, 5));

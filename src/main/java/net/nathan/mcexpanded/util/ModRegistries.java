@@ -14,6 +14,7 @@ import net.nathan.mcexpanded.command.SetHomeCommand;
 import net.nathan.mcexpanded.entity.ModEntities;
 import net.nathan.mcexpanded.entity.custom.DuckEntity;
 import net.nathan.mcexpanded.entity.custom.GhostEntity;
+import net.nathan.mcexpanded.entity.custom.MireEntity;
 import net.nathan.mcexpanded.entity.custom.WisteriaSpiderEntity;
 import net.nathan.mcexpanded.event.AttackEntityHandler;
 import net.nathan.mcexpanded.event.PlayerCopyHandler;
@@ -33,6 +34,7 @@ public class ModRegistries {
     private static void registerAttributes() {
         FabricDefaultAttributeRegistry.register(ModEntities.DUCK, DuckEntity.createDuckAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.GHOST, GhostEntity.createGhostAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.MIRE, MireEntity.createMireAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.WISTERIA_SPIDER, WisteriaSpiderEntity.createWisteriaSpiderAttributes());
     }
 
