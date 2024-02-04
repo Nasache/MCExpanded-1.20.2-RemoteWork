@@ -12,10 +12,7 @@ import net.nathan.mcexpanded.block.ModBlocks;
 import net.nathan.mcexpanded.command.ReturnHomeCommand;
 import net.nathan.mcexpanded.command.SetHomeCommand;
 import net.nathan.mcexpanded.entity.ModEntities;
-import net.nathan.mcexpanded.entity.custom.DuckEntity;
-import net.nathan.mcexpanded.entity.custom.GhostEntity;
-import net.nathan.mcexpanded.entity.custom.MireEntity;
-import net.nathan.mcexpanded.entity.custom.WisteriaSpiderEntity;
+import net.nathan.mcexpanded.entity.custom.*;
 import net.nathan.mcexpanded.event.AttackEntityHandler;
 import net.nathan.mcexpanded.event.PlayerCopyHandler;
 import net.nathan.mcexpanded.item.ModItems;
@@ -36,6 +33,7 @@ public class ModRegistries {
         FabricDefaultAttributeRegistry.register(ModEntities.GHOST, GhostEntity.createGhostAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.MIRE, MireEntity.createMireAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.WISTERIA_SPIDER, WisteriaSpiderEntity.createWisteriaSpiderAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.HARVEST_SPIRIT, HarvestSpiritEntity.createHarvestSpiritAttributes());
     }
 
     private static void registerFuels() {

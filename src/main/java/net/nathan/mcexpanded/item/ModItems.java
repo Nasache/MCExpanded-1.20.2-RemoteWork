@@ -168,6 +168,9 @@ public class ModItems {
     public static final Item WISTERIA_SPIDER_SPAWN_EGG = registerItem("wisteria_spider_spawn_egg",
             new SpawnEggItem(ModEntities.WISTERIA_SPIDER, 0xffbe7cdf, 0xff762496, new FabricItemSettings()));
 
+    public static final Item HARVEST_SPIRIT_SPAWN_EGG = registerItem("harvest_spirit_spawn_egg",
+            new SpawnEggItem(ModEntities.HARVEST_SPIRIT, 0xFFFFFF, 0xFFFFFF, new FabricItemSettings()));
+
 
     public static final Item LIGHTNING_BOTTLE = registerItem("lightning_bottle",
             new LightningBottleItem(new FabricItemSettings().maxCount(16)));

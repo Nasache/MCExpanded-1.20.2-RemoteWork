@@ -38,6 +38,11 @@ public class ModEntities {
             FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, WisteriaSpiderEntity::new)
                     .dimensions(EntityDimensions.fixed(0.5f, 1.5f)).build());
 
+    public static final EntityType<HarvestSpiritEntity> HARVEST_SPIRIT = Registry.register(Registries.ENTITY_TYPE,
+            new Identifier(MCExpanded.MOD_ID, "harvestspirit"),
+            FabricEntityTypeBuilder.create(SpawnGroup.MONSTER, HarvestSpiritEntity::new)
+                    .dimensions(EntityDimensions.fixed(2f, 3f)).build());
+
 
 
     public static void registerModEntities() {

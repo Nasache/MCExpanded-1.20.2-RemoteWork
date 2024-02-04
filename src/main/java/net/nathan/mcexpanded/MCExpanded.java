@@ -9,6 +9,7 @@ import net.nathan.mcexpanded.enchantment.ModEnchantments;
 import net.nathan.mcexpanded.entity.ModEntities;
 import net.nathan.mcexpanded.item.ModItemGroup;
 import net.nathan.mcexpanded.item.ModItems;
+import net.nathan.mcexpanded.screen.ModScreenHandlers;
 import net.nathan.mcexpanded.sound.ModSounds;
 import net.nathan.mcexpanded.util.ModEventListeners;
 import net.nathan.mcexpanded.util.ModLootTableModifiers;
@@ -44,6 +45,7 @@ public class MCExpanded implements ModInitializer {
 		ModEventListeners.registerEventListeners();
 
 		ModEntities.registerModEntities();
+		ModScreenHandlers.registerScreenHandler();
 
 
 	}

@@ -231,6 +231,7 @@ public class ModItemGroup {
                         entries.add(ModItems.VAGRANT_SPAWN_EGG);
                         entries.add(ModItems.MIRE_SPAWN_EGG);
                         entries.add(ModItems.WISTERIA_SPIDER_SPAWN_EGG);
+                        entries.add(ModItems.HARVEST_SPIRIT_SPAWN_EGG);
 
                     }).build());
 

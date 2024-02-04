@@ -10,6 +10,7 @@
 		"LivingEntityMixin",
 		"ArmorEffectMixin",
 		"MixinStrayEntity",
+		"FletchingTableMixin",
 		"ServerPlayerEntityMixin"
 
 

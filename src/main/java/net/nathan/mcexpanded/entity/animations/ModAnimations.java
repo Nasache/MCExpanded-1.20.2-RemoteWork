@@ -377,5 +377,53 @@ public class ModAnimations {
                             new Keyframe(0f, AnimationHelper.createRotationalVector(22.5f, 0f, 0f),
                                     Transformation.Interpolations.LINEAR))).build();
 
+
+
+    public static final Animation HARVEST_SPIRIT_IDLE = Animation.Builder.create(2f).looping()
+            .addBoneAnimation("head",
+                    new Transformation(Transformation.Targets.TRANSLATE,
+                            new Keyframe(0.041676664f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.9583434f, AnimationHelper.createTranslationalVector(0f, 2f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(1f, AnimationHelper.createTranslationalVector(0f, 2f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(1.9583433f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR)))
+            .addBoneAnimation("left_arm",
+                    new Transformation(Transformation.Targets.TRANSLATE,
+                            new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.125f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(1.125f, AnimationHelper.createTranslationalVector(0f, 2f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(1.1676667f, AnimationHelper.createTranslationalVector(0f, 2f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(2f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR)))
+            .addBoneAnimation("right_arm",
+                    new Transformation(Transformation.Targets.TRANSLATE,
+                            new Keyframe(0f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.125f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(1.125f, AnimationHelper.createTranslationalVector(0f, 2f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(1.1676667f, AnimationHelper.createTranslationalVector(0f, 2f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(2f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR)))
+            .addBoneAnimation("torso",
+                    new Transformation(Transformation.Targets.TRANSLATE,
+                            new Keyframe(0.041676664f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(0.9583434f, AnimationHelper.createTranslationalVector(0f, 2f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(1f, AnimationHelper.createTranslationalVector(0f, 2f, 0f),
+                                    Transformation.Interpolations.LINEAR),
+                            new Keyframe(1.9583433f, AnimationHelper.createTranslationalVector(0f, 0f, 0f),
+                                    Transformation.Interpolations.LINEAR))).build();
+
 }
 

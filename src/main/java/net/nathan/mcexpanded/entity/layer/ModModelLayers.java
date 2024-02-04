@@ -19,4 +19,7 @@ public class ModModelLayers {
 
     public static final EntityModelLayer WISTERIA_SPIDER =
             new EntityModelLayer(new Identifier(MCExpanded.MOD_ID, "wisteria_spider"), "main");
+
+    public static final EntityModelLayer HARVEST_SPIRIT =
+            new EntityModelLayer(new Identifier(MCExpanded.MOD_ID, "harvestspirit"), "main");
 }
